@@ -39,8 +39,13 @@ header {
     text-align: center;
     margin: 180px auto 0px auto;
 }
-#txt-NamePage { font-size: 6rem; }
-#txt-NamePage-word-Envi { color: var(--mainColor); }
+#txt-NamePage { 
+    font-size: 5rem; 
+}
+#txt-NamePage-word-Envi { 
+    color: var(--mainColor); 
+    font-size: 7rem;
+}
 
 
 
@@ -66,7 +71,9 @@ header {
     line-height: 1.1;
     letter-spacing: -1px;
 }
-.underline-blue { text-decoration:underline var(--mainColor);  }
+.underline-blue { 
+    text-decoration: underline 5px var(--mainColor);  
+}
 
 .section-welcome-text-container p {
     margin-top: 20px;
