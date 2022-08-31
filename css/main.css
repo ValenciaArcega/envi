@@ -79,7 +79,7 @@ header {
     height: 250px;
     border-radius: 12px;
     background-image: url(
-        ../assets/img/header-img.png);
+        ../assets/img/header-img-t.jpg);
     background-size: cover;
     box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.35);
 }
@@ -90,12 +90,12 @@ header {
     background-color: var(--mainColor);
     text-decoration: none;
     color: var(--white);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     text-align:center;
     margin: 25px 0px;
     padding: 12px 32px;
-    border-radius: 100px;
+    border-radius: 6px;
 }
 
 .btn:hover {
@@ -167,7 +167,7 @@ header {
 
 .section-cards {
     width: 100%;
-    margin: 250px auto 0px auto;
+    margin: 180px auto 0px auto;
 }
 
 .section-cards h2 {
