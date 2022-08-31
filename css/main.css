@@ -71,8 +71,9 @@ header {
     line-height: 1.1;
     letter-spacing: -1px;
 }
+
 .underline-blue { 
-    text-decoration: underline 5px var(--mainColor);  
+    text-decoration: underline 5px solid var(--mainColor) !important; 
 }
 
 .section-welcome-text-container p {
@@ -102,7 +103,7 @@ header {
     text-align:center;
     margin: 25px 0px;
     padding: 12px 32px;
-    border-radius: 6px;
+    border-radius: 100px;
 }
 
 .btn:hover {
@@ -123,7 +124,7 @@ header {
 
 .section-features-grid {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 5px;
     grid-template-columns: repeat(auto-fit,minmax(15rem, 1fr));
     justify-items: center /* center items in mobile mode */;
 }
@@ -137,14 +138,14 @@ header {
 }
 
 .feature {
-    margin-top: 35px;
+    margin-top: 25px;
     padding: 0px 20px;
     height: 11rem;
     width: 15rem;
     text-align: center;
     color: var(--mainColor);
     border-radius: 12px;
-    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.09);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.05);
 }
 
 .feature h3 {
