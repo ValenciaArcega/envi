@@ -74,6 +74,10 @@ header {
 
 .underline-blue { 
     text-decoration: underline 5px solid var(--mainColor) !important; 
+    -webkit-text-decoration-line:  underline !important;
+    -webkit-text-decoration-color: var(--mainColor) !important;
+    -webkit-text-decoration-style: solid !important;
+    -webkit-text-decoration-thickness: 2px !important;
 }
 
 .section-welcome-text-container p {
