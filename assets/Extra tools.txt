@@ -1,9 +1,12 @@
+
+Git::
+
 git version
 git init
 git status -s
 git add . or git add index.html
 git commit -m ""
-
+git push
 git log --oneline
 git reset --hard 'IDofCommit'
 

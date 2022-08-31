@@ -77,7 +77,8 @@ header {
     width: 22rem;
     height: 250px;
     border-radius: 12px;
-    background: url(/assets/img/header-img-t.jpg);
+    background: url(
+        assets/img/header-img-t.jpg);
     background-size: cover;
     box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.35);
 }
