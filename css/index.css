@@ -1,0 +1,247 @@
+/*
+
+|| SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+|| FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+|| COLORS
+   MAIN-COLOR: #1c7ed6
+   GRAY-COLOR: #212529
+*/
+
+:root {
+    --mainColor: #1c7ed6;
+    --grayColor: #212529;
+    --white: #fff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--grayColor);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    border-bottom: 10px solid var(--mainColor);
+}
+
+/* SECTION HEADER */
+header {
+    display:inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 180px auto 0px auto;
+}
+#txt-NamePage { font-size: 6rem; }
+#txt-NamePage-word-Envi { color: var(--mainColor); }
+
+
+
+
+/* SECTION WELCOME */
+.section-welcome {
+    width: 100%;
+    margin: 250px auto 0px auto;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 21rem));
+    justify-content: center;
+    justify-items:center;
+    align-items: center;
+}
+
+.section-welcome-text-container {
+    width: 21rem;
+}
+
+.section-welcome-text-container h1 {
+    font-size: 2.75rem;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+.underline-blue { text-decoration:underline var(--mainColor);  }
+
+.section-welcome-text-container p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.section-welcome-image {
+    width: 22rem;
+    height: 250px;
+    border-radius: 12px;
+    background: url(/assets/img/header-img-t.jpg);
+    background-size: cover;
+    box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.35);
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block; /* to add margin at the top and bottom */
+    background-color: var(--mainColor);
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 18px;
+    text-align:center;
+    margin: 25px 0px;
+    padding: 12px 32px;
+    border-radius: 100px;
+}
+
+.btn:hover {
+    background-color:#1971c2;
+}
+
+
+
+
+
+
+/* SECTION FEATURES */
+.section-features {
+    width: 90%;
+    margin: 200px auto 0px auto;
+    text-align: center;
+}
+
+.section-features-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(15rem, 1fr));
+    justify-items: center /* center items in mobile mode */;
+}
+
+.section-features h2 {
+    grid-column: 1/-1;
+    color: var(--grayColor);
+    font-size: 2.75rem;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.feature {
+    margin-top: 35px;
+    padding: 0px 20px;
+    height: 11rem;
+    width: 15rem;
+    text-align: center;
+    color: var(--mainColor);
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.09);
+}
+
+.feature h3 {
+    color: var(--grayColor);
+    margin: 10px 0px 5px 0px;
+    letter-spacing: 0px;
+}
+
+.feature p {
+    color: var(--grayColor);
+}
+
+.icon-features {
+    margin-top: 20px;
+    stroke: var(--mainColor);
+    width: 28px;
+    height: 28px;
+}
+
+
+
+
+
+
+
+
+
+.section-cards {
+    width: 100%;
+    margin: 250px auto 0px auto;
+}
+
+.section-cards h2 {
+    text-align:center;
+    font-size: 2.75rem;
+}
+
+.cards {
+    margin-top: 40px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fit,minmax(21rem, 1fr));
+    justify-items:center; /* center items in mobile mode */;
+}
+
+.card {
+    padding: 15px;
+    font-size:1.25rem;
+    display: block;
+    width: 22rem;
+    height: 34rem;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0px -2px 15px 5px rgba(0,0,0,0.19);
+    color: var(--grayColor);
+}
+.card h1 {
+    text-align: center;
+    color: var(--mainColor);
+    margin: 30px 0px 40px 0px;
+}
+
+ul li {
+    margin: 30px 30px 10px 30px;
+    list-style: none;
+}
+
+.list-header {
+    display:flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.card-icon {
+    stroke: var(--mainColor);
+    width: 24px;
+    height: 24px;
+}
+h4 {
+    font-size: 1.25rem;
+    user-select: none;
+}
+
+li p {
+    font-size: 1.1rem;
+    display: inline;
+}
+
+.muteLetters {
+    text-decoration:line-through red 2.5px;
+}
+
+
+footer {
+    width: 90%;
+    margin: 200px auto 10px auto;
+    height: 2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* SECTIONS */
