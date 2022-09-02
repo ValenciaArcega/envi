@@ -219,15 +219,12 @@ header {
     height: 34rem;
     background-color: var(--white);
     border-radius: 12px;
-    box-shadow: 0px -2px 15px 5px rgba(0,0,0,0.19);
+    box-shadow: 0px -2px 15px 5px rgba(0,0,0,0.16);
     color: var(--grayColor);
 }
 .card h1 {
     text-align: center;
-    /* color: var(--mainColor); */
-    background: linear-gradient(180deg, var(--mainColor)45%, var(--grayColor));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--mainColor);
     margin: 30px 0px 40px 0px;
 }
 
@@ -257,8 +254,7 @@ li p {
 }
 
 .muteLetters {
-    text-decoration: underline red 3.5px;
-    /* text-decoration:line-through red 3px; */
+    text-decoration:line-through red 3px;
 }
 
 
