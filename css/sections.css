@@ -46,7 +46,10 @@ header {
 }
 
 .card h1 {
-    color: var(--mainColor);
+    /* color: var(--mainColor); */
+    background: linear-gradient(180deg, var(--mainColor)25%, var(--grayColor));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     margin-top: 20px;
 }
