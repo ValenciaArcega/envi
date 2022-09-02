@@ -264,8 +264,10 @@ li p {
 }
 
 .muteLetters {
-    text-decoration: line-through red 3px;
-    -webkit-text-decoration: line-through red 3px;
+    text-decoration-line: line-through;
+    -webkit-text-decoration-line: line-through;
+    text-decoration-color: red;    
+    -webkit-text-decoration-color: red;
 }
 
 
