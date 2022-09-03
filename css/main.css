@@ -34,7 +34,7 @@
 body {
     
     overflow-x: hidden;
-    background-color: var(--white);
+    background-color: #f2f2f7;
     color: var(--grayColor);
     font-family: 'Inter', sans-serif;
     border-bottom: 8px solid var(--mainColor);
@@ -135,7 +135,7 @@ header {
     text-align:center;
     margin: 25px 0px;
     padding: 12px 32px;
-    border-radius: 6px;
+    border-radius: 100px;
 }
 
 
@@ -387,7 +387,7 @@ footer {
     text-decoration: none;
     margin: 1.2rem 0rem 0rem 1.2rem;
     padding: 0.3rem 0.8rem;
-    background-color: #D9D9D9;
+    background-color: white;
     color: var(--black);
     border-radius: 4px;
 }
