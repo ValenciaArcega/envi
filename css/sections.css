@@ -10,12 +10,12 @@
 body {
     background-color: var(--white);
     font-family: 'Inter', sans-serif;
-    border-bottom: 15px solid var(--mainColor);
+    border-bottom: 8px solid var(--mainColor);
 }
 
 header {
     width: 90%;
-    margin: 130px auto 0px auto;
+    margin: 50px auto 0px auto;
     background-color: var(--white);
     text-align:center;
     color: var(--black);
@@ -29,20 +29,20 @@ header {
 
 .cards {
     display:grid;
-    grid-gap: 20px;
+    grid-gap: 30px;
     grid-template-columns: repeat(auto-fit,minmax(16rem, 1fr));
     justify-items: center;
 }
 
 .card {
-    padding: 15px;
-    margin-top: 20px;
-    height: 16rem;
-    width: 16rem;
+    padding: 20px;
+    height: 14rem;
+    width: 15rem;
     background-color: var(--white);
     color: var(--black);
     border-radius: 10px;
-    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.12);
+    box-shadow: 0px 8px 5px 5px rgba(0,0,0,0.09);
+    text-align:center;
 }
 
 .card h1 {
@@ -50,12 +50,34 @@ header {
     background: linear-gradient(180deg, var(--mainColor)25%, var(--grayColor));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: center;
-    margin-top: 20px;
+    margin: 20px 0px;
 }
 
+.section-icon {
+    stroke:var(--mainColor);
+    height: 28px;
+    width: 100%;
+    margin: .5rem auto 0.5rem auto;
+}
+
+.btn-Alternatives {
+    width:60%;
+    display:inline-block;
+    margin-top: 25px;
+    padding: 4px 30px;
+    border-radius: 5px;
+    background-color: var(--mainColor);
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.10rem;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+
+
 footer {
-    margin-top: 40px;
+    margin-top: 80px;
     color: var(--black);
     height: 4rem;
     display: flex;
