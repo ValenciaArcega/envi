@@ -24,7 +24,8 @@
     box-sizing: border-box;
 }
 
-.gradient-text {
+.gradient-text,
+.txt-NamePage {
     background: linear-gradient(180deg, var(--mainColor)25%, var(--grayColor));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -51,9 +52,6 @@ header {
 }
 .txt-NamePage { 
     font-size: 7.5rem; 
-    background: linear-gradient(180deg, var(--mainColor)25%, var(--grayColor));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 
@@ -125,8 +123,6 @@ header {
 .btn:link,
 .btn:visited {
     display: inline-block; /* to add margin at the top and bottom */
-    /* background-color: var(--black); */
-
     background: 
         linear-gradient(to right, #1c7ed6,#f14848,#f5a92f);
     background-size: 500% 500%;
@@ -146,38 +142,50 @@ header {
 
 
 
+
+
+
+
 /* SECTION CARDS */
 
 .section-cards {
     width: 100%;
-    margin: 150px auto 0px auto;
+    margin: 250px auto 0px auto;
 }
 
-.section-cards h2 {
+.section-cards-words {
+    margin-top: 50px;
+}
+
+.section-cards h2 { /* Titles per section */
     text-align:center;
-    font-size: 2.75rem;
+    font-size: 2.85rem; /* Title cards */
 }
 
 .cards {
-    margin-top: 50px;
+    margin-top: 40px;
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 20px;
     grid-template-columns: repeat(auto-fit,minmax(21rem, 1fr));
     justify-items:center; /* center items in mobile mode */;
 }
 
 .card {
-    padding: 15px;
-    font-size:1.25rem;
+    padding: 18px;
     display: block;
-    width: 22rem;
+    width: 21rem;
     height: 34rem;
     background-color: var(--white);
     border-radius: 12px;
     box-shadow:0px -2px 15px 5px rgba(0,0,0,0.13);
     color: var(--grayColor);
 }
+.card h4 {
+    font-size: 1.115rem;
+    user-select: none;
+}
 .card h1 {
+    font-size: 2.75rem; /* Title cards */
     text-align: center;
     background: linear-gradient(180deg, var(--mainColor)45%, var(--grayColor));
     -webkit-background-clip: text;
@@ -200,13 +208,9 @@ ul li {
     width: 24px;
     height: 24px;
 }
-h4 {
-    font-size: 1.25rem;
-    user-select: none;
-}
 
 li p {
-    font-size: 1.1rem;
+    font-size: 1.115rem;
     display: inline;
 }
 
@@ -351,4 +355,50 @@ footer {
     100% {
         background-position: 0 50%;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* WORDS SECTION */
+
+.btn-Back:link,
+.btn-Back:visited {
+    display:inline-block;
+    text-decoration: none;
+    margin: 1.2rem 0rem 0rem 1.2rem;
+    padding: 0.3rem 0.8rem;
+    background-color: #D9D9D9;
+    color: var(--black);
+    border-radius: 4px;
+}
+
+.btn-Back:hover {
+    background-color:#cbcbcb;
+}
+
+.header-section-words {
+    margin-top: 100px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
 }
