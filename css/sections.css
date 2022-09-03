@@ -1,17 +1,19 @@
-* { margin: 0px 0px }
-
+* { 
+    margin: 0px 0px 
+}
 :root {
     --black: rgb(18,18,18);
     --white: #fff;
     --mainColor: #1c7ed6;
     --grayColor:#212529;
 }
-
 body {
     background-color: var(--white);
     font-family: 'Inter', sans-serif;
     border-bottom: 8px solid var(--mainColor);
 }
+
+
 
 .btn-BackHome {
     display: inline-block;
@@ -22,6 +24,8 @@ body {
     padding: 0.3rem 0.8rem;
     border-radius: 5px;
 }
+
+
 header {
     width: 90%;
     margin: 200px auto 0px auto;
@@ -30,6 +34,8 @@ header {
     color: var(--black);
     font-size: 2rem;
 }
+
+
 
 .section-main {
     width: 85%;

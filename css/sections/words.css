@@ -1,0 +1,29 @@
+* {
+    margin: 0px 0px;
+}
+:root {
+    --mainColor: #1c7ed6;
+    --greyColor:#212529;
+    --black: #121212;
+    --white: #fff;
+}
+body {
+    background-color: var(--white);
+    font-family: 'Inter', sans-serif;
+    border-bottom: 8px solid var(--mainColor);
+}
+
+.btn-Back:link,
+.btn-Back:visited {
+    display:inline-block;
+    text-decoration: none;
+    margin: 1.2rem 0rem 0rem 1.2rem;
+    padding: 0.3rem 0.8rem;
+    background-color: #D9D9D9;
+    color: var(--black);
+    border-radius: 4px;
+}
+
+.btn-Back:hover {
+    background-color:#cbcbcb;
+}
