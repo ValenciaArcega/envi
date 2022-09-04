@@ -3,27 +3,49 @@
 
 <head>
   <link href="../../css/main.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Words by Envi</title>
+  <title>Words</title>
 </head>
 
 <body>
-  <div>
-    <a href="../sections.html" class="btn-back-sections">Back sections</a>
+  <div class="top-bar">
+    <a href="../sections.html" class="btn-BackSections"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-back">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+      </svg>
+    </a>
+  </div>
+
+  <div class="section-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="icon-section">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+    </svg>
   </div>
 
   <div class="section-cards-words">
     <div class="cards">
+
       <div class="card-introduction">
         <div class="header-introduction-words">
           <h1>Welcome to words</h1>
         </div>
-
+        <p>Son <span class="gradient-text">palabras</span> comunes con muchas variaciones a la hora de hablar, es por ello que es importante agregarlas a
+          nuestro vocabulario.</p>
+        <div class="card-introduction-container-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            class="card-introduction-icon">
+            <path fill-rule="evenodd"
+              d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+              clip-rule="evenodd" />
+          </svg>
+        </div>
       </div>
 
       <div class="card">
@@ -202,6 +224,8 @@
 
     </div>
   </div>
+
+  <footer>&copy; 2022, Envi</footer>
 </body>
 
 </html>
