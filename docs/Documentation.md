@@ -4,7 +4,7 @@ Introduction.
 Envi is a web site where the users can explore the big vocabulary that English has, through cards, mean while they scroll down the screen can learn how is the pronunciation of some many words, sentences and more, to expand and improve their knowledges and enhance their vocabulary.
 
 ```diff
-@@ Goals @@
+Goals
 ```
 * Be a simple but powerful study tool for anyone.
 * Help people to understand a word, phrase, sentence and more, how is the correct pronunciation and which is the meaning and the context that this could have.
