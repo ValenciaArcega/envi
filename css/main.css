@@ -19,8 +19,8 @@
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -48,7 +48,7 @@ header {
     display:inline-block;
     width: 100%;
     text-align: center;
-    margin: 180px auto 0px auto;
+    margin: 180px auto 0 auto;
 }
 .txt-NamePage { 
     font-size: 7.5rem; 
@@ -63,7 +63,7 @@ header {
 /* SECTION WELCOME */
 .section-welcome {
     width: 100%;
-    margin: 250px auto 0px auto;
+    margin: 250px auto 0 auto;
     display: grid;
     grid-gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 21rem));
@@ -99,7 +99,7 @@ header {
     background-image: url(
         ../assets/img/header-img-t.jpg);
     background-size: cover;
-    box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.35);
+    box-shadow: 0 5px 15px 5px rgba(0,0,0,0.35);
     display: flex;
     justify-content:center;
     align-items: center;
@@ -113,7 +113,7 @@ header {
     -webkit-backdrop-filter: blur(9px);
     backdrop-filter: blur(12px);
     border: solid 1px rgba(255,255,255,0.6);
-    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
     border-radius:12px;
     display: flex;
     justify-content: center;
@@ -133,7 +133,7 @@ header {
     font-weight: 500;
     font-size: 18px;
     text-align:center;
-    margin: 25px 0px;
+    margin: 25px 0;
     padding: 12px 32px;
     border-radius: 100px;
 }
@@ -148,14 +148,15 @@ header {
 
 /* SECTION CARDS */
 
-.section-cards {
+.section-example-card {
     width: 100%;
-    margin: 100px auto 0px auto;
+    margin: 150px auto 0 auto;
 }
 
-.section-cards h2 { /* Titles per section */
+.section-example-card  h2 { /* Titles per section */
     text-align:center;
     font-size: 2.85rem; /* Title cards */
+    margin-bottom: -30px;
 }
 
 .cards {
@@ -174,7 +175,7 @@ header {
     height: 34rem;
     background-color: var(--white);
     border-radius: 12px;
-    box-shadow:0px -2px 15px 5px rgba(0,0,0,0.07);
+    box-shadow:0 -2px 15px 5px rgba(0,0,0,0.07);
     color: var(--grayColor);
 }
 .card h4 {
@@ -187,7 +188,7 @@ header {
     background: linear-gradient(180deg, var(--mainColor)45%, var(--grayColor));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 30px 0px 40px 0px;
+    margin: 30px 0 40px 0;
 }
 
 ul li {
@@ -238,7 +239,7 @@ li p {
 .section-features {
     background-color: #f2f2f7;
     width: 90%;
-    margin: 150px auto 0px auto;
+    margin: 150px auto 0 auto;
     text-align: center;
 }
 
@@ -260,20 +261,19 @@ li p {
 .feature {
     background-color: white;
     margin-top: 25px;
-    padding: 0px 20px;
+    padding: 0 20px;
     height: 11rem;
     width: 15rem;
     text-align: center;
     color: var(--mainColor);
     border-radius: 12px;
-    /* box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.05); */
     border: solid 1px #d9d9d9;
 }
 
 .feature h3 {
     color: var(--grayColor);
-    margin: 10px 0px 5px 0px;
-    letter-spacing: 0px;
+    margin: 10px 0 5px 0;
+    letter-spacing: 0;
 }
 
 .feature p {
@@ -291,7 +291,7 @@ li p {
 
 /* SECTION BUTTON GO TO LEARN*/
 .btnSecondPage {
-    margin: 10px auto 0px auto;
+    margin: 10px auto 0 auto;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -307,7 +307,7 @@ li p {
     font-weight: 500;
     font-size: 18px;
     text-align:center;
-    margin: 20px 0px;
+    margin: 20px 0;
     padding: 12px 25px;
     border-radius: 100px;
 }
@@ -370,7 +370,7 @@ footer {
 
 
 
-/* WORDS SECTION */
+/* SECTIONS TO CARDS */
 
 .top-bar {
     position: fixed;
@@ -378,13 +378,12 @@ footer {
     left:0;
     width: 100%;
     height: 3rem;
-    margin: 0px;
+    margin: 0;
     backdrop-filter: blur(8px);   
     -webkit-backdrop-filter: blur(8px);
 }
-
 .icon-back {
-    margin: 5px 0px 0px 5px;
+    margin: 5px 0 0 5px;
     stroke:#1c7ed6;
     width: 24px;
     height: 24px;    
@@ -393,7 +392,7 @@ footer {
 .btn-BackSections {
     display: inline-block;
     text-decoration: none;
-    margin: .5rem 0rem 0rem 1rem;
+    margin: .5rem 0 0 1rem;
 }
 
 
@@ -412,31 +411,33 @@ footer {
 }
 
 
-.section-cards-words {
+
+
+.section-cards {
     margin-top: 50px;
 }
 
 .card-introduction {
-    padding: 0px;
+    padding: 0;
     display: block;
     width: 21rem;
     height: 34rem;
     background-color: var(--white);
     border-radius: 12px;
-    box-shadow:0px -2px 15px 5px rgba(0,0,0,0.13);
+    box-shadow:0 -2px 15px 5px rgba(0,0,0,0.13);
     color: var(--grayColor);
 }
 
-.header-introduction-words {
-    padding: 60px;
+.header-introduction {
+    padding: 50px 10px 0 10px;
     height: 45%;
     background: linear-gradient(180deg,var(--mainColor), var(--white));
     border-radius: 12px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
-.header-introduction-words h1 {
+.header-introduction h1 {
     text-align:center;
     color: white;
     font-size: 2.75rem;
