@@ -1,21 +1,14 @@
 /*
+|| SPACING SYSTEM (px): 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
-|| SPACING SYSTEM (px)
-    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-|| FONT SIZE SYSTEM (px)
-    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-|| COLORS
-   MAIN-COLOR: #1c7ed6
-   GRAY-COLOR: #212529
-*/
+|| FONT SIZE SYSTEM (px): 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
 
 :root {
     --mainColor: #1c7ed6;
     --grayColor: #212529;
     --white: #fff;
-    --black: rgb(18,18,18);
+    --black: #121212;
+    --grayBackground: #f2f2f7;
 }
 
 * {
@@ -31,13 +24,12 @@
     -webkit-text-fill-color: transparent;
 }
 
-body {
-    
+body { 
     overflow-x: hidden;
-    background-color: #f2f2f7;
+    background-color: var(--grayBackground);
     color: var(--grayColor);
     font-family: 'Inter', sans-serif;
-    border-bottom: 8px solid var(--mainColor);
+    border-bottom: 7px solid var(--mainColor);
 }
 
 
@@ -97,7 +89,7 @@ header {
     height: 250px;
     border-radius: 12px;
     background-image: url(
-        ../assets/img/header-img-t.jpg);
+        ../assets/img/header-img.png);
     background-size: cover;
     box-shadow: 0 5px 15px 5px rgba(0,0,0,0.35);
     display: flex;
