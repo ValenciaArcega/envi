@@ -1,20 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <title>Tester</title>
-
-  <script src="tester.js"></script>
+  <title>Siri</title>
 </head>
 
 <body>
-  
+  <div>
+    <input type="text" id="texto">
+  </div>
+
+
+  <div id="contenido">
+    <h1>Ejemplo de síntesis de voz con JavaScript</h1>
+    <p>Elige una voz, introduce cualquier texto en el recuadro y pulsa para escucharlo!!</p>
+
+    <select id="selvoces">
+      <option data-voz="Microsoft Mark - English (United States)">Microsoft Mark - English (United States) - en-US
+      </option>
+      <option data-voz="Microsoft Zira - English (United States)">Microsoft Zira - English (United States) - en-US
+      </option>
+      <option data-voz="Microsoft David - English (United States)">Microsoft David - English (United States) - en-US
+      </option>
+    </select>
+
+    <div class="sliders">
+      <label for="velocidad">Velocidad: </label> <input type="range" min="0.5" max="2" value="1" step="0.1"
+        id="velocidad">
+    </div>
+
+    <textarea id="textoADecir">hola</textarea>
+    <button id="btnControl">Hablar</button>
+  </div>
+
+  <script type="text/javascript">
+    (function() {
+        //Referencias a los elementos de la UI
+        let selVoces = document.getElementById('selvoces');
+        let ctrlTexto = document.getElementById('textoADecir');
+        let infoArea = document.getElementById('infoArea');
+        let btnControl = document.getElementById('btnControl');
+
+    ///////////Funciones axuliares
+        //Mostrar información sobre el proceso
+        let muestraInfo = function(msg) {
+            infoArea.innerText = msg;
+        };
+
+        //Cambiar texto del botón de hablar y anoto la acción actual (hablar o parar)
+        let cambiaTextoControl = function(accion) {
+            btnControl.innerText = accion;
+        };
+    ///////////Fin de funciones axuliares
+
+        //Antes de nada vemos si la API está soportada o no
+        let sintetizador = window.speechSynthesis;
+        if (!sintetizador) {
+            document.getElementById('contenido').innerHTML = "¡¡La API de síntesis de voz no está soportada en este navegador!!. Usa Firefox, Chrome o algún navegador moderno...";
+            return;
+        }
+
+        //No podemos cargar la lista de voces, ni usarlas, hasta que el navegador las haya cargado,
+        //lo cual se notifica con el evento 'voiceschanged'
+        let voces;
+        let listaVocesCargada = false;  //Para evitar cargar la lista varias veces
+        let vocesCargadas = function() {
+            if (!listaVocesCargada) {
+                //Obtenemos la lista de voces
+                voces = sintetizador.getVoices();
+                if (voces.length > 0) {
+                    //Las añadimos al selector
+                    voces.forEach( v => {
+                        let optVoz = document.createElement('option');
+                        optVoz.textContent = `${v.name} - ${v.lang}`;
+                        if (v.default) optVoz.selected = true;
+                        optVoz.setAttribute('data-voz', v.name);
+                        selVoces.appendChild(optVoz);
+                    });
+                    listaVocesCargada = true;
+                }
+            }
+        };
+        //Para los navegadores compatibles (todos menos Safari), cargar las voces cuando estén disponibles
+        if (sintetizador.addEventListener)
+            sintetizador.addEventListener('voiceschanged', vocesCargadas);
+
+        vocesCargadas();    //Necesario para forzar la carga de las voces en Safari
+
+        //Determinar la voz actualmente elegida en el desplegable
+        let getVozElegida = function() {
+            //Averiguamos la voz elegida
+            let vozElegida = selVoces.selectedOptions[0].getAttribute('data-voz');
+            return voces.find(function(voz){
+                return voz.name == vozElegida;
+            });
+        };
+
+        //Lanzar texto a voz
+        let hablar = function() {
+            if (sintetizador.speaking) {
+                //Si ya está hablando, lo paramos
+                sintetizador.cancel();
+                muestraInfo('Síntesis de voz detenida por el usuario');
+                cambiaTextoControl('Hablar');
+            }
+            else {
+                //Lanzamos la síntesis de voz
+                let txt = ctrlTexto.value.trim();   //Texto a convertir a voz
+                if (txt) {
+                    let declaracion = new SpeechSynthesisUtterance(txt);
+                    //Asignamos la voz elegida
+                    declaracion.voice = getVozElegida();
+                    declaracion.lang = declaracion.voice.lang;  //Necesario en móviles
+                    declaracion.rate = velocidad.value;
+
+                    //Lanzamos la síntesis de voz
+                    sintetizador.speak(declaracion);
+                }
+            }
+        };
+
+        //sintetizador.getVoices();   //Necesario para forzar la carga de las voces en Firefox
+
+        //Establezco eventos de UI
+        btnControl.addEventListener('click', hablar);
+
+    })();
+</script>
+
+  <script src="tester.js"></script>
+
 </body>
 
 </html>

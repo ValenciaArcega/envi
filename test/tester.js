@@ -1,7 +1,12 @@
-document.getElementById('speaker').addEventListener("click",()=>{
-    fnTalk(document.getElementById("txt").value);
+document.getElementById('hablar').addEventListener("click",()=>{
+    decir(document.getElementById("texto").value);
 });
 
-function fnTalk(texto){
+function decir(texto){
     speechSynthesis.speak(new SpeechSynthesisUtterance(texto));
+    const utterance  = new SpeechSynthesisUtterance();
 }
+
+
+
+
