@@ -206,10 +206,10 @@ li p {
 
 .muteLetters {
     text-decoration-line: line-through;
-    text-decoration-thickness: 3.5px;
+    text-decoration-thickness: 1.42px;
     text-decoration-color: red;    
     -webkit-text-decoration-line: line-through;
-    -webkit-text-decoration-thickness: 3.5px;
+    -webkit-text-decoration-thickness: 1.42px;
     -webkit-text-decoration-color: red;
 }
 .muteExample {
