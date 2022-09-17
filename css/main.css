@@ -147,8 +147,8 @@ body {
 .section-example-card {
     width: 100%;
     margin: 250px auto 0 auto;
-    background-color:var(--black);
-    height: 48rem;
+    background-color:#000;
+    height: 50rem;
     padding-top: 50px;
 }
 
@@ -185,9 +185,9 @@ body {
     display: block;
     width: 21rem;
     height: 34rem;
-    background-color: #000;
-    border-radius: 12px;
-    box-shadow:0 10px 10px 10px rgba(255,255,255,0.04);
+    background-color: var(--black);
+    border-radius: 18px;
+    border: solid 1px #414141;
     color: var(--white);
 }
 
