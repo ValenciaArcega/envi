@@ -48,6 +48,7 @@ body {
 }
 .txt-NamePage { 
     font-size: 7.5rem; 
+    user-select: none;
 }
 
 
@@ -93,7 +94,7 @@ body {
     height: 250px;
     border-radius: 12px;
     background-image: url(
-        ../assets/img/header-img.png);
+        ../assets/img/header-img.webp);
     background-size: cover;
     box-shadow: 0 5px 15px 5px rgba(0,0,0,0.35);
     display: flex;
@@ -119,10 +120,11 @@ body {
 .btn:link,
 .btn:visited {
     display: inline-block; /* to add margin at the top and bottom */
-    background: 
+    background-color: var(--black);
+/*     background: 
         linear-gradient(to right, #1c7ed6,#f14848,#1c7ed6);
     background-size: 400% 400%;
-    animation: color-mov 13s infinite ease-in-out;
+    animation: color-mov 13s infinite ease-in-out; */
 
     text-decoration: none;
     color: var(--white);
@@ -317,7 +319,7 @@ li p {
 .btn-second-page:visited {
     display: flex; /* to add margin at the top and bottom */
     align-items:center;
-    background-color: var(--mainColor);
+    background-color: #1B5B93/* var(--mainColor) */;
     text-decoration: none;
     color: var(--white);
     font-weight: 500;
@@ -329,7 +331,7 @@ li p {
 }
 
 .btn-second-page:hover {
-    background-color: #1971c2;
+    background-color: #185284;
 }
 .btn-second-page-icon {
     margin-left: 5px;
