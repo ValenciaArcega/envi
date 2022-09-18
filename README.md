@@ -1,2 +1,2 @@
 # E N V I
-This project finds to help people, to improve their vocabulary through simple cards.
+This project help people, to improve their english vocabulary through simple and fun cards.

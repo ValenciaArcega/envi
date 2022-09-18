@@ -2,81 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ICONS -->
-    <link rel="icon" href="/assets/img/icons/favicon.png">
-    <link rel="apple-touch-icon" href="assets/img/icons/touch-icon.png">
-    <link rel="manifest" href="manifest.webmanifest" />
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- IMPORTS -->
-    <link href="../../css/main.css" rel="stylesheet">
-    <script src="../../js/cards.js"></script>
-    
-    <title>Envi &mdash; Alternatives</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ICONS -->
+  <link rel="icon" href="/assets/img/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/icons/touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest" />
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- IMPORTS -->
+  <link href="../../css/main.css" rel="stylesheet">
+  <script src="../../js/cards.js"></script>
+  <script src="../../js/card_introduction.js"></script>
+
+  <title>Envi &mdash; Alternatives</title>
 </head>
 
 <body>
-    <div class="top-bar">
-        <a href="../sections.html" class="btn-BackSections"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-back">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
-            </svg>
-        </a>
+  <div class="top-bar">
+    <a href="../sections.html" class="btn-BackSections"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-back">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+      </svg>
+    </a>
+  </div>
+
+  <div class="section-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="icon-section">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+    </svg>
+  </div>
+
+  <div class="section-cards">
+    <div class="cards">
+
+      <intro-card title="Welcome to alternatives"
+        description="Son frases más comunes en hablantes nativos, es por ello que no viene mal remplazarlas por lo clasico que nos enseñan en la escuela.">
+      </intro-card>
+
+      <the-card card_name="Just joshing" mute_letters="G" txt_pronuntiation="yost yosh-in"
+        meaning_es="Solo bromeo, na'te creas"
+        meaning="Es una alternativa a **Just kidding** se usa en situaciones donde quieres dejarle en claro a otra persona que solo estas bromeando, no es literal lo que dices o haces.">
+      </the-card>
+
+      <the-card card_name="I'm bursting" mute_letters="U G" txt_pronuntiation="am brs-tin"
+        meaning_es="¡Me estoy haciendo del baño!"
+        meaning="Dependiendo el contexto puede sustituir a **I have to go to the bathroom** y de manera informal quieres dejar en claro que ya no aguantas las ganas de ir al baño.">
+      </the-card>
+
+      <the-card card_name="I'm pissed off" mute_letters="D" txt_pronuntiation="am pisr-of"
+        meaning_es="¡Estar encabronad@!"
+        meaning="Es una alternativa a **I'm so angry** que se usa cuando se quiere expresar el sentimiento un enojo de manera muy informal.">
+      </the-card>
+
     </div>
+  </div>
 
-    <div class="section-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="icon-section">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-        </svg>
-    </div>
+  <footer>&copy; 2022, Envi</footer>
 
-    <div class="section-cards">
-        <div class="cards">
-
-            <div class="card-introduction">
-                <div class="header-introduction">
-                    <h1>Welcome to alternatives</h1>
-                </div>
-                <p>Son <span class="gradient-text">frases</span> que son más comunes en hablantes nativos, es por ello
-                    que no viene mal remplazarlas por lo clasico que nos enseñan en la escuela.</p>
-                <div class="card-introduction-container-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                        class="card-introduction-icon">
-                        <path fill-rule="evenodd"
-                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
-            </div>
-
-            <the-card card_name="Just joshing" mute_letters="G" txt_pronuntiation="yost yosh-in"
-                meaning_es="Solo bromeo, na'te creas wey"
-                meaning="Es una alternativa a **Just kidding** se usa en situaciones donde quieres dejarle en claro a otra persona que solo estas bromeando, no es literal lo que dices o haces.">
-            </the-card>
-
-            <the-card card_name="I'm bursting" mute_letters="U G" txt_pronuntiation="am brs-tin"
-                meaning_es="¡Me estoy haciendo del baño!"
-                meaning="Dependiendo el contexto puede sustituir a **I have to go to the bathroom** y de manera informal quieres dejar en claro que ya no aguantas las ganas de ir al baño.">
-            </the-card>
-
-            <the-card card_name="I'm pissed off" mute_letters="D" txt_pronuntiation="am pisr-of"
-                meaning_es="¡Estoy encabronad@!"
-                meaning="Es una alternativa a **I'm so angry** que se usa cuando se quiere expresar el sentimiento un enojo de manera muy informal.">
-            </the-card>
-
-        </div>
-    </div>
-
-    <!-- <the-card card_name="" mute_letters="" txt_pronuntiation="" meaning_es="¡" meaning=""></the-card> -->
-
-    <footer>&copy; 2022, Envi</footer>
 </body>
 
 </html>
