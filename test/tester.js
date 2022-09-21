@@ -1,10 +1,10 @@
-document.getElementById('hablar').addEventListener("click",()=>{
-    decir(document.getElementById("texto").value);
+document.getElementById('speaker').addEventListener("click",()=>{
+    decir(document.getElementById("fieldToSpeak").value);
 });
 
-function decir(texto){
-    speechSynthesis.speak(new SpeechSynthesisUtterance(texto));
-    const utterance  = new SpeechSynthesisUtterance();
+function decir(txt){
+    speechSynthesis.speak(new SpeechSynthesisUtterance(txt));
+    // const utterance  = new SpeechSynthesisUtterance();
 }
 
 
