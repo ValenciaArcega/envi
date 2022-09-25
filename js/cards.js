@@ -3,23 +3,19 @@ class CardElement extends HTMLElement {
   constructor() {
     super();
     this.card_name;
-    this.mute_letters;
     this.txt_pronuntiation;
     this.meaning_es;
     this.meaning;
   }
 
   static get observedAttributes() {
-    return ['card_name', 'mute_letters', 'txt_pronuntiation', 'meaning_es', 'meaning'];
+    return ['card_name', 'txt_pronuntiation', 'meaning_es', 'meaning'];
   }
 
   attributeChangedCallback(Attr, oldValue, newValue) {
 
     if (Attr == "card_name") {
       this.card_name = newValue;
-    }
-    if (Attr == "mute_letters") {
-      this.mute_letters = newValue;
     }
     if (Attr == "txt_pronuntiation") {
       this.txt_pronuntiation = newValue;
@@ -45,8 +41,7 @@ class CardElement extends HTMLElement {
               </svg>
               <h4>Pronunciation</h4>
             </div>
-            <span class="muteLetters"> ${this.mute_letters}</span>
-            <p> : ${this.txt_pronuntiation}</p>
+            <p>${this.txt_pronuntiation}</p>
           </li>
 
           <li>
