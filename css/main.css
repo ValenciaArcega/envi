@@ -177,7 +177,7 @@ body {
     height: 34rem;
     background-color: var(--white);
     border-radius: 12px;
-    box-shadow:0 -2px 15px 5px rgba(0,0,0,0.05);
+    box-shadow:0 10px 15px 8px rgba(105, 133, 255, 0.13);
     color: var(--grayColor);
 }
 
@@ -483,7 +483,7 @@ footer {
     height: 20rem;
     background-color: var(--white);
     border-radius: 16px;
-    box-shadow:0 10px 15px 5px rgba(81, 81, 255, 0.17);
+    box-shadow:0 12px 10px 7px rgba(63, 142, 238, 0.17);
     color: var(--grayColor);
 }
 
