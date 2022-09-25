@@ -35,10 +35,10 @@ body {
 
 
 /* SECTION HEADER */
-.header-envi {
-    background-color:var(--black);
+.header-hey {
+    background-color:var(--white);
     display:inline-block;
-    width: 100%;
+    width: 90%;
     height: 50rem;
     text-align: center;
     margin: 0 auto 0 auto;
@@ -47,8 +47,16 @@ body {
     justify-content: center;
 }
 .txt-NamePage { 
-    font-size: 7.5rem; 
-    user-select: none;
+    font-size: 7.5rem ; 
+    font-weight: 700;
+    user-select: none;   
+}
+
+.header-hey .header-icon {
+    fill: #ffffff;
+    stroke: #0d3961;
+    height: 80px;
+    width: 80px;
 }
 
 
@@ -149,15 +157,16 @@ body {
 .section-example-card {
     width: 100%;
     margin: 250px auto 0 auto;
-    background-color:#000;
     height: 50rem;
     padding-top: 50px;
+    background-color: #000;
 }
 
 .section-example-card  h2 { /* Titles per section */
     text-align:center;
     color: var(--white);
-    font-size: 2.85rem; /* Title cards */
+    font-size: 3.95rem; /* Title cards */
+    font-weight: 700;
     margin-bottom: -10px;
 }
 
@@ -177,7 +186,7 @@ body {
     height: 34rem;
     background-color: var(--white);
     border-radius: 12px;
-    box-shadow:0 10px 15px 8px rgba(105, 133, 255, 0.13);
+    box-shadow:0 10px 15px 8px rgba(0, 0, 0, 0.13);
     color: var(--grayColor);
 }
 
@@ -189,7 +198,7 @@ body {
     height: 34rem;
     background-color: var(--black);
     border-radius: 18px;
-    border: solid 1px #414141;
+    border: solid 1px #343a40;
     color: var(--white);
 }
 

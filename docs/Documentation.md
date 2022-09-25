@@ -1,7 +1,7 @@
 # Documentation
 
 ## Introduction
-Envi is a web site where the users can explore the big **vocabulary** that English has through cards, mean while they *scroll* down the screen can learn how is the pronunciation of some many words, sentences and more, to expand and improve their knowledges and enhance their vocabulary.
+Tolescro is a web site where the users can explore the big **vocabulary** that English has through cards, mean while they *scroll* down the screen can learn how is the pronunciation of some many words, sentences and more, to expand and improve their knowledges and enhance their vocabulary.
 
 ## Objetives
 - Be a simple but powerful study tool for anyone.
@@ -17,7 +17,7 @@ Envi is a web site where the users can explore the big **vocabulary** that Engli
 - No media queries.
 
 ## Structure.
-Envi have the next line of elements:
+Tolescro have the next line of elements:
 - Index.html: has the welcome page where the user will can see an overview about the page and know more about cards and structure.
 - main.css: has all the styles that the html files needs to work fluidly thought any device, making a responsive and good performance website.
 
