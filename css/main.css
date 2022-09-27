@@ -38,10 +38,10 @@ body {
 .header-hey {
     background-color:var(--white);
     display:inline-block;
-    width: 90%;
-    height: 50rem;
+    width: 100%;
+    height: auto;
     text-align: center;
-    margin: 0 auto 0 auto;
+    margin: 280px auto 0 auto;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -68,7 +68,7 @@ body {
 /* SECTION WELCOME */
 .section-welcome {
     width: 100%;
-    margin: 250px auto 0 auto;
+    margin: 300px auto 0 auto;
     display: grid;
     grid-gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 21rem));
