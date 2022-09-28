@@ -36,7 +36,7 @@ body {
 
 /* SECTION HEADER */
 .header-hey {
-    background-color:var(--white);
+    background-color:var(--grayBackground);
     display:inline-block;
     width: 100%;
     height: auto;
@@ -104,7 +104,7 @@ body {
     background-image: url(
         ../assets/img/header-img.webp);
     background-size: cover;
-    box-shadow: 0 5px 15px 5px rgba(0,0,0,0.35);
+    box-shadow: 0 5px 15px 5px rgba(0,0,0,0.25);
     display: flex;
     justify-content:center;
     align-items: center;
@@ -186,7 +186,7 @@ body {
     height: 34rem;
     background-color: var(--white);
     border-radius: 12px;
-    box-shadow:0 10px 15px 8px rgba(0, 0, 0, 0.13);
+    box-shadow:0 10px 12px 8px rgba(0, 0, 0, 0.075);
     color: var(--grayColor);
 }
 
@@ -482,6 +482,16 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* SLANGS CARD */
 
 .card-slang {
@@ -492,7 +502,7 @@ footer {
     height: 20rem;
     background-color: var(--white);
     border-radius: 16px;
-    box-shadow:0 12px 10px 7px rgba(63, 142, 238, 0.17);
+    box-shadow:0 8px 6px 6px rgba(0, 0, 0, 0.1);
     color: var(--grayColor);
 }
 
