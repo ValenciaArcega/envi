@@ -46,12 +46,12 @@ body {
 
 /* SECTION HEY EXPLORER */
 .header-hey {
-    background-color:var(--grayBackground);
+    background-color:var(--black);
     display:inline-block;
     width: 100%;
-    height: auto;
+    height: 50rem;
     text-align: center;
-    margin: 280px auto 0 auto;
+    margin: 0 auto 0 auto;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -78,7 +78,7 @@ body {
 /* SECTION WELCOME */
 .section-welcome {
     width: 100%;
-    margin: 300px auto 0 auto;
+    margin: 180px auto 0 auto;
     display: grid;
     grid-gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 21rem));
@@ -123,8 +123,8 @@ body {
 
 .glass {
     margin: 10px;
-    height: 55%;
-    width: 55%;
+    height: 45%;
+    width: 60%;
     background-color: rgba(255,255,255,0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -170,7 +170,7 @@ body {
 
 .section-example-card {
     width: 100%;
-    margin: 300px auto 0 auto;
+    margin: 200px auto 0 auto;
     height: 50rem;
     padding-top: 50px;
     background-color: #000;
@@ -218,7 +218,7 @@ body {
 
 .card h4 {
     font-size: 1.15rem;
-    letter-spacing: -0.5px;
+    font-weight: 700;
     user-select: none;
 }
 .card h1 {
