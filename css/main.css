@@ -29,17 +29,22 @@
     font-size: 4.3rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body { 
     overflow-x: hidden;
     background-color: var(--grayBackground);
     color: var(--grayColor);
     font-family: 'Inter', sans-serif;
+    /*  */
 }
 
 
 
 
-/* SECTION HEADER */
+/* SECTION HEY EXPLORER */
 .header-hey {
     background-color:var(--grayBackground);
     display:inline-block;
@@ -94,7 +99,7 @@ body {
 
 #txt-are-like-cards {
     font-weight: bold;
-    text-decoration:  underline 3px #1c7ed6;
+    text-decoration:  none
 }
 
 .section-welcome-text-container p {
@@ -158,11 +163,11 @@ body {
 
 
 
-/* SECTION CARDS */
+/* SECTION CARDS & EXAMPLE CARD */
 
 .section-example-card {
     width: 100%;
-    margin: 250px auto 0 auto;
+    margin: 300px auto 0 auto;
     height: 50rem;
     padding-top: 50px;
     background-color: #000;
@@ -302,6 +307,7 @@ li p {
 
 
 
+/* .goBtn */
 /* SECTION BUTTON GO TO LEARN*/
 .btnSecondPage {
     margin: 10px auto 0 auto;
@@ -310,8 +316,6 @@ li p {
     align-items: center;
 }
 
-
-/* .goBtn */
 .btn-second-page:link,
 .btn-second-page:visited {
     display: flex; /* to add margin at the top and bottom */
@@ -331,12 +335,6 @@ li p {
 .btn-second-page:hover {
     background-color: #166ebc;
 }
-.btn-second-page-icon {
-    margin-left: 5px;
-    stroke: var(--white);
-    height: 18px;
-    width: 18px;
-}
 
 
 footer {
@@ -350,7 +348,6 @@ footer {
 
 
 /* Functions */
-
 
 @keyframes color-mov {
     0% {
@@ -431,7 +428,10 @@ footer {
 
 
 
-/* SECTION INTRODUCTION */
+
+
+
+/* INTRODUCTION CARD */
 .section-cards {
     margin-top: 50px;
 }
