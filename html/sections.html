@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- IMPORTS -->
   <link href="../css/sections.css" rel="stylesheet">
+  <script src="../js/speaker.js"></script>
 
   <title>Tolescro &mdash; Sections</title>
 </head>
@@ -77,32 +78,95 @@
       <div class="card">
         <div class="header-text-container">
           <h1>Slangs</h1>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="header-text-icon">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z" />
-          </svg>          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="header-text-icon">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z" />
+          </svg>
         </div>
         <a href="sections/slangs.html" class="btn-Sections">Ver cartas</a>
       </div>
 
     </div> <!-- CARDS -->
-
-
-    <div>
-      <input type="text" id="fieldToSpeak">
-      <button id="speaker">Listen</button>
-      <style>
-        #fieldToSpeak {
-          height: 3rem;
-          width: 80%;
-        }
-      </style>
-  </div>
-
-
+    </div>
   </main>
 
+  <h1>Texto a voz con JS</h1>
+  <label for="voces">Selecciona la voz:</label>
+  <br>
+  <select id="voces"></select>
+  <br>
+  Escribe un mensaje:<br>
+  <textarea id="mensaje" cols="30" rows="5"></textarea>
+  <br><br>
+  <button id="btnEscuchar">Listen</button>
+
+  <script>
+// Seleccionar estos idiomas por defecto, en caso de que existan
+const IDIOMAS_PREFERIDOS = ["en-US", "en-UK"];
+
+// Esperar a que el que DOM cargue
+document.addEventListener("DOMContentLoaded", () => {
+    const $voces = document.querySelector("#voces"),
+        $boton = document.querySelector("#btnEscuchar"),
+        $mensaje = document.querySelector("#mensaje");
+    let posibleIndice = 0;
+    let theVoices = [];
+
+    // Función que pone las voces dentro del select
+    const cargarVoces = () => {
+        if (theVoices.length > 0) {
+            console.log("No se cargan las voces porque ya existen: ", theVoices);
+            return;
+        }
+        theVoices = speechSynthesis.getVoices();
+        console.log({ vocesDisponibles: theVoices })
+        posibleIndice = theVoices.findIndex(voz => IDIOMAS_PREFERIDOS.includes(voz.lang));
+        if (posibleIndice === -1) posibleIndice = 0;
+        theVoices.forEach((voz, indice) => {
+            const opcion = document.createElement("option");
+            opcion.value = indice;
+            opcion.innerHTML = voz.name;
+            opcion.selected = indice === posibleIndice;
+            $voces.appendChild(opcion);
+        });
+    };
+
+
+
+    // Si no existe la API, lo indicamos
+    if (!'speechSynthesis' in window) return alert("Lo siento, tu navegador no soporta esta tecnología");
+
+    // No preguntes por qué pongo esto que se ejecuta dos veces
+    // en determinados casos, solo así funciona en algunos casos
+    cargarVoces();
+
+    // Si hay evento, entonces lo esperamos
+    if ('onvoiceschanged' in speechSynthesis) {
+        speechSynthesis.onvoiceschanged = function () {
+            cargarVoces();
+        };
+    }
+
+
+    $boton.addEventListener("click", () => {
+        let textoAEscuchar = $mensaje.value;
+        if (!textoAEscuchar) return alert("Escribe el texto");
+        let mensaje = new SpeechSynthesisUtterance();
+        mensaje.voice = theVoices[$voces.value];
+        mensaje.volume = 2;
+        mensaje.rate = 1;
+        mensaje.text = textoAEscuchar;
+        mensaje.pitch = 1;
+        speechSynthesis.speak(mensaje);
+    });
+});
+
+  </script>
+  
   <footer>&copy; 2022, Tolescro</footer>
 
 </body>
+
 
 </html>
