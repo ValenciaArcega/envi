@@ -55,13 +55,15 @@ input{
     padding: 10px;
     outline: none;
     border: 2px solid var(--mainColor);
-    border-radius: 8px;
+    border-radius: 100px;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
 }
 
-
+input:focus { 
+    font-size: 16px!important
+}
 
 
 
