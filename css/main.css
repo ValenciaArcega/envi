@@ -51,18 +51,18 @@ body {
     width: 100%;
 }
 input {
-    width: 60vw; /* 50vw */
+    width: 70vw;
     padding: 10px;
     outline: none;
-    border: 2px solid var(--mainColor);
-    border-radius: 100px;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
 }
 
 input:focus { 
-    font-size: 16px!important
+    border: 2px solid var(--mainColor);
 }
 
 
