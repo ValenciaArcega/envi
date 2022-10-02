@@ -42,36 +42,6 @@ body {
 
 
 
-.searchBar {
-    margin-top: 3rem;
-    display: flex;
-    align-self: center;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-input {
-    width: 70vw;
-    padding: 10px;
-    outline: none;
-    border: 2px solid #D9D9D9;
-    border-radius: 10px;
-    font-weight: 500;
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-}
-
-input:focus { 
-    border: 2px solid var(--mainColor);
-}
-
-
-
-
-
-
-
-
 /* SECTION HEY EXPLORER */
 .header-hey {
     background-color:var(--black);
@@ -441,7 +411,7 @@ footer {
 }
 
 
-/* ICON SECTION */
+/* ICON HEADER SECTION */
 .section-icon {
     margin-top:100px;
     display: flex;
@@ -450,13 +420,35 @@ footer {
 }
 .icon-section {
     stroke: var(--mainColor);
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     text-align:center;
 }
 
 
+.searchBar {
+    margin-top: 3rem;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
+.searchBar input {
+    width: 70vw;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+.searchBar input:focus { 
+    border: 2px solid var(--mainColor);
+}
 
 
 
@@ -576,6 +568,6 @@ footer {
     height: 24px;
 }
 
-.filtro {
+.filter {
     display: none;
 }

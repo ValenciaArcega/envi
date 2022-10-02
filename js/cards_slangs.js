@@ -8,7 +8,6 @@ class CardsSlangs extends HTMLElement {
     }
 
     static get observedAttributes() {
-
         return ['slang_name', 'slang_es', 'slang_meaning'];
     } // observed
 
