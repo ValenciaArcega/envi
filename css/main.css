@@ -44,7 +44,7 @@ body {
 
 /* SECTION HEY EXPLORER */
 .header-hey {
-    background-color:var(--black);
+    background-color:var(--grayBackground);
     display:inline-block;
     width: 100%;
     height: 50rem;
@@ -62,11 +62,6 @@ body {
 }
 
 
-.highlight {
-    text-decoration: underline 2px var(--mainColor);
-}
-
-
 
 
 
@@ -74,7 +69,7 @@ body {
 /* SECTION WELCOME */
 .section-welcome {
     width: 100%;
-    margin: 180px auto 0 auto;
+    margin: 100px auto 0 auto;
     display: grid;
     grid-gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 21rem));
@@ -165,7 +160,7 @@ body {
 .section-example-card {
     width: 100%;
     margin: 200px auto 0 auto;
-    height: 50rem;
+    height: 47rem;
     padding-top: 50px;
     background-color: #000;
 }
@@ -198,11 +193,11 @@ body {
 }
 
 .card-example {
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 18px;
     display: block;
     width: 21rem;
-    height: 34rem;
+    height: 32rem;
     background-color: var(--black);
     border-radius: 18px;
     border: solid 1px #343a40;
@@ -254,7 +249,7 @@ li p {
 .section-features {
     background-color: #f2f2f7;
     width: 90%;
-    margin: 150px auto 0 auto;
+    margin: 250px auto 250px auto;
     text-align: center;
 }
 
@@ -307,7 +302,7 @@ li p {
 /* .goBtn */
 /* SECTION BUTTON GO TO LEARN*/
 .btnSecondPage {
-    margin: 10px auto 0 auto;
+    margin: -45px auto 0 auto;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -317,7 +312,8 @@ li p {
 .btn-second-page:visited {
     display: flex; /* to add margin at the top and bottom */
     align-items:center;
-    background-color: var(--mainColor) /*1B5B93*/;
+    /* background-color: var(--mainColor) 1B5B93; */
+    background: linear-gradient(to top left, var(--mainColor) 20%, rgb(232, 232, 232));
     box-shadow: 0px 5px 8px 2px rgba(54, 128, 197, 0.35);
     text-decoration: none;
     color: var(--white);
@@ -326,11 +322,13 @@ li p {
     text-align:center;
     margin: 20px 0;
     padding: 12px 25px;
-    border-radius: 100px;
+    border-radius: 12px;
 }
 
 .btn-second-page:hover {
-    background-color: #166ebc;
+    cursor: pointer;
+    background: linear-gradient(to top left, #2285db 20%, rgb(227, 227, 227));
+    box-shadow: 0px 5px 8px 2px rgba(54, 128, 197, 0.38);
 }
 
 
