@@ -17,18 +17,6 @@
     box-sizing: border-box;
 }
 
-.gradient-text,
-.txt-NamePage {
-    background: linear-gradient(180deg, var(--mainColor)30%, var(--grayColor));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.txt-NamePage p {
-    margin-top: -10px;
-    font-size: 4.3rem;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -62,8 +50,17 @@ body {
     user-select: none;
 }
 
+.gradient-text,
+.txt-NamePage {
+    background: linear-gradient(180deg, var(--mainColor)30%, var(--grayColor));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-
+.txt-NamePage p {
+    margin-top: -10px;
+    font-size: 4.3rem;
+}
 
 
 
@@ -90,6 +87,12 @@ body {
 #txt-are-like-cards {
     font-weight: 400;
 }
+
+.word-transition {
+    opacity: 0.2;
+    transition: all 1.5s;
+}
+
 
 .section-welcome-text-container p {
     margin-top: 15px;
@@ -550,4 +553,28 @@ footer {
 
 .filter {
     display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fade_up {
+    transform: translateY(20%);
+}
+.aparece {
+    opacity: 1;
+    transform: none;
 }
