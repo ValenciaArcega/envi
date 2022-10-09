@@ -68,41 +68,30 @@ body {
 .section-welcome {
     width: 100%;
     margin: 100px auto 0 auto;
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-.section-welcome-text-container {
+.section-welcome-container {
     width: 21rem;
 }
 
-.section-welcome-text-container h1 {
-    font-size: 2.85rem;
+.section-welcome-container h1 {
+    font-size: 2.75rem;
     line-height: 1.1;
     letter-spacing: -1px;
 }
 
-#txt-are-like-cards {
-    font-weight: 400;
-}
-
 .word-transition {
     opacity: 0.2;
-    transition: all 1.5s;
+    transition: all 2.5s;
 }
 
-
-.section-welcome-text-container p {
+.section-welcome-container p {
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.7;
-}
-
-.section-welcome-text-container a{
-    text-align: center;
-    margin-top: 2rem;
 }
 
 /* .section-welcome-image {
@@ -120,14 +109,20 @@ body {
     text-align: center;
 } */
 
+.wrapperBtn {
+    margin-top: 1.55rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-.btn:link,
-.btn:visited {    
+.btn-see-cards:link,
+.btn-see-cards:visited {    
     display: inline-block; /* to add margin at the top and bottom */
     margin-bottom: -1rem;
     background: linear-gradient(    
                 to top left, var(--mainColor) 20%, rgb(180, 205, 237));
-    box-shadow: 0px 5px 8px 3px rgba(54, 128, 197, 0.35);
+    box-shadow: 0px 5px 8px 3px rgba(54, 128, 197, 0.25);
     text-decoration: none;
     color: var(--white);
     font-weight: 500;
@@ -137,10 +132,10 @@ body {
     border-radius: 12px;
 }
 
-.btn:hover {
+.btn-see-cards:hover {
     cursor: pointer;
     background: linear-gradient(to top left, #2285db 20%, rgb(180, 205, 237));
-    box-shadow: 0px 5px 8px 2px rgba(54, 128, 197, 0.37);
+    box-shadow: 0px 5px 8px 2px rgba(54, 128, 197, 0.27);
 }
 
 
