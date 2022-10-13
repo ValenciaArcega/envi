@@ -412,8 +412,8 @@ footer {
 }
 
 .searchBar input {
-    width: 70vw;
-    padding: 10px 25px;
+    width: 55vw;
+    padding: 10px 15px;
     outline: none;
     border: 2px solid #cacaca;
     border-radius: 100px;
