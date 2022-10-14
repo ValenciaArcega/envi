@@ -45,11 +45,12 @@ header {
     text-align:center;
     color: var(--black);
     font-size: 2rem;
-    line-height: 1.1;
+    line-height: .9;
     letter-spacing: -1.3px;
 }
+
 header h1 {
-    background: linear-gradient(180deg, var(--mainColor)10%, var(--grayColor));
+    background: linear-gradient(180deg, var(--mainColor)65%, var(--grayColor));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -58,7 +59,7 @@ header h1 {
 .section-main {
     width: 95%;
     height:auto;
-    margin: 2rem auto 90px auto;
+    margin: .3rem auto 90px auto;
 }
 
 .cards {
