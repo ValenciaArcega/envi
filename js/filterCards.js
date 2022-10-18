@@ -1,4 +1,3 @@
-
 document.addEventListener("keyup", e=> {
 
     if (e.target.matches("#finder")) {
@@ -10,7 +9,7 @@ document.addEventListener("keyup", e=> {
               ? carta.classList.remove("filter")
               : carta.classList.add("filter")
         })
-
+        
         document.querySelectorAll(".card-introduction").forEach(introCard => {
             introCard.textContent.toLowerCase().includes(e.target.value.toLowerCase())
                 ? introCard.classList.remove("filter")
