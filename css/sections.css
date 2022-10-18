@@ -50,7 +50,7 @@ header {
 }
 
 header h1 {
-    background: linear-gradient(180deg, var(--mainColor)65%, var(--grayColor));
+    background: linear-gradient(180deg, var(--mainColor)25%, var(--grayColor));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
