@@ -184,6 +184,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 10px 12px 8px rgba(0, 0, 0, 0.052);
     color: var(--grayColor);
+    overflow-x: hidden;
 }
 
 .card-example {
@@ -434,6 +435,7 @@ footer {
 /* INTRODUCTION CARD */
 .section-cards {
     margin-top: 50px;
+    overflow-x: hidden;
 }
 
 .card-introduction {
@@ -487,16 +489,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* SLANGS CARD */
 
 .card-slang {
@@ -546,6 +538,33 @@ footer {
     width: 24px;
     height: 24px;
 }
+
+
+/* SLIDER TIPS */
+
+.sliderTips {
+    width: 100%;
+    overflow-x: scroll;
+    margin-top: 1rem;
+    height: 17rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.tip {
+    margin: 0 1.2rem 0 1.2rem;
+    height: 12rem;
+    width: 17rem;
+    background: linear-gradient(to top right, #1c7ed6, #4dabf7);
+    border-radius: 18px;
+}
+
+
+
+
+
 
 
 
