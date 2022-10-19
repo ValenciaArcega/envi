@@ -556,25 +556,35 @@ footer {
 }
 
 .tip {
+    color: var(--white);
     margin: 0 1.2rem 0 1.2rem;
     padding: .8rem .9rem 0 .9rem;
     height: 12rem;
     width: 17rem;
     background: linear-gradient(to top right, #1c7ed6, #4dabf7);
     border-radius: 18px;
+    user-select: none;
 }
-.tip p {
+
+.tip-homo {
+    color: var(--white);
+    margin: 0 1.2rem 0 1.2rem;
+    padding: .8rem .9rem 0 .9rem;
+    height: 12rem;
+    width: 17rem;
+    background: linear-gradient(to top right, #0ec630, #2cd2a5);
+    border-radius: 18px;
+    user-select: none;
+}
+
+.tip p,
+.tip-homo p {
     padding-top: .6rem;
     margin: 0 0;
     width: 100%;
     text-align: center;
     font-size: 1rem;
     font-weight: 400;
-    color: white;
-}
-
-.tip p::selection {
-    background-color: black;
     color: white;
 }
 
