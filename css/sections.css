@@ -115,8 +115,8 @@ header h1 {
     margin: 5px auto 0 auto;
     border-radius: 10px;
     /* background-color: #E8E8ED; */
-    background: linear-gradient(to top left, var(--mainColor) 20%, rgb(232, 232, 232));
-    box-shadow: 5px 7px 15px 3px rgba(116, 177, 235, 0.45);
+    background: linear-gradient(to top left, var(--mainColor) 20%, #a5d8ff);
+    box-shadow: 5px 7px 15px 2px rgba(116, 177, 235, 0.45);
     text-decoration: none;
     color: var(--white);
     font-size: 1.2rem;
@@ -125,8 +125,8 @@ header h1 {
 }
 .btn-Sections:hover {
     cursor: pointer;
-    background: linear-gradient(to top left, #2285db 20%, rgb(227, 227, 227));
-    box-shadow: 0px 7px 15px 2px rgba(128, 193, 255, 0.47);
+    background: linear-gradient(to top left, #2285db 20%, #a8d8fc);
+    box-shadow: 5px 7px 15px 2px rgba(116, 177, 235, 0.47);
 }
 
 
