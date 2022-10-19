@@ -4,7 +4,7 @@ class CardsSlangs extends HTMLElement {
         super();
         this.card_slang_name;
         this.card_meaning_es;
-        this.card_meaning
+        this.card_meaning;
     }
 
     static get observedAttributes() {
