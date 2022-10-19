@@ -27,5 +27,17 @@ document.addEventListener("keyup", e=> {
               ? carta.classList.remove("filter")
               : carta.classList.add("filter")
         })
+
+        document.querySelectorAll(".tip").forEach(carta => {
+            carta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+              ? carta.classList.remove("filter")
+              : carta.classList.add("filter")
+        })
+
+        document.querySelectorAll(".tip-homo").forEach(carta => {
+            carta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+              ? carta.classList.remove("filter")
+              : carta.classList.add("filter")
+        })
     }
   })
