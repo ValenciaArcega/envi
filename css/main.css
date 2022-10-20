@@ -497,7 +497,7 @@ footer {
     padding: 18px;
     display: block;
     width: 21rem;
-    height: 14rem;
+    height: 12rem;
     background-color: var(--white);
     border-radius: 16px;
     box-shadow: 0 4px 5px 4px rgba(0, 0, 0, 0.07);
@@ -511,7 +511,7 @@ footer {
     background: linear-gradient(180deg, var(--mainColor)45%, var(--grayColor));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 2px 0 0px 0;
+    margin: -5px 0 0px 0;
 }
 
 .card-slang h4 {
@@ -522,16 +522,16 @@ footer {
 }
 
 .card-slang p {
-    font-size: 1.09rem;
-    margin: 0 0;
+    font-size: 1.07rem;
+    margin-top:-1rem;
 }
 
 
 .list-header {
-    display: flex;
+    display: flex;    
     align-items: center;
-    gap: 10px;
-    margin: -20px 0 10px 0;
+    gap: 8px;
+    margin: -22px 0 10px 0;
 }
 
 .card-icon {
