@@ -573,7 +573,7 @@ footer {
     padding: .8rem .9rem 0 .9rem;
     height: 12rem;
     width: 17rem;
-    background: linear-gradient(to top right, #0ec630, #2cd2a5);
+    background: linear-gradient(to bottom right, #1971c2, #4dabf7);
     border-radius: 18px;
     user-select: none;
 }
