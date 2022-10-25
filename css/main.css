@@ -447,7 +447,7 @@ li p {
 /* SECTIONS TO CARDS */
 .top-bar {
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 3rem;
@@ -589,7 +589,7 @@ li p {
 }
 
 .card-slang h1 {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     text-align: center;
     letter-spacing: 3.5px;
     background: linear-gradient(180deg, var(--mainColor)45%, var(--grayColor));
@@ -606,7 +606,7 @@ li p {
 }
 
 .card-slang p {
-    font-size: 1.07rem;
+    font-size: 1.05rem;
     margin-top:-1rem;
 }
 

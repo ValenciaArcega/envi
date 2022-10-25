@@ -11,10 +11,8 @@ Tolescro is a web site where the users can explore the big **vocabulary** that E
 
 ## Technologies and more tools that the project will use. 
 - HTML 5
-- CSS
-- CSS Grid to make a responsive web design.
-- Flexbox to elements.
-- No media queries.
+- CSS (Grid to make a responsive web design and Flexbox to elements, No media queries)
+- JavaScript
 
 ## Structure.
 Tolescro have the next line of elements:
