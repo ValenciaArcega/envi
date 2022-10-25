@@ -1,21 +1,16 @@
-
 class CardTip extends HTMLElement {
 
   constructor() {
     super();
-    this.css_class;
     this.card_title;
     this.card_tip_description;
   }
 
   static get observedAttributes() {
-    return ['css_class', 'card_title', 'tip_description'];
+    return ['card_title', 'tip_description'];
   }
 
   attributeChangedCallback(Attr, oldValue, newValue) {
-    if (Attr == "css_class") {
-      this.css_class = newValue;
-    }
     if (Attr == "card_title") {
       this.card_title = newValue;
     }
@@ -26,7 +21,7 @@ class CardTip extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML =
-      `<div class="${this.css_class}">
+      `<div class="tip">
             <div class="header-tip">
             <h1>${this.card_title}</h1>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-tip">
