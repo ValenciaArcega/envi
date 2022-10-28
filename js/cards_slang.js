@@ -1,26 +1,26 @@
 class CardsSlangs extends HTMLElement {
 
-    constructor() {
-        super();
-        this.card_slang_name;
-        this.card_meaning_es;
+  constructor() {
+    super();
+    this.card_slang_name;
+    this.card_meaning_es;
+  }
+
+  static get observedAttributes() {
+    return ['slang_name', 'slang_es'];
+  } // observed
+
+  attributeChangedCallback(Attr, oldValue, newValue) {
+    if (Attr == "slang_name") {
+      this.card_slang_name = newValue;
     }
-
-    static get observedAttributes() {
-        return ['slang_name', 'slang_es'];
-    } // observed
-
-    attributeChangedCallback(Attr, oldValue, newValue) {
-        if(Attr == "slang_name") {
-            this.card_slang_name = newValue;
-        }
-        if(Attr == "slang_es") {
-            this.card_meaning_es = newValue;
-        }
+    if (Attr == "slang_es") {
+      this.card_meaning_es = newValue;
     }
+  }
 
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <div class="card-slang">
         <h1 class="title-card">${this.card_slang_name}</h1>
         <ul>
@@ -38,7 +38,7 @@ class CardsSlangs extends HTMLElement {
         </ul>
       </div>
         `
-    }
+  }
 } // class
 
 window.customElements.define("slang-card", CardsSlangs);
