@@ -454,7 +454,7 @@ li p {
     margin: 0;
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.015);
 }
 
 .icon-back {
