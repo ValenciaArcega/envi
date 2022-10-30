@@ -403,15 +403,16 @@ li p {
     justify-self: start;
     color: var(--black);  
     font-weight: 700;   
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    letter-spacing: -.8px;
 }
 .header-container-icon {
     width: 10%;
     align-self: center;
     justify-self: end;
     stroke: var(--mainColor);
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
 
 .btn-Sections:link,
