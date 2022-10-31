@@ -16,25 +16,13 @@ document.addEventListener("keyup", e=> {
                 : introCard.classList.add("filter")
         }) 
 
-        document.querySelectorAll(".sliderTips").forEach(introCard => {
-            introCard.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-                ? introCard.classList.remove("filter")
-                : introCard.classList.add("filter")
-        }) 
-
         document.querySelectorAll(".card-slang").forEach(carta => {
             carta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
               ? carta.classList.remove("filter")
               : carta.classList.add("filter")
         })
 
-        document.querySelectorAll(".tip").forEach(carta => {
-            carta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-              ? carta.classList.remove("filter")
-              : carta.classList.add("filter")
-        })
-
-        document.querySelectorAll(".tip-homo").forEach(carta => {
+        document.querySelectorAll(".sliderTips").forEach(carta => {
             carta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
               ? carta.classList.remove("filter")
               : carta.classList.add("filter")
