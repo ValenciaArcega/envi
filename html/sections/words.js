@@ -19,7 +19,7 @@ class Tester extends HTMLElement {
       </div>
   
       <div class="searchBar">
-        <input type="text" name="finder" id="finder" placeholder="Search words">
+        <input type="text" name="finder" id="finder" placeholder="Search words, slangs">
       </div>
   
       <div class="section-cards">
@@ -51,7 +51,7 @@ class Tester extends HTMLElement {
             </tip-card>
           </section>
   
-          <!-- SLANG  -->
+<!-- SLANG  -->
           <slang-card slang_name="btw" slang_es="By the way : por cierto 😬"></slang-card>
   
           <slang-card slang_name="smh" slang_es="Shaking my head : mover la cabeza con desaprobación 🤦"></slang-card>
@@ -69,28 +69,28 @@ class Tester extends HTMLElement {
             meaning="Significa lo que puede ser conocido por un individuo a través del estudio, la experiencia o la investigación.">
           </the-card>
   
-          <!-- SLANG  -->
+<!-- SLANG  -->
           <slang-card slang_name="pls" slang_es="Please : por favor 🙏"></slang-card>
   
           <slang-card slang_name="thx" slang_es="Thanks : gracias 😊"></slang-card>
   
           <slang-card slang_name="rn" slang_es="Right now : ahora mismo 👇"></slang-card>
   
-          <!-- SLANG  -->
+<!-- SLANG  -->
           <slang-card slang_name="tbh" slang_es="To be honest : para ser honest@"></slang-card>
   
           <slang-card slang_name="jk" slang_es="Just kidding : solo bromeo 😂"></slang-card>
   
           <slang-card slang_name="ngl" slang_es="Not gonna lie : no voy a mentir 🤷"></slang-card>
   
-          <!-- SLANG  -->
+<!-- SLANG  -->
           <slang-card slang_name="nvm" slang_es="Never mind : No importa, olvidalo"></slang-card>
   
           <slang-card slang_name="fr" slang_es="For real : de verdad"></slang-card>
   
           <slang-card slang_name="lil" slang_es="Little : pequeñ@"></slang-card>
   
-          <!-- SLANG  -->
+<!-- SLANG  -->
           <slang-card slang_name="lmfao" slang_es="Laughing my freaking ass off : me cago de la risa 🤣"></slang-card>
   
           <slang-card slang_name="hbd" slang_es="Happy birthday : feliz cumpleaños 🎁"></slang-card>
@@ -98,10 +98,19 @@ class Tester extends HTMLElement {
         </div>
       </div>
   
-      <footer>&copy; 2022, Tolescro</footer>
-      
+      <footer>&copy; 2022, Tolescro</footer>      
         `;
   }
-}
+} // class
 
-window.customElements.define("tag-test", Tester);
+window.customElements.define("class-words", Tester);
+
+
+
+/* 
+<the-card card_name="" txt_pronuntiation="" meaning_es="" meaning=""></the-card>
+
+<tip-card card_title="" tip_description=''></tip-card>
+
+<slang-card slang_name="" slang_es="No problem : no hay problema 😌"></slang-card> 
+*/
