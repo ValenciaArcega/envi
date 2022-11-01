@@ -30,7 +30,7 @@ class Tester extends HTMLElement {
           </intro-card>
   
           <intro-card title="There are slangs 2"
-            description="Los slangs son muy comunes y utilizados en mensajes de texto y redes sociales. Son abreviaciones de escritura informal.">
+            description="Los slangs son muy comunes e utilizados en mensajes de texto y redes sociales. Son abreviaciones de escritura informal.">
           </intro-card>
   
           <the-card card_name="Environment" txt_pronuntiation="in-vai-rn-mnt" meaning_es="Entorno, ambiente"

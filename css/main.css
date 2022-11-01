@@ -262,9 +262,7 @@ li p {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    justify-items: center
-        /* center items in mobile mode */
-    ;
+    justify-items: center;
 }
 
 .section-features h2 {
@@ -289,12 +287,13 @@ li p {
 
 .feature h3 {
     color: var(--grayColor);
-    margin: 10px 0 5px 0;
-    letter-spacing: 0;
+    margin: 10px 0 1px 0;
+    letter-spacing: -.5px;
 }
 
 .feature p {
     color: var(--grayColor);
+    line-height: 1.5;
 }
 
 .icon-features {
