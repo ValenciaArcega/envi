@@ -88,7 +88,7 @@ class Tester extends HTMLElement {
   
           <slang-card slang_name="fr" slang_es="For real : de verdad"></slang-card>
   
-          <slang-card slang_name="lil" slang_es="Little : pequeñ@"></slang-card>
+          <slang-card slang_name="lil" slang_es="Little : pequeñ@ 🤏"></slang-card>
   
 <!-- SLANG  -->
           <slang-card slang_name="lmfao" slang_es="Laughing my freaking ass off : me cago de la risa 🤣"></slang-card>
