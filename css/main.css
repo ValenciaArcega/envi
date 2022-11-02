@@ -196,7 +196,7 @@ body {
 }
 
 .card-example {
-    margin-top: 0px;
+    margin-top: 2.4rem;
     padding: 18px;
     display: block;
     width: 21rem;
@@ -589,13 +589,14 @@ label {
 }
 
 .card-introduction {
+    margin-top: 1.7rem;
     padding: 0;
     display: block;
     width: 21rem;
     height: 34rem;
     background-color: var(--white);
     border-radius: 12px;
-    box-shadow: 0 -2px 15px 5px rgba(0, 0, 0, 0.13);
+    box-shadow: 0 5px 15px 15px rgba(0, 0, 0, 0.03);
     color: var(--grayColor);
 }
 
@@ -641,7 +642,7 @@ label {
 
 /* SLANGS CARD */
 .card-slang {
-    /* margin-top: 20px; */
+    margin-top: 2.2rem;
     padding: 22px 2px 10px 2px;
     display: block;
     width: 21rem;
