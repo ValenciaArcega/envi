@@ -1,10 +1,11 @@
+
 document.addEventListener("keyup", e=> {
 
     if (e.target.matches("#finder")) {
   
         if (e.key ==="Escape")e.target.value = ""
         
-        document.querySelectorAll(".card").forEach(carta => {
+        document.querySelectorAll('.card').forEach(carta => {
             carta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
               ? carta.classList.remove("filter")
               : carta.classList.add("filter")
@@ -22,10 +23,17 @@ document.addEventListener("keyup", e=> {
               : carta.classList.add("filter")
         })
 
-        document.querySelectorAll(".sliderTips").forEach(carta => {
+        document.querySelectorAll('.sliderTips').forEach(carta => {
             carta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
               ? carta.classList.remove("filter")
               : carta.classList.add("filter")
         })
+
+        document.querySelectorAll('.tip').forEach(carta => {
+          carta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+            ? carta.classList.remove("filter")
+            : carta.classList.add("filter")
+      })
+
     }
   })

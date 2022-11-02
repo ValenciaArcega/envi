@@ -1,6 +1,4 @@
-
 class Words extends HTMLElement {
-
   constructor() {
     super();
   }
@@ -14,8 +12,6 @@ class Words extends HTMLElement {
 } // class
 
 window.customElements.define("class-words", Words);
-
-
 
 /* 
 <the-card card_name='' txt_pronuntiation='' meaning_es='' meaning=''></the-card>
