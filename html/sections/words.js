@@ -19,7 +19,8 @@ class Tester extends HTMLElement {
       </div>
   
       <div class="searchBar">
-        <input type="text" name="finder" id="finder" placeholder="Search words, slangs">
+        <input type="text" name="finder" id="finder">
+        <label>Search words, slangs</label>
       </div>
   
       <div class="section-cards">
