@@ -455,9 +455,19 @@ li p {
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.015);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;    
 }
 
 .icon-back {
+    margin: 5px 0 0 5px;
+    stroke: #1c7ed6;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-up {
     margin: 5px 0 0 5px;
     stroke: #1c7ed6;
     width: 24px;
@@ -470,6 +480,22 @@ li p {
     text-decoration: none;
     margin: .5rem 0 0 1rem;
 }
+
+.btn-GoTop {
+    display: inline-block;
+    text-decoration: none;
+    margin: .5rem 1rem 0 0;
+    justify-self: end;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+
+
+
+
 
 
 /* ICON HEADER SECTION */
