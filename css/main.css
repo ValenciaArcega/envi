@@ -355,6 +355,7 @@ li p {
     font-size: 2rem;
     line-height: .9;
     letter-spacing: -1.3px;
+    user-select: none;
 }
 
 .header-sections h1 {
@@ -374,6 +375,7 @@ li p {
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(16rem, 1fr));
     grid-column-gap: 1rem;
+    grid-row-gap: 1.8rem;
     justify-items: center;
     margin: 5px 0;
 }
