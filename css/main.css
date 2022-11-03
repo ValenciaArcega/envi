@@ -185,7 +185,6 @@ body {
 .card {
     margin: 1.8rem 0;
     padding: 18px;
-    /* display: block; */
     width: 21rem;
     height: 31.2rem;
     background-color: var(--white);
@@ -501,7 +500,7 @@ li p {
 
 /* ICON HEADER SECTION */
 .section-icon {
-    margin-top: 100px;
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -509,30 +508,12 @@ li p {
 
 .icon-section {
     stroke: var(--mainColor);
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
     text-align: center;
 }
 
-
-/* TEST */
-.input-group {
-        
-}
-
-.tester {
-    border: solid 1.5px #D9D9D9;
-    border-radius: 1rem;
-    background: none;
-    padding: 1rem;
-    color:#000;
-
-}
-
-
-
 .searchBar {
-    position: relative;
     margin-top: 1.5rem;
     margin-bottom: -1rem;
     display: flex;
@@ -543,36 +524,19 @@ li p {
 }
 
 #finder {
-    width: 52vw;
+    width: 58vw;
     padding: 10px 14px;
     outline: none;
     border: 2px solid #d1d1d1;
-    border-radius: 100px;
+    border-radius: 1rem;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     transition: 250ms cubic-bezier(0.4,0,0.2,1);
 }
 
-label {
-    color: #868686;
-    position: absolute;
-    top: -.3rem;
-    pointer-events: none;
-    transform: translateY(1rem);
-    transition: 150ms cubic-bezier(0.4,0,0.2,1);
-}
-
 #finder:focus {
-    outline: none;
     border: 2px solid var(--mainColor);
-}
-
-#finder:focus ~ label {
-    transform: translateY(-90%) scale(0.8);
-    background-color: var(--grayBackground);
-    padding: 0 0.2rem;
-    color: var(--mainColor);
 }
 
 
@@ -593,7 +557,7 @@ label {
     padding: 0;
     display: block;
     width: 21rem;
-    height: 34rem;
+    height: 31.2rem;
     background-color: var(--white);
     border-radius: 12px;
     box-shadow: 0 5px 15px 15px rgba(0, 0, 0, 0.03);
@@ -614,7 +578,7 @@ label {
     color: white;
     font-size: 2.75rem;
     line-height: 1;
-    letter-spacing: -0.5px;
+    letter-spacing: -1px;
 }
 
 .card-introduction p {
