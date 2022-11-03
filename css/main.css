@@ -488,7 +488,6 @@ li p {
     justify-self: end;
     border: none;
     background-color: transparent;
-    cursor: pointer;
     transition: all 0.4s;
 }
 
