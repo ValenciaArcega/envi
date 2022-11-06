@@ -29,9 +29,8 @@ body {
 }
 
 
-
 /* SECTION HEY EXPLORER */
-.header-hey {
+.header-message-welcome {
     background-color: var(--grayBackground);
     display: inline-block;
     width: 100%;
@@ -43,7 +42,7 @@ body {
     justify-content: center;
 }
 
-.txt-NamePage {
+.message-welcome-h1 {
     font-size: 7.5rem;
     font-weight: 700;
     -webkit-user-select: none;
@@ -51,13 +50,13 @@ body {
 }
 
 .gradient-text,
-.txt-NamePage {
+.message-welcome-h1 {
     background: linear-gradient(180deg, var(--mainColor)20%, var(--grayColor));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.txt-NamePage p {
+.message-welcome-h1 p {
     margin-top: -0.625rem;
     font-size: 4.3rem;
 }
@@ -167,11 +166,11 @@ body {
 
 .card {
     margin: 1.8rem 0;
-    padding: 0.625rem;
+    padding: 1rem;
     width: 21rem;
     height: 31.2rem;
     background-color: var(--white);
-    border-radius: 0.75rem;
+    border-radius: 1rem;
     box-shadow: 0 0.625rem 0.75rem 0.5rem rgba(0, 0, 0, 0.052);
     color: var(--grayColor);
     overflow-x: hidden;
@@ -532,13 +531,13 @@ li p {
 
 /* INTRODUCTION CARD */
 .section-cards {
-    margin-top: 3.125rem;
+    margin-top: 2rem;
     overflow-x: hidden;
     height: auto;
 }
 
 .card-introduction {
-    margin-top: .5rem;
+    margin-top: 1.5rem;
     padding: 0;
     display: block;
     width: 21rem;
