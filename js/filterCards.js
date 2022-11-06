@@ -1,4 +1,3 @@
-
 document.addEventListener("keyup", e=> {
 
     if (e.target.matches("#finder")) {

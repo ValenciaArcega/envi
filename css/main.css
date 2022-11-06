@@ -3,7 +3,8 @@
 /*
 || SPACING SYSTEM (px): 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
-|| FONT SIZE SYSTEM (px): 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+|| FONT SIZE SYSTEM (px): 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+*/
 
 :root {
     --mainColor: #1c7ed6;
@@ -274,7 +275,7 @@ li p {
 }
 
 .feature {
-    background-color: white;
+    background-color: var(--white);
     margin-top: 25px;
     padding: 0 20px;
     height: 11rem;
@@ -464,20 +465,21 @@ li p {
 
 .icon-back {
     margin: 5px 0 0 5px;
-    stroke: #1c7ed6;
+    stroke: var(--black);
     width: 24px;
     height: 24px;
 }
 
 .icon-up {
     margin: 5px 0 0 5px;
-    stroke: #1c7ed6;
+    stroke: var(--black);
     width: 24px;
     height: 24px;
 }
 
 .btn-BackSections, 
 .btn-BackHome {
+    width: 2.1rem;
     display: inline-block;
     text-decoration: none;
     margin: .5rem 0 0 1rem;
@@ -509,13 +511,13 @@ li p {
 
 .icon-section {
     stroke: var(--mainColor);
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     text-align: center;
 }
 
 .searchBar {
-    margin-top: .5rem;
+    margin-top: .7rem;
     margin-bottom: -1rem;
     display: flex;
     align-self: center;
@@ -526,7 +528,7 @@ li p {
 
 #finder {
     width: 55vw;
-    padding: 10px 18px;
+    padding: 8px 14px;
     outline: none;
     border: 2px solid #d1d1d1;
     border-radius: .8rem;
@@ -576,9 +578,9 @@ li p {
 
 .header-introduction h1 {
     text-align: center;
-    color: white;
     font-size: 2.75rem;
     line-height: 1;
+    color: var(--white);
     letter-spacing: -1px;
 }
 
@@ -613,7 +615,7 @@ li p {
     width: 21rem;
     height: 12rem;
     background-color: var(--white);
-    border-radius: 16px;
+    border-radius: 1rem;
     box-shadow: 0 5px 4px 6px rgba(0, 0, 0, 0.02);
     color: var(--grayColor);
 }
@@ -670,20 +672,36 @@ li p {
     width: 100%;
     overflow-x: scroll;
     margin-top: 0rem;
-    height: 17rem;
+    height: 15rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
 }
+.sliderTips::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.sliderTips::-webkit-scrollbar:horizontal {
+    height: 5px;    
+}
+
+.sliderTips::-webkit-scrollbar-thumb {
+    background-color: #0000002d;
+    border-radius: 10px;
+}
+
+.sliderTips::-webkit-scrollbar-track {
+    border-radius: 50px;  
+}
 
 .tip {
     color: var(--white);
-    margin: 0 .7rem 0 .7rem;
+    margin: 0 1.2rem 0 1.2rem;
     padding: .8rem .9rem 0 .9rem;
     height: 12rem;
     width: 17rem;
-    background: linear-gradient(to top right, #1c7ed6, #4dabf7);
+    background: linear-gradient(to top right, var(--mainColor), #4dabf7);
     border-radius: 18px;
     user-select: none;
 }
@@ -696,7 +714,7 @@ li p {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.6;
-    color: white;
+    color: var(--white);
 }
 
 .header-tip {
@@ -709,18 +727,16 @@ li p {
     margin-left: .5rem;
     width: 85%;
     text-align: start;
-    color: white;
+    color: var(--white);
     font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: 0.2px;
 }
 .icon-tip {
-    stroke: white;
+    stroke: var(--white);
     width: 1.5rem;
     justify-self: flex-end;
 }
-
-
 
 
 footer {
@@ -730,11 +746,6 @@ footer {
     text-align: center;
     color: var(--black);
 }
-
-
-
-
-
 
 
 .filter {        
