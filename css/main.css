@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
-/*|| SPACING SYSTEM (rem): 2:0.125 / 4:0.25 / 8:0.5 / 12:0.75 / 16:1 / 24:1.5 / 32:2 / 48:3 / 64:4 / 80:5 / 96:6 / 128:8
-|| FONT SIZE SYSTEM (rem): 10:0.625 / 12:0.75 / 14:0.875 / 16:1 / 18:1.125 / 20:1.25 / 24:1.5 / 30:1.875 / 36:2.25 / 44:2.75 / 52:3.25 / 62:3.875 / 74:4.625 / 86:5.375 / 98:6.125 */
+/*
+|| SPACING SYSTEM (px): 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+|| FONT SIZE SYSTEM (px): 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+*/
 
 :root {
     --mainColor: #1c7ed6;
@@ -27,6 +30,7 @@ body {
     color: var(--grayColor);
     font-family: 'Inter', sans-serif;
 }
+
 
 
 /* SECTION HEY EXPLORER */
@@ -57,7 +61,7 @@ body {
 }
 
 .message-welcome-h1 p {
-    margin-top: -0.625rem;
+    margin-top: -10px;
     font-size: 4.3rem;
 }
 
@@ -66,7 +70,7 @@ body {
 /* SECTION WELCOME */
 .section-welcome {
     width: 100%;
-    margin: 6.25rem auto 15.625rem auto;
+    margin: 100px auto 250px auto;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -79,7 +83,7 @@ body {
 .section-welcome-container h1 {
     font-size: 2.75rem;
     line-height: 1.1;
-    letter-spacing: -0.063rem;
+    letter-spacing: -1px;
 }
 
 
@@ -94,8 +98,8 @@ body {
 }
 
 .section-welcome-container p {
-    margin-top: 0.938rem;
-    font-size: 1.188rem;
+    margin-top: 15px;
+    font-size: 19px;
     line-height: 1.7;
 }
 
@@ -112,20 +116,20 @@ body {
     margin-bottom: -1rem;
     background: linear-gradient(    
                 to top left, var(--mainColor) 20%, rgb(180, 205, 237));
-    box-shadow: 0 0.313rem 0.5rem 0.188rem rgba(54, 128, 197, 0.25);
+    box-shadow: 0px 5px 8px 3px rgba(54, 128, 197, 0.25);
     text-decoration: none;
     color: var(--white);
     font-weight: 500;
-    font-size: 1.125rem;
+    font-size: 18px;
     text-align: center;
-    padding: 0.75rem 2.813rem;
-    border-radius: 0.75rem;
+    padding: 12px 45px;
+    border-radius: 12px;
 }
 
 .btn-see-cards:hover {
     cursor: pointer;
     background: linear-gradient(to top left, #2285db 20%, rgb(180, 205, 237));
-    box-shadow: 0 0.313rem 0.5rem 0.125rem rgba(54, 128, 197, 0.27);
+    box-shadow: 0px 5px 8px 2px rgba(54, 128, 197, 0.27);
 }
 
 
@@ -141,7 +145,7 @@ body {
     margin-top: 18rem;
     width: 100%;
     height: 47rem;
-    padding-top: 3.125rem;
+    padding-top: 50px;
     background-color: #000;
 }
 
@@ -152,11 +156,11 @@ body {
     font-size: 3.95rem;
     /* Title cards */
     font-weight: 700;
-    margin-bottom: -0.625rem;
+    margin-bottom: -10px;
 }
 
 .cards {
-    margin-top: 0.625rem;
+    margin-top: 10px;
     display: grid;
     grid-gap: 0 3.5rem;
     grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
@@ -166,25 +170,25 @@ body {
 
 .card {
     margin: 1.8rem 0;
-    padding: 1rem;
+    padding: 18px;
     width: 21rem;
     height: 31.2rem;
     background-color: var(--white);
-    border-radius: 1rem;
-    box-shadow: 0 0.625rem 0.75rem 0.5rem rgba(0, 0, 0, 0.052);
+    border-radius: 12px;
+    box-shadow: 0 10px 12px 8px rgba(0, 0, 0, 0.052);
     color: var(--grayColor);
     overflow-x: hidden;
 }
 
 .card-example {
     margin-top: 2.4rem;
-    padding: 0.625rem;
+    padding: 18px;
     display: block;
     width: 21rem;
     height: 32rem;
     background-color: var(--black);
-    border-radius: 0.625rem;
-    border: solid 0.063rem #343a40;
+    border-radius: 18px;
+    border: solid 1px #343a40;
     color: var(--white);
 }
 
@@ -202,25 +206,25 @@ body {
     background: linear-gradient(180deg, var(--mainColor)45%, var(--grayColor));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 1.25rem 0 2.5rem 0;
+    margin: 20px 0 40px 0;
 }
 
 ul li {
-    margin: 2.813rem 1.875rem 0.625rem 1.875rem;
+    margin: 45px 30px 10px 30px;
     list-style: none;
 }
 
 .list-header {
     display: flex;
     align-items: center;
-    gap: 0.625rem;
-    margin-bottom: 0.625rem;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .card-icon {
     stroke: var(--mainColor);
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 24px;
+    height: 24px;
 }
 
 li p {
@@ -236,13 +240,13 @@ li p {
 .section-features {
     background-color: #f2f2f7;
     width: 90%;
-    margin: 12.5rem auto 9.375rem auto;
+    margin: 200px auto 150px auto;
     text-align: center;
 }
 
 .section-features-grid {
     display: grid;
-    grid-gap: 0.313rem;
+    grid-gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     justify-items: center;
 }
@@ -257,19 +261,19 @@ li p {
 
 .feature {
     background-color: var(--white);
-    margin-top: 1.563rem;
-    padding: 0 1.25rem;
+    margin-top: 25px;
+    padding: 0 20px;
     height: 11rem;
     width: 15rem;
     text-align: center;
     color: var(--mainColor);
-    border-radius: 0.75rem;
-    border: solid 0.063rem #d9d9d9;
+    border-radius: 12px;
+    border: solid 1px #d9d9d9;
 }
 
 .feature h3 {
     color: var(--grayColor);
-    margin: 0.625rem 0 0.063rem 0;
+    margin: 10px 0 1px 0;
     letter-spacing: -.5px;
 }
 
@@ -279,10 +283,10 @@ li p {
 }
 
 .icon-features {
-    margin-top: 1.25rem;
+    margin-top: 20px;
     stroke: var(--mainColor);
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 28px;
+    height: 28px;
 }
 
 
@@ -291,7 +295,7 @@ li p {
 
 /* SECTION BUTTON GO TO LEARN*/
 .section-btn-sections {
-    margin: -2.813rem auto 0 auto;
+    margin: -45px auto 0 auto;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -303,21 +307,21 @@ li p {
     /* to add margin at the top and bottom */
     align-items: center;
     background: linear-gradient(to top left, var(--mainColor) 20%, rgb(180, 205, 237));
-    box-shadow: 0 0.313rem 0.5rem 0.125rem rgba(54, 128, 197, 0.35);
+    box-shadow: 0px 5px 8px 2px rgba(54, 128, 197, 0.35);
     text-decoration: none;
     color: var(--white);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 18px;
     text-align: center;
-    margin: 1.25rem 0;
-    padding: 0.75rem 1.563rem;
-    border-radius: 0.75rem;
+    margin: 20px 0;
+    padding: 12px 25px;
+    border-radius: 12px;
 }
 
 .btn-go-sections-page:hover {
     cursor: pointer;
     background: linear-gradient(to top left, #2285db 20%, rgb(180, 205, 237));
-    box-shadow: 0 0.313rem 0.5rem 0.125rem rgba(54, 128, 197, 0.37);
+    box-shadow: 0px 5px 8px 2px rgba(54, 128, 197, 0.37);
 }
 
 
@@ -359,23 +363,23 @@ li p {
     grid-column-gap: 1rem;
     grid-row-gap: 1.8rem;
     justify-items: center;
-    margin: 0.313rem 0;
+    margin: 5px 0;
 }
 
 .cards-sections {
-    margin-top: 2.5rem;
+    margin-top: 40px;
     height: 8rem;
     width: 16rem;
     background-color: var(--white);
     color: var(--black);
-    border-radius: 0.625rem;    
-    border: solid 0.063rem #cacaca;
+    border-radius: 10px;    
+    border: solid 1px #cacaca;
     text-align: center;
 }
 
 
 .cards-sections-header-container {
-    margin: 0 1.25rem 0 1.25rem;
+    margin: 0 20px 0 20px;
     display: flex;
     height: 50%;
     text-align: start;
@@ -394,30 +398,30 @@ li p {
     align-self: center;
     justify-self: end;
     stroke: var(--mainColor);
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 20px;
+    height: 20px;
 }
 
 .btn-Sections:link,
 .btn-Sections:visited {
     display: inline-block;
     width: 9rem;
-    padding: 0.375rem 0.125rem;
-    margin: 0.313rem auto 0 auto;
-    border-radius: 0.625rem;
+    padding: 6px 2px;
+    margin: 5px auto 0 auto;
+    border-radius: 10px;
     /* background-color: #E8E8ED; */
     background: linear-gradient(to top left, var(--mainColor) 20%, #a5d8ff);
-    box-shadow: 0.313rem 0.438rem 0.938rem 0.125rem rgba(116, 177, 235, 0.45);
+    box-shadow: 5px 7px 15px 2px rgba(116, 177, 235, 0.45);
     text-decoration: none;
     color: var(--white);
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: 0px;
 }
 .btn-Sections:hover {
     cursor: pointer;
     background: linear-gradient(to top left, #2285db 20%, #a8d8fc);
-    box-shadow: 0.313rem 0.438rem 0.938rem 0.125rem rgba(116, 177, 235, 0.47);
+    box-shadow: 5px 7px 15px 2px rgba(116, 177, 235, 0.47);
 }
 
 
@@ -438,24 +442,24 @@ li p {
     margin: 0;
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
-    box-shadow: 0 0.313rem 0.625rem rgba(0, 0, 0, 0.015);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.015);
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;    
 }
 
 .icon-back {
-    margin: 0.313rem 0 0 0.313rem;
+    margin: 5px 0 0 5px;
     stroke: var(--black);
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 24px;
+    height: 24px;
 }
 
 .icon-up {
-    margin: 0.313rem 0 0 0.313rem;
+    margin: 5px 0 0 5px;
     stroke: var(--black);
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 24px;
+    height: 24px;
 }
 
 .btn-BackSections, 
@@ -484,7 +488,7 @@ li p {
 
 /* ICON HEADER SECTION */
 .section-icon {
-    margin-top: 4.375rem;
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -492,8 +496,8 @@ li p {
 
 .icon-section {
     stroke: var(--mainColor);
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 36px;
+    height: 36px;
     text-align: center;
 }
 
@@ -509,9 +513,9 @@ li p {
 
 #finder {
     width: 55vw;
-    padding: 0.5rem 0.875rem;
+    padding: 8px 14px;
     outline: none;
-    border: 0.125rem solid #d1d1d1;
+    border: 2px solid #d1d1d1;
     border-radius: .8rem;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
@@ -520,7 +524,7 @@ li p {
 }
 
 #finder:focus {
-    border: 0.125rem solid var(--mainColor);
+    border: 2px solid var(--mainColor);
 }
 
 
@@ -531,28 +535,28 @@ li p {
 
 /* INTRODUCTION CARD */
 .section-cards {
-    margin-top: 2rem;
+    margin-top: 50px;
     overflow-x: hidden;
     height: auto;
 }
 
 .card-introduction {
-    margin-top: 1.5rem;
+    margin-top: .5rem;
     padding: 0;
     display: block;
     width: 21rem;
     height: 31.2rem;
     background-color: var(--white);
-    border-radius: 0.75rem;
-    box-shadow: 0 0.313rem 0.938rem 0.938rem rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px 15px rgba(0, 0, 0, 0.03);
     color: var(--grayColor);
 }
 
 .header-introduction {
-    padding: 3.125rem 0.625rem 0 0.625rem;
+    padding: 50px 10px 0 10px;
     height: 45%;
     background: linear-gradient(180deg, var(--mainColor), var(--white));
-    border-radius: 0.75rem;
+    border-radius: 12px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -566,8 +570,8 @@ li p {
 }
 
 .card-introduction p {
-    margin: -1.25rem 0 0.625rem 0;
-    padding: 0 1.875rem 0 1.875rem;
+    margin: -20px 0 10px 0;
+    padding: 0 30px 0 30px;
     font-size: 1.1rem;
     text-align: center;
     line-height: 1.6;
@@ -581,8 +585,8 @@ li p {
 
 .card-introduction-icon {
     fill: #20c997;
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 36px;
+    height: 36px;
 }
 
 
@@ -591,13 +595,13 @@ li p {
 /* SLANGS CARD */
 .card-slang {
     margin-top: 2.2rem;
-    padding: 1.375rem 0.125rem 0.625rem 0.125rem;
+    padding: 22px 2px 10px 2px;
     display: block;
     width: 21rem;
     height: 12rem;
     background-color: var(--white);
     border-radius: 1rem;
-    box-shadow: 0 0.313rem 0.25rem 0.375rem rgba(0, 0, 0, 0.02);
+    box-shadow: 0 5px 4px 6px rgba(0, 0, 0, 0.02);
     color: var(--grayColor);
 }
 
@@ -608,7 +612,7 @@ li p {
     background: linear-gradient(180deg, var(--mainColor)45%, var(--grayColor));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: -0.313rem 0 0 0;
+    margin: -5px 0 0px 0;
 }
 
 .card-slang h4 {
@@ -629,14 +633,14 @@ li p {
 .list-header {
     display: flex;    
     align-items: center;
-    gap: 0.5rem;
-    margin: -1.375rem 0 0.625rem 0;
+    gap: 8px;
+    margin: -22px 0 10px 0;
 }
 
 .card-icon {
     stroke: var(--mainColor);
-    width: 1.375rem;
-    height: 1.375rem;
+    width: 22px;
+    height: 22px;
 }
 
 
@@ -664,16 +668,16 @@ li p {
 }
 
 .sliderTips::-webkit-scrollbar:horizontal {
-    height: 0.313rem;    
+    height: 5px;    
 }
 
 .sliderTips::-webkit-scrollbar-thumb {
     background-color: #0000002d;
-    border-radius: 0.625rem;
+    border-radius: 10px;
 }
 
 .sliderTips::-webkit-scrollbar-track {
-    border-radius: 3.125rem;  
+    border-radius: 50px;  
 }
 
 .tip {
@@ -683,7 +687,7 @@ li p {
     height: 12rem;
     width: 17rem;
     background: linear-gradient(to top right, var(--mainColor), #4dabf7);
-    border-radius: 1rem;
+    border-radius: 18px;
     user-select: none;
 }
 
@@ -722,7 +726,7 @@ li p {
 
 footer {
     width: 90%;
-    margin: 9.375rem auto 0 auto;
+    margin: 150px auto 0 auto;
     height: 2rem;
     text-align: center;
     color: var(--black);
