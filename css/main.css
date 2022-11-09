@@ -27,7 +27,7 @@ html {
 body {
     overflow-x: hidden;
     background-color: var(--grayBackground);
-    color: var(--whote);
+    color: var(--black);
     font-family: 'Inter', sans-serif;
 }
 
@@ -175,7 +175,7 @@ body {
     height: 31.2rem;
     background-color: var(--white);
     border-radius: 12px;
-    box-shadow: 0 10px 12px 8px rgba(0, 0, 0, 0.052);
+    box-shadow: 0 10px 12px 8px rgba(0, 0, 0, 0.032);
     color: var(--grayColor);
     overflow-x: hidden;
 }
@@ -545,7 +545,7 @@ li p {
     width: 21rem;
     height: 31.2rem;
     background-color: var(--white);
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: 0 5px 15px 15px rgba(0, 0, 0, 0.03);
     color: var(--grayColor);
 }
@@ -554,7 +554,7 @@ li p {
     padding: 48px 10px 0 10px;
     height: 45%;
     background: linear-gradient(180deg, var(--mainColor), var(--white));
-    border-radius: 20px;
+    border-radius: 30px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
