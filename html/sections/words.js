@@ -5,7 +5,7 @@ class Words extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML =
-      `
+`
       <top-bar src="../sections.html"></top-bar>
 
       <div class="section-icon">
@@ -85,23 +85,27 @@ class Words extends HTMLElement {
           <!-- SLANG  -->
           <slang-card slang_name="nvm" slang_es="Never mind : No importa, olvidalo"></slang-card>
     
-          <slang-card slang_name="fr" slang_es="For real : de verdad"></slang-card>
+          <slang-card slang_name="fr" slang_es="For real : De verdad"></slang-card>
     
-          <slang-card slang_name="lil" slang_es="Little : pequeñ@ 🤏"></slang-card>
+          <slang-card slang_name="lil" slang_es="Little : Pequeñ@ 🤏"></slang-card>
     
           <!-- SLANG  -->
           <slang-card slang_name="lmfao" slang_es="Laughing my freaking ass off : me cago de la risa 🤣"></slang-card>
     
-          <slang-card slang_name="hbd" slang_es="Happy birthday : feliz cumpleaños 🎁"></slang-card>
+          <slang-card slang_name="hbd" slang_es="Happy birthday : Feliz cumpleaños 🎁"></slang-card>
     
           <slang-card slang_name="wdym?" slang_es="What do you mean? : ¿A que te refieres?, ¿Qué quieres decir?"></slang-card>
     
           <!-- SLANG  -->
           <slang-card slang_name="wyd?" slang_es="What you doing? : ¿Qué haces?"></slang-card>
+
+          <slang-card slang_name="lmk" slang_es="Let me know : Házmelo saber 😉"></slang-card>
+
+          <slang-card slang_name="idts" slang_es="I donot think so : No lo creo, no pienso lo mismo 🤔"></slang-card>
     
+ 
     
-    
-    
+   
     
           <!-- SLANG -->
           <slang-card slang_name="Tryna" slang_es="Trying to : Tratando de..."></slang-card>
@@ -128,12 +132,14 @@ class Words extends HTMLElement {
           <slang-card slang_name="Lemme" slang_es="Let me : Déjame (mostrarte, adivinar, ver, probar, etc.)"></slang-card>
     
           <slang-card slang_name="Dunno" slang_es="Donot know : No lo se / sabemos / saben / sabes / sabe 🤔"></slang-card>
+
+          <slang-card slang_name="Lotta" slang_es="Lot of : Mucho / Bastante de..."></slang-card>
     
         </div>
       </div>
     
       <footer>&copy; 2022, Tolescro</footer>           
-        `;
+`;
   }
 } // class
 
