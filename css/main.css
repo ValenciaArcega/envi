@@ -152,11 +152,14 @@ body {
 .section-example-card h2 {
     /* Titles per section */
     text-align: center;
-    color: var(--white);
-    font-size: 3.95rem;
+    background: linear-gradient(180deg, var(--mainColor), black 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
     /* Title cards */
     font-weight: 700;
-    margin-bottom: -10px;
+    letter-spacing: -1.5px;
+    margin-bottom: -20px;
 }
 
 .cards {
@@ -187,8 +190,8 @@ body {
     width: 21rem;
     height: 32rem;
     background-color: var(--black);
-    border-radius: 18px;
-    border: solid 1px #343a40;
+    border-radius: 22px;
+    border: solid 2px #3b3b3b;
     color: var(--white);
 }
 

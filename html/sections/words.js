@@ -35,20 +35,6 @@ class Words extends HTMLElement {
             meaning="Conjunto de factores sociales, culturales, económicos, etc, que rodean a una cosa o persona, e influyen en su desarrollo.">
           </the-card>
     
-          <!-- TIPS -->
-          <section class="sliderTips">
-            <tip-card card_title="tip"
-              tip_description="Puedes agregar un icono de cualquier sección de Tolescro en tu pantalla de inicio. 📱">
-            </tip-card>
-    
-            <tip-card card_title="..."
-              tip_description='Da click en las opciones de la página en tu navegador y después en "Agregar icono a pantalla de inicio".'>
-            </tip-card>
-    
-            <tip-card card_title="😁"
-              tip_description='Listo tendras un acceso directo, esto lo puedes hacer con cualquier sección.'>
-            </tip-card>
-          </section>
     
           <!-- SLANG  -->
           <slang-card slang_name="btw" slang_es="By the way : por cierto 😬"></slang-card>
