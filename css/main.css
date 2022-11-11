@@ -669,7 +669,7 @@ li p {
 }
 
 .sliderTips::-webkit-scrollbar:horizontal {
-    height: 5px;    
+    height: 7px;    
 }
 
 .sliderTips::-webkit-scrollbar-thumb {
@@ -679,6 +679,7 @@ li p {
 
 .sliderTips::-webkit-scrollbar-track {
     border-radius: 48px;  
+    margin-left: 2rem;
 }
 
 .tip {
