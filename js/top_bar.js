@@ -1,20 +1,16 @@
 class TopBar extends HTMLElement {
-
     constructor() {
         super();
         this.source_back;
     }
-
     static get observedAttributes() {
         return ['src'];
     }
-
     attributeChangedCallback(Attr, oldValue, newValue) {
         if (Attr == "src") {
             this.source_back = newValue;
         }
     }
-
     connectedCallback() {
         this.innerHTML =
             `
@@ -65,8 +61,8 @@ class TopBar extends HTMLElement {
         });
 
         btnLight.addEventListener('click', function() {
-            root.style.setProperty('--white', '#fff');
-            root.style.setProperty('--black', '121212');
+            root.style.setProperty('--white', 'white');
+            root.style.setProperty('--black', '#121212');
             root.style.setProperty('--grayBackground', '#f2f2f7');
             root.style.setProperty('--iconTopBar','black');
             btnLight.classList.add('filter');
