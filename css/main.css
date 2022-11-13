@@ -437,10 +437,10 @@ li p {
 
 
 
-/* SECTIONS TO CARDS */
+/* SECTION TOPBAR */
 .top-bar {
     position: fixed;
-    top: 10px;
+    top: 15px;
     left: 50%;  
     transform: translateX(-50%);
     width: 75vw;
@@ -456,14 +456,42 @@ li p {
     align-items: center;    
 }
 
+.top-bar-Back {
+    position: fixed;
+    top: 10px;
+    left: 20px;  
+    width: 3rem;
+    height: 2.5rem;
+    margin: 0;
+    border-radius: 8px;
+    border: solid 1px var(--borderCards);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+    text-align: center; 
+}
+.top-bar-Back a {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 100%;
+    height: 100%;
+    align-self: center;
+}
+.top-bar-Back svg {
+    margin: 0 0;
+}
+
 .icon-back,
 .icon-dark,
-.icon-up {
+.icon-search {
+    margin-bottom: 5px;
     stroke: var(--iconTopBar);
     width: 24px;
     height: 24px;
 }
 .icon-light {
+    margin-bottom: 5px;
     stroke: var(--iconTopBar);
     width: 24px;
     height: 24px;
@@ -491,7 +519,7 @@ li p {
     background-color: transparent;
 }
 
-.btn-GoTop {
+.btn-Search {
     display: inline-block;
     text-decoration: none;
     margin: .5rem 1rem 0 0;

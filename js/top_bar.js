@@ -13,7 +13,7 @@ class TopBar extends HTMLElement {
     }
     connectedCallback() {
         this.innerHTML =
-            `
+`
         <div class="top-bar">
            <a href="${this.source_back}" class="btn-BackSections" aria-label="Go back">
                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -34,26 +34,25 @@ class TopBar extends HTMLElement {
                 </svg>
             </button>
 
-            <button class="btn-GoTop">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-up">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
-                </svg>
+            <button class="btn-Search">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-search">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>          
             </button>
-        </div>`;
-
+        </div>
+`;
         let root = document.querySelector(':root');
-        let btnUp = document.querySelector('.btn-GoTop');
+        let btnUp = document.querySelector('.btn-Search');
         let btnDark = document.querySelector('.btn-Dark');
         let btnLight = document.querySelector('.btn-Light');
-        let card = document.querySelector('.card');
         btnLight.classList.add('filter');
 
         btnUp.addEventListener('click', function () {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            document.querySelector("#finder").focus();
         });
 
         btnDark.addEventListener('click', function() {
-
             root.style.setProperty('--white', '#181818');
             root.style.setProperty('--black', 'white');
             root.style.setProperty('--grayBackground', '#121212');
@@ -74,6 +73,38 @@ class TopBar extends HTMLElement {
             btnLight.classList.add('filter');
             btnDark.classList.remove('filter');
         });
-    }
-}
+    } // callback inner
+} // class
+
 window.customElements.define("top-bar", TopBar);
+
+
+
+
+class BarBack extends HTMLElement {
+    constructor() {
+        super();
+        this.source;
+    }
+    static get observedAttributes() {
+        return ['url'];
+    }
+    attributeChangedCallback(Attr, oldValue, newValue) {
+        if (Attr == "url") {
+            this.source = newValue;
+        }
+    }
+    connectedCallback() {
+        this.innerHTML =
+  `<div class="top-bar-Back">
+           <a href="${this.source}" aria-label="Go back">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-back">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                </svg>
+            </a>           
+        </div>`;
+    } // callback inner
+  } // class
+  
+  window.customElements.define("bar-back", BarBack);
