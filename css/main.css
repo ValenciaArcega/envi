@@ -440,7 +440,7 @@ li p {
 /* SECTION TOPBAR */
 .top-bar {
     position: fixed;
-    top: 15px;
+    top: 10px;
     left: 50%;  
     transform: translateX(-50%);
     width: 75vw;
@@ -467,7 +467,7 @@ li p {
     border: solid 1px var(--borderCards);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     text-align: center; 
 }
 .top-bar-Back a {
@@ -481,6 +481,7 @@ li p {
 .top-bar-Back svg {
     margin: 0 0;
 }
+
 
 .icon-back,
 .icon-dark,
