@@ -8,10 +8,10 @@
 
 :root {
     --mainColor: #1c7ed6;
-    --grayColor: #212529;
     --white: #fff;
     --black: #121212;
     --grayBackground: #f2f2f7;
+    --iconTopBar: #000;
 }
 
 * {
@@ -55,7 +55,7 @@ body {
 
 .gradient-text,
 .message-welcome-h1 {
-    background: linear-gradient(180deg, var(--mainColor)20%, var(--grayColor));
+    background: linear-gradient(180deg, var(--mainColor)20%, var(--black));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -179,7 +179,7 @@ body {
     background-color: var(--white);
     border-radius: 12px;
     box-shadow: 0 10px 12px 8px rgba(0, 0, 0, 0.032);
-    color: var(--grayColor);
+    color: var(--black);
     overflow-x: hidden;
 }
 
@@ -206,7 +206,7 @@ body {
     font-size: 2.7rem;
     letter-spacing: -1.2px;
     text-align: center;
-    background: linear-gradient(180deg, var(--mainColor)45%, var(--grayColor));
+    background: linear-gradient(180deg, var(--mainColor)45%, var(--black));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 20px 0 40px 0;
@@ -256,7 +256,7 @@ li p {
 
 .section-features h2 {
     grid-column: 1/-1;
-    color: var(--grayColor);
+    color: var(--black);
     font-size: 2.75rem;
     text-align: center;
     letter-spacing: -1px;
@@ -275,13 +275,13 @@ li p {
 }
 
 .feature h3 {
-    color: var(--grayColor);
+    color: var(--black);
     margin: 10px 0 1px 0;
     letter-spacing: -.5px;
 }
 
 .feature p {
-    color: var(--grayColor);
+    color: var(--black);
     line-height: 1.5;
 }
 
@@ -348,7 +348,7 @@ li p {
 }
 
 .header-sections h1 {
-    background: linear-gradient(180deg, var(--mainColor)25%, var(--grayColor));
+    background: linear-gradient(180deg, var(--mainColor)25%, var(--black));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -436,29 +436,32 @@ li p {
 /* SECTIONS TO CARDS */
 .top-bar {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 10px;
+    left: 50%;  
+    transform: translateX(-50%);
+    width: 75vw;
     height: 3rem;
     margin: 0;
+    border-radius: 12px;
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.015);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.085);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;    
 }
 
-.icon-back {
-    margin: 5px 0 0 5px;
-    stroke: var(--mainColor);
+.icon-back,
+.icon-dark,
+.icon-up {
+    margin: 0px 0 0 5px;
+    stroke: var(--iconTopBar);
     width: 24px;
     height: 24px;
 }
-
-.icon-up {
-    margin: 5px 0 0 5px;
-    stroke: var(--mainColor);
+.icon-light {
+    margin: 0px 0 0 5px;
+    stroke: var(--iconTopBar);
     width: 24px;
     height: 24px;
 }
@@ -469,6 +472,20 @@ li p {
     display: inline-block;
     text-decoration: none;
     margin: .5rem 0 0 1rem;
+}
+.btn-Dark {
+    display: inline-block;
+    text-decoration: none;
+    margin: .5rem 1rem 0 0;    
+    border: none;
+    background-color: transparent;
+}
+.btn-Light {
+    display: inline-block;
+    text-decoration: none;
+    margin: .5rem 1rem 0 0;    
+    border: none;
+    background-color: transparent;
 }
 
 .btn-GoTop {
@@ -519,10 +536,10 @@ li p {
     border: 3px solid #d1d1d1;
     border-radius: 100px;
     background-color: var(--white);
+    color: var(--black);
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    transition: 250ms cubic-bezier(0.4,0,0.2,1);
 }
 
 #finder:focus {
@@ -551,7 +568,7 @@ li p {
     background-color: var(--white);
     border-radius: 30px;
     box-shadow: 0 5px 15px 15px rgba(0, 0, 0, 0.03);
-    color: var(--grayColor);
+    color: var(--black);
 }
 
 .header-introduction {
@@ -604,14 +621,14 @@ li p {
     background-color: var(--white);
     border-radius: 1rem;
     box-shadow: 0 5px 4px 6px rgba(0, 0, 0, 0.02);
-    color: var(--grayColor);
+    color: var(--black);
 }
 
 .card-slang h1 {
     font-size: 2.5rem;
     text-align: center;
     letter-spacing: 1px;
-    background: linear-gradient(180deg, var(--mainColor)45%, var(--grayColor));
+    background: linear-gradient(180deg, var(--mainColor)45%, var(--black));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: -5px 0 0px 0;
