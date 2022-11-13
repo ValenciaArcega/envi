@@ -152,7 +152,7 @@ body {
 .section-example-card h2 {
     /* Titles per section */
     text-align: center;
-    background: linear-gradient(180deg, var(--mainColor), black 88%);
+    background: linear-gradient(180deg, var(--mainColor), black 92%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 4rem;
@@ -451,14 +451,14 @@ li p {
 
 .icon-back {
     margin: 5px 0 0 5px;
-    stroke: var(--black);
+    stroke: var(--mainColor);
     width: 24px;
     height: 24px;
 }
 
 .icon-up {
     margin: 5px 0 0 5px;
-    stroke: var(--black);
+    stroke: var(--mainColor);
     width: 24px;
     height: 24px;
 }
@@ -513,11 +513,12 @@ li p {
 }
 
 #finder {
-    width: 55vw;
+    width: 57vw;
     padding: 8px 14px;
     outline: none;
-    border: 2px solid #d1d1d1;
-    border-radius: .8rem;
+    border: 3px solid #d1d1d1;
+    border-radius: 100px;
+    background-color: var(--white);
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
@@ -525,7 +526,7 @@ li p {
 }
 
 #finder:focus {
-    border: 2px solid var(--mainColor);
+    border: 3px solid var(--mainColor);
 }
 
 
