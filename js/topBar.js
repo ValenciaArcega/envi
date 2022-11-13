@@ -87,10 +87,10 @@ class BarBack extends HTMLElement {
         this.source;
     }
     static get observedAttributes() {
-        return ['url'];
+        return ['src'];
     }
     attributeChangedCallback(Attr, oldValue, newValue) {
-        if (Attr == "url") {
+        if (Attr == "src") {
             this.source = newValue;
         }
     }
