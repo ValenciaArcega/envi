@@ -12,6 +12,9 @@
     --black: #121212;
     --grayBackground: #f2f2f7;
     --iconTopBar: #000;
+    --grayBorder: #d9d9d9;
+    --tester: #353535;
+    --borderCards: transparent;
 }
 
 * {
@@ -152,7 +155,7 @@ body {
 .section-example-card h2 {
     /* Titles per section */
     text-align: center;
-    background: linear-gradient(180deg, var(--mainColor), black 92%);
+    background: linear-gradient(180deg, var(--mainColor), black 99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 4rem;
@@ -165,7 +168,7 @@ body {
 .cards {
     margin-top: 10px;
     display: grid;
-    grid-gap: 0 3.5rem;
+    grid-gap: 0 3.2rem;
     grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
     grid-auto-flow: dense;
     justify-items: center;
@@ -177,6 +180,7 @@ body {
     width: 21rem;
     height: 31.2rem;
     background-color: var(--white);
+    border: 1px solid var(--borderCards);
     border-radius: 12px;
     box-shadow: 0 10px 12px 8px rgba(0, 0, 0, 0.032);
     color: var(--black);
@@ -271,7 +275,7 @@ li p {
     text-align: center;
     color: var(--mainColor);
     border-radius: 12px;
-    border: solid 1px #d9d9d9;
+    border: solid 1px var(--grayBorder);
 }
 
 .feature h3 {
@@ -375,7 +379,7 @@ li p {
     background-color: var(--white);
     color: var(--black);
     border-radius: 10px;    
-    border: solid 1px #cacaca;
+    border: solid 1px var(--grayBorder);
     text-align: center;
 }
 
@@ -443,6 +447,7 @@ li p {
     height: 3rem;
     margin: 0;
     border-radius: 12px;
+    border: solid 1px var(--borderCards);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.085);
@@ -454,13 +459,11 @@ li p {
 .icon-back,
 .icon-dark,
 .icon-up {
-    margin: 0px 0 0 5px;
     stroke: var(--iconTopBar);
     width: 24px;
     height: 24px;
 }
 .icon-light {
-    margin: 0px 0 0 5px;
     stroke: var(--iconTopBar);
     width: 24px;
     height: 24px;
@@ -506,7 +509,7 @@ li p {
 
 /* ICON HEADER SECTION */
 .section-icon {
-    margin-top: 70px;
+    margin-top: 128px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -533,7 +536,7 @@ li p {
     width: 57vw;
     padding: 8px 14px;
     outline: none;
-    border: 3px solid #d1d1d1;
+    border: 2px solid var(--grayBorder);
     border-radius: 100px;
     background-color: var(--white);
     color: var(--black);
@@ -543,7 +546,7 @@ li p {
 }
 
 #finder:focus {
-    border: 3px solid var(--mainColor);
+    border: 2px solid var(--mainColor);
 }
 
 
@@ -566,7 +569,7 @@ li p {
     width: 21rem;
     height: 31.2rem;
     background-color: var(--white);
-    border-radius: 30px;
+    border-radius: 1rem;
     box-shadow: 0 5px 15px 15px rgba(0, 0, 0, 0.03);
     color: var(--black);
 }
@@ -575,7 +578,7 @@ li p {
     padding: 48px 10px 0 10px;
     height: 45%;
     background: linear-gradient(180deg, var(--mainColor), var(--white));
-    border-radius: 30px;
+    border-radius: 1rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -619,6 +622,7 @@ li p {
     width: 21rem;
     height: 12rem;
     background-color: var(--white);
+    border: 1px solid var(--borderCards);
     border-radius: 1rem;
     box-shadow: 0 5px 4px 6px rgba(0, 0, 0, 0.02);
     color: var(--black);

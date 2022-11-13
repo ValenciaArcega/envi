@@ -45,6 +45,7 @@ class TopBar extends HTMLElement {
         let btnUp = document.querySelector('.btn-GoTop');
         let btnDark = document.querySelector('.btn-Dark');
         let btnLight = document.querySelector('.btn-Light');
+        let card = document.querySelector('.card');
         btnLight.classList.add('filter');
 
         btnUp.addEventListener('click', function () {
@@ -52,9 +53,12 @@ class TopBar extends HTMLElement {
         });
 
         btnDark.addEventListener('click', function() {
+
             root.style.setProperty('--white', '#181818');
             root.style.setProperty('--black', 'white');
             root.style.setProperty('--grayBackground', '#121212');
+            root.style.setProperty('--grayBorder', '#353535');
+            root.style.setProperty('--borderCards', '#3b3b3b');
             root.style.setProperty('--iconTopBar','white');
             btnDark.classList.add('filter');
             btnLight.classList.remove('filter');
@@ -64,6 +68,8 @@ class TopBar extends HTMLElement {
             root.style.setProperty('--white', 'white');
             root.style.setProperty('--black', '#121212');
             root.style.setProperty('--grayBackground', '#f2f2f7');
+            root.style.setProperty('--grayBorder', '#d9d9d9');
+            root.style.setProperty('--borderCards', 'transparent');
             root.style.setProperty('--iconTopBar','black');
             btnLight.classList.add('filter');
             btnDark.classList.remove('filter');
