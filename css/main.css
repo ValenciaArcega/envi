@@ -34,8 +34,6 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-
-
 /* SECTION HEY EXPLORER */
 .header-message-welcome {
     background-color: var(--grayBackground);
@@ -155,7 +153,7 @@ body {
 .section-example-card h2 {
     /* Titles per section */
     text-align: center;
-    background: linear-gradient(180deg, var(--mainColor), black 99%);
+    background: linear-gradient(180deg, var(--mainColor), black 98%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 4rem;
@@ -478,21 +476,17 @@ li p {
     height: 100%;
     align-self: center;
 }
-.top-bar-Back svg {
-    margin: 0 0;
-}
 
 
 .icon-back,
-.icon-dark,
 .icon-search {
     margin-bottom: 5px;
     stroke: var(--iconTopBar);
     width: 24px;
     height: 24px;
 }
+.icon-dark,
 .icon-light {
-    margin-bottom: 5px;
     stroke: var(--iconTopBar);
     width: 24px;
     height: 24px;
@@ -505,17 +499,10 @@ li p {
     text-decoration: none;
     margin: .5rem 0 0 1rem;
 }
-.btn-Dark {
-    display: inline-block;
-    text-decoration: none;
-    margin: .5rem 1rem 0 0;    
-    border: none;
-    background-color: transparent;
-}
+.btn-Dark,
 .btn-Light {
     display: inline-block;
-    text-decoration: none;
-    margin: .5rem 1rem 0 0;    
+    text-decoration: none;  
     border: none;
     background-color: transparent;
 }
