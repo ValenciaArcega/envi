@@ -16,25 +16,25 @@ class TopBar extends HTMLElement {
        `<div class="top-bar">
            <a href="${this.source_back}" class="btn-BackSections" aria-label="Go back">
                 <svg xmlns="http://www.w3.org/2000/svg"
-                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-back">
+                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-top-bar">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
                 </svg>
             </a>
 
-            <button class="btn-Dark">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-dark">
+            <button type="button" title="Button turn dark mode" class="btn-Dark">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-top-bar">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
                 </svg>
             </button>
 
-            <button class="btn-Light">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-light">
+            <button type="button" title="Button turn light mode" class="btn-Light">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-top-bar">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
                 </svg>
             </button>
 
-            <button class="btn-Search">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-search">
+            <button type="button" title="Button focus search bar" class="btn-Search">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-top-bar">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                 </svg>          
             </button>
@@ -95,10 +95,10 @@ class BarBack extends HTMLElement {
     }
     connectedCallback() {
         this.innerHTML =
-  `<div class="top-bar-Back">
+  `<div class="top-bar-btnBackHome">
            <a href="${this.source}" aria-label="Go back">
                 <svg xmlns="http://www.w3.org/2000/svg"
-                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-back">
+                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-top-bar">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
                 </svg>
             </a>           

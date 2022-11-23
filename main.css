@@ -437,38 +437,38 @@ li p {
 
 /* SECTION TOPBAR */
 .top-bar {
+    height: 2.5rem;
+    width: 18rem;
+    margin: 0;
+    border: solid 1px var(--borderCards);
+    border-radius: 12px;
     position: fixed;
     top: 10px;
     left: 50%;  
-    transform: translateX(-50%);
-    width: 75vw;
-    height: 3rem;
-    margin: 0;
-    border-radius: 12px;
-    border: solid 1px var(--borderCards);
+    transform: translateX(-50%);    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;  
+    justify-items: center;  
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.085);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;    
 }
 
-.top-bar-Back {
+.top-bar-btnBackHome {
+    height: 2.5rem;
+    width: 3rem;
+    border: solid 1px var(--borderCards);
+    border-radius: 8px;
     position: fixed;
     top: 10px;
     left: 20px;  
-    width: 3rem;
-    height: 2.5rem;
-    margin: 0;
-    border-radius: 8px;
-    border: solid 1px var(--borderCards);
+    text-align: center; 
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-    text-align: center; 
 }
-.top-bar-Back a {
+.top-bar-btnBackHome a {
     display: flex;
     justify-content: center;
     align-items: center;   
@@ -478,15 +478,7 @@ li p {
 }
 
 
-.icon-back,
-.icon-search {
-    margin-bottom: 5px;
-    stroke: var(--iconTopBar);
-    width: 24px;
-    height: 24px;
-}
-.icon-dark,
-.icon-light {
+.icon-top-bar {
     stroke: var(--iconTopBar);
     width: 24px;
     height: 24px;
@@ -497,7 +489,7 @@ li p {
     width: 2.1rem;
     display: inline-block;
     text-decoration: none;
-    margin: .5rem 0 0 1rem;
+    /* margin: .5rem 0 0 1rem; */
 }
 .btn-Dark,
 .btn-Light {
@@ -506,12 +498,10 @@ li p {
     border: none;
     background-color: transparent;
 }
-
 .btn-Search {
     display: inline-block;
     text-decoration: none;
-    margin: .5rem 1rem 0 0;
-    justify-self: end;
+    /* margin: .5rem 1rem 0 0; */
     border: none;
     background-color: transparent;
     transition: all 0.4s;
