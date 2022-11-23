@@ -9,7 +9,7 @@
 :root {
     --mainColor: #1c7ed6;
     --white: #fff;
-    --black: #121212;
+    --black: #121212; 
     --grayBackground: #f2f2f7;
     --iconTopBar: #000;
     --grayBorder: #d9d9d9;
@@ -437,9 +437,10 @@ li p {
 
 /* SECTION TOPBAR */
 .top-bar {
-    height: 2.5rem;
-    width: 18rem;
+    height: 2.3rem;
+    width: 16rem;
     margin: 0;
+    padding-top: 2px;
     border: solid 1px var(--borderCards);
     border-radius: 12px;
     position: fixed;
@@ -447,7 +448,7 @@ li p {
     left: 50%;  
     transform: translateX(-50%);    
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;  
     justify-items: center;  
     -webkit-backdrop-filter: blur(12px);
@@ -486,7 +487,6 @@ li p {
 
 .btn-BackSections, 
 .btn-BackHome {
-    width: 2.1rem;
     display: inline-block;
     text-decoration: none;
     /* margin: .5rem 0 0 1rem; */

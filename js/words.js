@@ -60,6 +60,12 @@ class Words extends HTMLElement {
           <slang-card slang_name="thx" slang_es="Thanks : gracias 😊"></slang-card>
     
           <slang-card slang_name="rn" slang_es="Right now : ahora mismo 👇"></slang-card>
+
+          <the-card card_name='Should' txt_pronuntiation='sh-ud' meaning_es='Deberí a/mos/as/an/' meaning='"It is too late, you should sleep rn" : "Ya es muy tarde, deberías dormir ahora mismo"'></the-card>
+
+          <the-card card_name='Could' txt_pronuntiation='kh-ud' meaning_es='Podrí a/mos/as/an/' meaning='"I could not do it either" : "Yo tampoco podría hacerlo", "She could get it" : "Ella podría conseguirlo"'></the-card>
+
+          <the-card card_name='Would' txt_pronuntiation='gh-ud' meaning_es='ría / haría' meaning='"I would like score a goal in the world cup" : "Me gustaría anotar un gol en el mundial"'></the-card>
     
           <!-- SLANG  -->
           <slang-card slang_name="tbh" slang_es="To be honest : para ser honest@"></slang-card>
@@ -68,6 +74,12 @@ class Words extends HTMLElement {
     
           <slang-card slang_name="ngl" slang_es="Not gonna lie : no voy a mentir 🤷"></slang-card>
     
+          <the-card card_name='Native' txt_pronuntiation='nei - rif' meaning_es='Nativa, Nativo' meaning='"I am a native Spanish speaker" : "Soy un hispanohablante nativo"'></the-card>
+
+          <the-card card_name='Enhance' txt_pronuntiation='in-hans' meaning_es='Mejorar, incrementar' meaning='"I want to enhance my English, to talk with native speakers" : "Quiero mejorar mi Inglés para platicar con hablantes nativos"'></the-card>
+
+          <the-card card_name='I Thought' txt_pronuntiation='thot "saca el aire, con la lengua pegada a los dientes de arriba"' meaning_es='Pensé' meaning='"He thought he could do it" : "El pensó que podría hacerlo"'></the-card>
+
           <!-- SLANG  -->
           <slang-card slang_name="nvm" slang_es="Never mind : No importa, olvidalo"></slang-card>
     
@@ -132,7 +144,7 @@ class Words extends HTMLElement {
 window.customElements.define("class-words", Words);
 
 /* 
-<the-card card_name='' txt_pronuntiation='' meaning_es='' meaning=''></the-card>
+<the-card card_name='' txt_pronuntiation='' meaning_es='' meaning='"" : "'></the-card>
 
 <tip-card card_title="" tip_description=''></tip-card>
 
