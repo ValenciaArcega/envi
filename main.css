@@ -713,7 +713,7 @@ li p {
 .tip {
     color: var(--white);
     margin: 0 1.2rem 0 1.2rem;
-    padding: .8rem .9rem 0 .9rem;
+    padding: .8rem .8rem 0 .8rem;
     height: 12rem;
     width: 17rem;
     background: linear-gradient(to top right, var(--mainColor), #4dabf7);
@@ -722,11 +722,11 @@ li p {
 }
 
 .tip p {
-    padding-top: .6rem;
+    padding-top: .9rem;
     margin: 0 0;
     width: 100%;
     text-align: center;
-    font-size: 1rem;
+    font-size: 17px;
     font-weight: 400;
     line-height: 1.6;
     color: var(--white);
