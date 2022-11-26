@@ -28,23 +28,23 @@ html {
 }
 
 body {
+    font-family: 'Inter', sans-serif;
     overflow-x: hidden;
     background-color: var(--grayBackground);
     color: var(--black);
-    font-family: 'Inter', sans-serif;
 }
 
-/* SECTION HEY EXPLORER */
+/* SECTION (Hey explorer) */
 .header-message-welcome {
-    background-color: var(--grayBackground);
-    display: inline-block;
-    width: 100%;
     height: 50rem;
-    text-align: center;
+    width: 100%;
     margin: 0 auto 0 auto;
+    display: inline-block;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--grayBackground);
 }
 
 .message-welcome-h1 {
@@ -68,7 +68,7 @@ body {
 
 
 
-/* SECTION WELCOME */
+/* SECTION (Welcome to Tolescro) */
 .section-welcome {
     width: 100%;
     margin: 100px auto 250px auto;
@@ -83,10 +83,9 @@ body {
 
 .section-welcome-container h1 {
     font-size: 2.75rem;
-    line-height: 1.1;
     letter-spacing: -1px;
+    line-height: 1;
 }
-
 
 .title-transition {
     opacity: 0.1;
@@ -99,32 +98,29 @@ body {
 }
 
 .section-welcome-container p {
-    margin-top: 15px;
+    margin-top: 1rem;
     font-size: 19px;
     line-height: 1.7;
 }
 
 .wrapperBtn {
-    margin-top: 1.55rem;
     width: 100%;
+    margin-top: 1.3rem;
     display: flex;
     justify-content: center;
 }
 
 .btn-see-cards:link,
 .btn-see-cards:visited {
-    display: inline-block;
-    /* to add margin at the top and bottom */
-    margin-bottom: -1rem;
-    background: linear-gradient(to top left, var(--mainColor) 20%, rgb(180, 205, 237));
-    box-shadow: 0px 5px 8px 3px rgba(54, 128, 197, 0.25);
+    padding: 10px 45px;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 400;
     text-decoration: none;
-    color: var(--white);
-    font-weight: 500;
-    font-size: 18px;
     text-align: center;
-    padding: 12px 45px;
-    border-radius: 12px;
+    color: var(--white);
+    background: linear-gradient(to top left, var(--mainColor) 15%, rgb(180, 205, 237));
+    box-shadow: 0px 5px 8px 3px rgba(54, 128, 197, 0.25);
 }
 
 .btn-see-cards:hover {
@@ -135,29 +131,23 @@ body {
 
 
 
-
-
-
-
-
 /* SECTION CARDS & EXAMPLE CARD */
 .section-example-card {
-    margin-top: 20rem;
     width: 100%;
-    height: 47rem;
-    padding-top: 48px;
+    margin-top: 20rem;
+    padding: 48px 0 96px 0;
     background-color: black;
 }
 
 .section-example-card h2 {
+    margin-bottom: -20px;
+    font-size: 4rem;
+    letter-spacing: -1.5px;
+    font-weight: 700;
     text-align: center;
-    background: linear-gradient(180deg, var(--mainColor), black 98%);
+    background: linear-gradient(180deg, var(--mainColor), black 98.5%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: -1.5px;
-    margin-bottom: -20px;
 }
 
 .cards {
@@ -170,28 +160,28 @@ body {
 }
 
 .card {
+    height: 31.2rem;
+    width: 21rem;
     margin: 1.8rem 0;
     padding: 18px;
-    width: 21rem;
-    height: 31.2rem;
-    background-color: var(--white);
-    border: 1px solid var(--borderCards);
     border-radius: 12px;
-    box-shadow: 0 10px 12px 8px rgba(0, 0, 0, 0.032);
-    color: var(--black);
+    border: 1px solid var(--borderCards);
     overflow-x: hidden;
+    color: var(--black);
+    background-color: var(--white);
+    box-shadow: 0 10px 12px 8px rgba(0, 0, 0, 0.032);
 }
 
 .card-example {
+    height: 32rem;
+    width: 21rem;
     margin-top: 2.4rem;
     padding: 18px;
-    display: block;
-    width: 21rem;
-    height: 32rem;
-    background-color: var(--black);
     border-radius: 22px;
     border: solid 2px #3b3b3b;
+    display: block;
     color: var(--white);
+    background-color: var(--black);
 }
 
 .card h4 {
@@ -202,13 +192,13 @@ body {
 }
 
 .card h1 {
+    margin: 20px 0 40px 0;
     font-size: 2.7rem;
     letter-spacing: -1.2px;
     text-align: center;
     background: linear-gradient(180deg, var(--mainColor)45%, var(--black));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 20px 0 40px 0;
 }
 
 ul li {
@@ -217,33 +207,33 @@ ul li {
 }
 
 .list-header {
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 10px;
 }
 
 .card-icon {
-    stroke: var(--mainColor);
-    width: 24px;
     height: 24px;
+    width: 24px;
+    stroke: var(--mainColor);
 }
 
 li p {
     font-size: 1rem;
     font-weight: 400;
-    display: inline;
     line-height: 1.5;
+    display: inline;
 }
 
 
 
 /* SECTION FEATURES */
 .section-features {
-    background-color: var(--grayBackground);
     width: 90%;
     margin: 200px auto 150px auto;
     text-align: center;
+    background-color: var(--grayBackground);
 }
 
 .section-features-grid {
@@ -255,40 +245,40 @@ li p {
 
 .section-features h2 {
     grid-column: 1/-1;
-    color: var(--black);
     font-size: 2.75rem;
-    text-align: center;
     letter-spacing: -1px;
+    text-align: center;
+    color: var(--black);
 }
 
 .feature {
-    background-color: var(--white);
-    margin-top: 25px;
-    padding: 0 20px;
     height: 11rem;
     width: 15rem;
+    margin-top: 25px;
+    padding: 0 20px;
+    border: solid 1px var(--grayBorder);
+    border-radius: 12px;
     text-align: center;
     color: var(--mainColor);
-    border-radius: 12px;
-    border: solid 1px var(--grayBorder);
+    background-color: var(--white);
 }
 
 .feature h3 {
-    color: var(--black);
     margin: 10px 0 1px 0;
     letter-spacing: -.5px;
+    color: var(--black);
 }
 
 .feature p {
-    color: var(--black);
     line-height: 1.5;
+    color: var(--black);
 }
 
 .icon-features {
+    height: 28px;
+    width: 28px;
     margin-top: 20px;
     stroke: var(--mainColor);
-    width: 28px;
-    height: 28px;
 }
 
 
@@ -298,13 +288,13 @@ li p {
 .header-sections {
     width: 85%;
     margin: 9rem auto 0 auto;
-    background-color: var(--grayBackground);
-    text-align: center;
-    color: var(--black);
     font-size: 2rem;
-    line-height: .9;
     letter-spacing: -1.3px;
+    line-height: .9;
+    text-align: center;
     user-select: none;
+    color: var(--black);
+    background-color: var(--grayBackground);
 }
 
 .header-sections h1 {
@@ -313,55 +303,54 @@ li p {
 
 
 .main-container-sections {
-    width: 95%;
     height: auto;
+    width: 95%;
     margin: .3rem auto 15rem auto;
 }
 
 .wrapper-cards-sections {
+    margin: 5px 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     grid-gap: 1rem;
     justify-items: center;
-    margin: 5px 0;
 }
 
 .cards-sections {
-    margin-top: 40px;
     height: 8rem;
     width: 16rem;
-    background-color: var(--white);
-    color: var(--black);
-    border-radius: 10px;
+    margin-top: 40px;
     border: solid 1px var(--grayBorder);
+    border-radius: 10px;
     text-align: center;
+    color: var(--black);
+    background-color: var(--white);
 }
 
 
 .cards-sections-header-container {
+    height: 50%;
     margin: 0 20px 0 20px;
     display: flex;
-    height: 50%;
     text-align: start;
 }
 
 .cards-sections-header-container h1 {
     width: 90%;
-    align-self: center;
-    justify-self: start;
-    color: var(--black);
-    font-weight: 700;
     font-size: 1.3rem;
+    font-weight: 700;
     letter-spacing: -.8px;
+    justify-self: start;
+    align-self: center;
+    color: var(--black);
 }
 
 .header-container-icon {
-    width: 10%;
+    height: 20px;
+    width: 20px;
     align-self: center;
     justify-self: end;
     stroke: var(--mainColor);
-    width: 20px;
-    height: 20px;
 }
 
 .btn-Sections:link,
@@ -373,11 +362,11 @@ li p {
     font-size: 16px;
     letter-spacing: 0px;
     font-weight: 500;
-    color: var(--white);
     display: inline-block;
     text-decoration: none;
-    box-shadow: 5px 7px 15px 2px rgba(116, 177, 235, 0.45);
+    color: var(--white);
     background: linear-gradient(to top left, var(--mainColor) 20%, #a5d8ff);
+    box-shadow: 5px 7px 15px 2px rgba(116, 177, 235, 0.45);
 }
 
 .btn-Sections:hover {
@@ -410,9 +399,9 @@ li p {
 }
 
 .icon-top-bar {
-    stroke: var(--iconTopBar);
-    width: 24px;
     height: 24px;
+    width: 24px;
+    stroke: var(--iconTopBar);
 }
 
 .btn-BackHome {
@@ -422,18 +411,18 @@ li p {
 
 .btn-Dark,
 .btn-Light {
+    border: none;
     display: inline-block;
     text-decoration: none;
-    border: none;
     background-color: transparent;
 }
 
 .btn-Search {
+    border: none;
     display: inline-block;
     text-decoration: none;
-    border: none;
-    background-color: transparent;
     transition: all 0.4s;
+    background-color: transparent;
 }
 
 
@@ -451,10 +440,10 @@ li p {
 }
 
 .icon-section {
-    stroke: var(--mainColor);
-    width: 36px;
     height: 36px;
+    width: 36px;
     text-align: center;
+    stroke: var(--mainColor);
 }
 
 .searchBar {
@@ -470,14 +459,14 @@ li p {
 #finder {
     width: 57vw;
     padding: 8px 14px;
-    outline: none;
     border: 2px solid var(--grayBorder);
     border-radius: 100px;
-    background-color: var(--white);
-    color: var(--black);
+    font-size: 1rem;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
+    outline: none;
+    color: var(--black);
+    background-color: var(--white);
 }
 
 #finder:focus {
@@ -492,46 +481,46 @@ li p {
 
 /* INTRODUCTION CARD */
 .section-cards {
+    height: auto;
     margin-top: 24px;
     overflow-x: hidden;
-    height: auto;
 }
 
 .card-introduction {
+    height: 31.2rem;
+    width: 21rem;
     margin-top: 1.5rem;
     padding: 0;
-    display: block;
-    width: 21rem;
-    height: 31.2rem;
-    background-color: var(--white);
     border-radius: 1rem;
-    box-shadow: 0 5px 15px 15px rgba(0, 0, 0, 0.03);
+    display: block;
     color: var(--black);
+    background-color: var(--white);
+    box-shadow: 0 5px 15px 15px rgba(0, 0, 0, 0.03);
 }
 
 .header-introduction {
-    padding: 48px 10px 0 10px;
     height: 45%;
-    background: linear-gradient(180deg, var(--mainColor), var(--white));
+    padding: 48px 10px 0 10px;
     border-radius: 1rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    background: linear-gradient(180deg, var(--mainColor), var(--white));
 }
 
 .header-introduction h1 {
-    text-align: center;
     font-size: 2.75rem;
-    line-height: 1;
-    color: var(--white);
     letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+    color: var(--white);
 }
 
 .card-introduction p {
     margin: -20px 0 10px 0;
     padding: 0 30px 0 30px;
     font-size: 1.1rem;
-    text-align: center;
     line-height: 1.6;
+    text-align: center;
 }
 
 .card-introduction-container-icon {
@@ -541,9 +530,9 @@ li p {
 }
 
 .card-introduction-icon {
-    fill: #20c997;
-    width: 36px;
     height: 36px;
+    width: 36px;
+    fill: #20c997;
 }
 
 
@@ -551,26 +540,26 @@ li p {
 
 /* SLANGS CARD */
 .card-slang {
+    height: 12rem;
+    width: 21rem;
     margin: 2.2rem 0;
     padding: 22px 2px 10px 2px;
-    display: block;
-    width: 21rem;
-    height: 12rem;
-    background-color: var(--white);
     border: 1px solid var(--borderCards);
     border-radius: 1rem;
-    box-shadow: 0 5px 4px 6px rgba(0, 0, 0, 0.02);
+    display: block;
     color: var(--black);
+    background-color: var(--white);
+    box-shadow: 0 5px 4px 6px rgba(0, 0, 0, 0.02);
 }
 
 .card-slang h1 {
+    margin: -5px 0 0px 0;
     font-size: 2.5rem;
-    text-align: center;
     letter-spacing: 1px;
+    text-align: center;
     background: linear-gradient(180deg, var(--mainColor)45%, var(--black));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: -5px 0 0px 0;
 }
 
 .card-slang h4 {
@@ -589,31 +578,25 @@ li p {
 }
 
 .list-header {
+    margin: -22px 0 10px 0;
     display: flex;
     align-items: center;
     gap: 8px;
-    margin: -22px 0 10px 0;
 }
 
 .card-icon {
-    stroke: var(--mainColor);
-    width: 22px;
     height: 22px;
+    width: 22px;
+    stroke: var(--mainColor);
 }
-
-
-
-
-
-
 
 
 /* SLIDER TIPS */
 .sliderTips {
-    grid-column: 1/-1;
-    width: 100%;
-    overflow-x: scroll;
     height: 15rem;
+    width: 100%;
+    grid-column: 1/-1;
+    overflow-x: scroll;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -629,67 +612,67 @@ li p {
 }
 
 .sliderTips::-webkit-scrollbar-thumb {
-    background-color: #0000002d;
     border-radius: 10px;
+    background-color: #0000002d;
 }
 
 .sliderTips::-webkit-scrollbar-track {
-    border-radius: 48px;
     margin-left: 2rem;
+    border-radius: 48px;
 }
 
 .tip {
-    color: var(--white);
-    margin: 0 1.2rem 0 1.2rem;
-    padding: .8rem .8rem 0 .8rem;
     height: 12rem;
     width: 17rem;
-    background: linear-gradient(to top right, var(--mainColor), #4dabf7);
+    margin: 0 1.2rem 0 1.2rem;
+    padding: .8rem .8rem 0 .8rem;
     border-radius: 18px;
     user-select: none;
+    color: var(--white);
+    background: linear-gradient(to top right, var(--mainColor), #4dabf7);
 }
 
 .tip p {
-    padding-top: .9rem;
-    margin: 0 0;
     width: 100%;
-    text-align: center;
+    margin: 0 0;
+    padding-top: .9rem;
     font-size: 17px;
     font-weight: 400;
     line-height: 1.6;
+    text-align: center;
     color: var(--white);
 }
 
 .header-tip {
-    width: 100%;
     height: 22%;
+    width: 100%;
     display: flex;
     align-items: center;
 }
 
 .header-tip h1 {
-    margin-left: .5rem;
     width: 85%;
+    margin-left: .5rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.2px;
+    font-weight: 700;
     text-align: start;
     color: var(--white);
-    font-size: 1.6rem;
-    font-weight: 700;
-    letter-spacing: 0.2px;
 }
 
 .icon-tip {
-    stroke: var(--white);
     width: 1.5rem;
     justify-self: flex-end;
+    stroke: var(--white);
 }
 
 
 footer {
+    height: 2rem;
     width: 90%;
     margin: 150px auto 0 auto;
-    height: 2rem;
-    text-align: center;
     color: var(--black);
+    text-align: center;
 }
 
 
