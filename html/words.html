@@ -11,15 +11,17 @@
   <link rel="manifest" href="../manifest.webmanifest" />
   <!-- IMPORTS -->
   <link href="../main.css" rel="stylesheet">
-  <script src="../js/cards.js"></script>
-  <script src="../js/filterCards.js"></script>
-  <script src="../js/topBar.js"></script>
-  <script src="../js/words.js"></script>
+  <script src="../components/cards/card.js"></script>
+  <script src="../components/cards/introduction.js"></script>
+  <script src="../components/cards/slang.js"></script>
+  <script src="../components/finder/filterCards.js"></script>
+  <script src="../components/navBar/topBar.js"></script>
   <title>Tolescro &mdash; Words n Slangs</title>
 </head>
 
 <body>
   <top-bar src="sections.html"></top-bar>
+  <!-- <top-bar src="../index.html#fin"></top-bar> -->
 
   <div class="section-icon">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -92,7 +94,8 @@
       <slang-card slang_name="ngl" slang_es="Not gonna lie : no voy a mentir 🤷"></slang-card>
 
       <the-card card_name="Overview" txt_pronuntiation="ow - vr - viu" meaning_es="Vistazo / Vista general"
-      meaning='"Imma give u a lil overview to the project" : "Voy a darte una pequeña descripción general del proyecto."'></the-card>
+        meaning='"Imma give u a lil overview to the project" : "Voy a darte una pequeña descripción general del proyecto."'>
+      </the-card>
 
       <the-card card_name='Enhance' txt_pronuntiation='in - hans' meaning_es='Incrementar / Intensificar'
         meaning='"I want to enhance my English, to talk with native speakers" : "Quiero mejorar mi Inglés para platicar con hablantes nativos"'>
@@ -109,11 +112,16 @@
 
       <slang-card slang_name="tbh" slang_es="To be honest : para ser honest@"></slang-card>
 
-      <the-card card_name='Commitment' txt_pronuntiation='co - mid - ment' meaning_es='Compromiso / Dar tu palabra' meaning='"I am sorry, I already have a commitment to my family" : "Lo siento, ya tengo un compromiso con mi familia"'></the-card>
+      <the-card card_name='Commitment' txt_pronuntiation='co - mid - ment' meaning_es='Compromiso / Dar tu palabra'
+        meaning='"I am sorry, I already have a commitment to my family" : "Lo siento, ya tengo un compromiso con mi familia"'>
+      </the-card>
 
-      <the-card card_name='Between' txt_pronuntiation='bi - thuin' meaning_es='Entre / en medio de' meaning='"Guess her/his age, is between 18 and 27" : "Adivina su edad, es entre 18 y 27"'></the-card>
+      <the-card card_name='Between' txt_pronuntiation='bi - thuin' meaning_es='Entre / en medio de'
+        meaning='"Guess her/his age, is between 18 and 27" : "Adivina su edad, es entre 18 y 27"'></the-card>
 
-      <the-card card_name='Effortless' txt_pronuntiation='eforh - les' meaning_es='Sin mayor esfuerzo / Poco esfuerzo / Sin esfuerzo aparente' meaning='"I made no efforless to bench 225lb" : "No hice ningún esfuerzo para levantar 115kg"'></the-card>
+      <the-card card_name='Effortless' txt_pronuntiation='eforh - les'
+        meaning_es='Sin mayor esfuerzo / Poco esfuerzo / Sin esfuerzo aparente'
+        meaning='"I made no efforless to bench 225lb" : "No hice ningún esfuerzo para levantar 115kg"'></the-card>
 
       <!-- SLANG  -->
       <slang-card slang_name="lmfao" slang_es="Laughing my freaking ass off : me cago de la risa 🤣"></slang-card>
@@ -123,11 +131,16 @@
       <slang-card slang_name="wdym?" slang_es="What do you mean? : ¿A que te refieres?, ¿Qué quieres decir?">
       </slang-card>
 
-      <the-card card_name='Storage' txt_pronuntiation='s - to - rech' meaning_es='Almacenamiento' meaning='"The storage in my cellphone is completely full" : "El almacenamiento en mi celular está completamente lleno"'></the-card>
+      <the-card card_name='Storage' txt_pronuntiation='s - to - rech' meaning_es='Almacenamiento'
+        meaning='"The storage in my cellphone is completely full" : "El almacenamiento en mi celular está completamente lleno"'>
+      </the-card>
 
-      <the-card card_name='Measure' txt_pronuntiation='me - shu - r' meaning_es='Medida' meaning='"The measure of earth can be measured in Kilometers" : "La medida de la tierra se puede medir en kilómetros"'></the-card>
+      <the-card card_name='Measure' txt_pronuntiation='me - shu - r' meaning_es='Medida'
+        meaning='"The measure of earth can be measured in Kilometers" : "La medida de la tierra se puede medir en kilómetros"'>
+      </the-card>
 
-      <the-card card_name='Through' txt_pronuntiation='thru' meaning_es='A través de / Mediante' meaning='"I sent you a gift through delivery" : "Te envié un regalo mediante paqueteria"'></the-card>
+      <the-card card_name='Through' txt_pronuntiation='thru' meaning_es='A través de / Mediante'
+        meaning='"I sent you a gift through delivery" : "Te envié un regalo mediante paqueteria"'></the-card>
 
       <!-- SLANG  -->
       <slang-card slang_name="wyd?" slang_es="What you doing? : ¿Qué haces?"></slang-card>
@@ -136,11 +149,17 @@
 
       <slang-card slang_name="idts" slang_es="I donot think so : No lo creo, no pienso lo mismo 🤔"></slang-card>
 
-      <the-card card_name='Throw' txt_pronuntiation='dhrow' meaning_es='Arrojar / Lanzar' meaning='"Patrick throwed a perfect pass on second half" : "Patrick lanzó un pase perfecto en la segunda mitad"'></the-card>
+      <the-card card_name='Throw' txt_pronuntiation='dhrow' meaning_es='Arrojar / Lanzar'
+        meaning='"Patrick throwed a perfect pass on second half" : "Patrick lanzó un pase perfecto en la segunda mitad"'>
+      </the-card>
 
-      <the-card card_name='Though' txt_pronuntiation='dho' meaning_es='Aunque / Sin embargo' meaning='"I am into him/her, though he makes me angry sometimes" : "Me gusta, aunque a veces me hace enojar"'></the-card>
+      <the-card card_name='Though' txt_pronuntiation='dho' meaning_es='Aunque / Sin embargo'
+        meaning='"I am into him/her, though he makes me angry sometimes" : "Me gusta, aunque a veces me hace enojar"'>
+      </the-card>
 
-      <the-card card_name='Improve' txt_pronuntiation='im - pruv' meaning_es='Mejorar / Aumentar' meaning='"I love English and i work hard to improve my knowledge" : "Me encanta el inglés y trabajo duro para mejorar mis conocimientos."'></the-card>
+      <the-card card_name='Improve' txt_pronuntiation='im - pruv' meaning_es='Mejorar / Aumentar'
+        meaning='"I love English and i work hard to improve my knowledge" : "Me encanta el inglés y trabajo duro para mejorar mis conocimientos."'>
+      </the-card>
 
       <!-- SLANG -->
       <slang-card slang_name="Tryna" slang_es="Trying to : Tratando de..."></slang-card>
@@ -149,11 +168,15 @@
 
       <slang-card slang_name="Outta" slang_es="Out of : Fuera de..."></slang-card>
 
-      <the-card card_name='Behavior' txt_pronuntiation='bi - hey -viur' meaning_es='Comportamiento / Conducta' meaning='"Your behavior is disgusting, calm down" : "Tu comportamiento es desagradable, cálmate"'></the-card>
+      <the-card card_name='Behavior' txt_pronuntiation='bi - hey -viur' meaning_es='Comportamiento / Conducta'
+        meaning='"Your behavior is disgusting, calm down" : "Tu comportamiento es desagradable, cálmate"'></the-card>
 
-      <the-card card_name='Childhood' txt_pronuntiation='cha - il - jud' meaning_es='Infancia' meaning='"Not gonna lie, I had a lovely childhood" : "No lo negaré, tuve una infancia hermosa"'></the-card>
+      <the-card card_name='Childhood' txt_pronuntiation='cha - il - jud' meaning_es='Infancia'
+        meaning='"Not gonna lie, I had a lovely childhood" : "No lo negaré, tuve una infancia hermosa"'></the-card>
 
-      <the-card card_name='Weird' txt_pronuntiation='wi - rd' meaning_es='Raro / Extraño' meaning='"Bro dont get me wrong, but u are kinda weird" : "Wey no me malinterpretes, pero eres un poco rar@"'></the-card>
+      <the-card card_name='Weird' txt_pronuntiation='wi - rd' meaning_es='Raro / Extraño'
+        meaning='"Bro dont get me wrong, but u are kinda weird" : "Wey no me malinterpretes, pero eres un poco rar@"'>
+      </the-card>
 
       <!-- SLANG -->
       <slang-card slang_name="Gonna" slang_es="Going to : Voy a / vas a / va a / van a"></slang-card>
