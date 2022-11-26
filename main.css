@@ -9,7 +9,7 @@
 :root {
     --mainColor: #1c7ed6;
     --white: #fff;
-    --black: #121212; 
+    --black: #121212;
     --grayBackground: #f2f2f7;
     --iconTopBar: #000;
     --grayBorder: #d9d9d9;
@@ -112,11 +112,11 @@ body {
 }
 
 .btn-see-cards:link,
-.btn-see-cards:visited {    
-    display: inline-block; /* to add margin at the top and bottom */
+.btn-see-cards:visited {
+    display: inline-block;
+    /* to add margin at the top and bottom */
     margin-bottom: -1rem;
-    background: linear-gradient(    
-                to top left, var(--mainColor) 20%, rgb(180, 205, 237));
+    background: linear-gradient(to top left, var(--mainColor) 20%, rgb(180, 205, 237));
     box-shadow: 0px 5px 8px 3px rgba(54, 128, 197, 0.25);
     text-decoration: none;
     color: var(--white);
@@ -141,7 +141,6 @@ body {
 
 
 /* SECTION CARDS & EXAMPLE CARD */
-
 .section-example-card {
     margin-top: 20rem;
     width: 100%;
@@ -151,13 +150,11 @@ body {
 }
 
 .section-example-card h2 {
-    /* Titles per section */
     text-align: center;
     background: linear-gradient(180deg, var(--mainColor), black 98%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 4rem;
-    /* Title cards */
     font-weight: 700;
     letter-spacing: -1.5px;
     margin-bottom: -20px;
@@ -298,12 +295,11 @@ li p {
 
 
 /* SECTION SECTIONS */
-
 .header-sections {
     width: 85%;
-    margin: 6rem auto 0 auto;
+    margin: 9rem auto 0 auto;
     background-color: var(--grayBackground);
-    text-align:center;
+    text-align: center;
     color: var(--black);
     font-size: 2rem;
     line-height: .9;
@@ -313,21 +309,18 @@ li p {
 
 .header-sections h1 {
     padding-top: 3rem;
-    background: linear-gradient(180deg, var(--mainColor)25%, var(--black));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 
 .main-container-sections {
     width: 95%;
-    height:auto;
+    height: auto;
     margin: .3rem auto 15rem auto;
 }
 
 .wrapper-cards-sections {
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(16rem, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     grid-gap: 1rem;
     justify-items: center;
     margin: 5px 0;
@@ -339,7 +332,7 @@ li p {
     width: 16rem;
     background-color: var(--white);
     color: var(--black);
-    border-radius: 10px;    
+    border-radius: 10px;
     border: solid 1px var(--grayBorder);
     text-align: center;
 }
@@ -351,15 +344,17 @@ li p {
     height: 50%;
     text-align: start;
 }
+
 .cards-sections-header-container h1 {
     width: 90%;
     align-self: center;
     justify-self: start;
-    color: var(--black);  
-    font-weight: 700;   
+    color: var(--black);
+    font-weight: 700;
     font-size: 1.3rem;
     letter-spacing: -.8px;
 }
+
 .header-container-icon {
     width: 10%;
     align-self: center;
@@ -371,30 +366,25 @@ li p {
 
 .btn-Sections:link,
 .btn-Sections:visited {
-    display: inline-block;
     width: 9rem;
-    padding: 6px 2px;
     margin: 5px auto 0 auto;
+    padding: 6px 2px;
     border-radius: 10px;
-    background: linear-gradient(to top left, var(--mainColor) 20%, #a5d8ff);
-    box-shadow: 5px 7px 15px 2px rgba(116, 177, 235, 0.45);
-    text-decoration: none;
-    color: var(--white);
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 16px;
     letter-spacing: 0px;
+    font-weight: 500;
+    color: var(--white);
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 5px 7px 15px 2px rgba(116, 177, 235, 0.45);
+    background: linear-gradient(to top left, var(--mainColor) 20%, #a5d8ff);
 }
+
 .btn-Sections:hover {
     cursor: pointer;
     background: linear-gradient(to top left, #2285db 20%, #a8d8fc);
     box-shadow: 5px 7px 15px 2px rgba(116, 177, 235, 0.47);
 }
-
-
-
-
-
-
 
 
 
@@ -408,12 +398,12 @@ li p {
     border-radius: 12px;
     position: fixed;
     top: 10px;
-    left: 50%;  
-    transform: translateX(-50%);    
+    left: 50%;
+    transform: translateX(-50%);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;  
-    justify-items: center;  
+    align-items: center;
+    justify-items: center;
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.085);
@@ -425,23 +415,22 @@ li p {
     height: 24px;
 }
 
-.btn-BackSections, 
 .btn-BackHome {
     display: inline-block;
     text-decoration: none;
-    /* margin: .5rem 0 0 1rem; */
 }
+
 .btn-Dark,
 .btn-Light {
     display: inline-block;
-    text-decoration: none;  
+    text-decoration: none;
     border: none;
     background-color: transparent;
 }
+
 .btn-Search {
     display: inline-block;
     text-decoration: none;
-    /* margin: .5rem 1rem 0 0; */
     border: none;
     background-color: transparent;
     transition: all 0.4s;
@@ -600,7 +589,7 @@ li p {
 }
 
 .list-header {
-    display: flex;    
+    display: flex;
     align-items: center;
     gap: 8px;
     margin: -22px 0 10px 0;
@@ -620,7 +609,6 @@ li p {
 
 
 /* SLIDER TIPS */
-
 .sliderTips {
     grid-column: 1/-1;
     width: 100%;
@@ -631,12 +619,13 @@ li p {
     justify-items: center;
     align-items: center;
 }
+
 .sliderTips::-webkit-scrollbar {
     -webkit-appearance: none;
 }
 
 .sliderTips::-webkit-scrollbar:horizontal {
-    height: 8px;    
+    height: 8px;
 }
 
 .sliderTips::-webkit-scrollbar-thumb {
@@ -645,7 +634,7 @@ li p {
 }
 
 .sliderTips::-webkit-scrollbar-track {
-    border-radius: 48px;  
+    border-radius: 48px;
     margin-left: 2rem;
 }
 
@@ -677,6 +666,7 @@ li p {
     display: flex;
     align-items: center;
 }
+
 .header-tip h1 {
     margin-left: .5rem;
     width: 85%;
@@ -686,6 +676,7 @@ li p {
     font-weight: 700;
     letter-spacing: 0.2px;
 }
+
 .icon-tip {
     stroke: var(--white);
     width: 1.5rem;
@@ -702,7 +693,7 @@ footer {
 }
 
 
-.filter {        
+.filter {
     display: none;
 }
 
@@ -710,6 +701,7 @@ footer {
 .fade_up {
     transform: translateY(20%);
 }
+
 .aparece {
     opacity: 1;
     transform: none;
