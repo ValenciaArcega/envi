@@ -455,7 +455,7 @@ li p {
 }
 
 #finder {
-    width: 57vw;
+    width: 18rem; /* 57vw */
     padding: 8px 14px;
     border: 2px solid var(--grayBorder);
     border-radius: 100px;
