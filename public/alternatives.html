@@ -11,12 +11,6 @@
   <link rel="manifest" href="../manifest.webmanifest" />
   <!-- IMPORTS -->
   <link href="../main.css" rel="stylesheet" />
-  <script src="../components/cards/card.js"></script>
-  <script src="../components/cards/introduction.js"></script>
-  <script src="../components/cards/tip.js"></script>
-  <script src="../components/finder/filterCards.js"></script>
-  <script src="../components/navBar/topBar.js"></script>
-
   <title>Tolescro &mdash; Alternatives</title>
 </head>
 
@@ -38,20 +32,19 @@
 
   <div class="section-cards">
     <div class="cards">
-
       <intro-card title="Welcome to alternatives"
         description="Son frases más comunes en hablantes nativos, es por ello que no viene mal remplazarlas por lo clasico que nos enseñan en la escuela.">
       </intro-card>
 
-      <the-card card_name="I'm pissed off" txt_pronuntiation="am  pisr-of" meaning_es="¡Estoy encabronad@! 😡"
-        meaning='Sustituye a "I am so angry" y expresa el sentimiento de enojo, de manera muy informal y un tanto más agresiva.'>
+      <the-card card_name="I'm pissed off" txt_pronuntiation="am  pisr - of" meaning_es="¡Estoy encabronad@! 😡"
+        meaning='Sustituye a "I am so angry" y expresa coraje, de manera agresiva. "I am pissed at you" : "Estoy encabronado contigo" '>
       </the-card>
 
-      <the-card card_name="Just joshing" txt_pronuntiation="yost  yosh-in" meaning_es="Solo bromeo 😆"
-        meaning='Sustituye a "Just kidding" y se usa para dejar en claro que solo estas bromeando, no es literal lo que dices o haces.'>
+      <the-card card_name="Just joshing" txt_pronuntiation="yost  yosh - in" meaning_es="Solo bromeo 😆"
+        meaning='Sustituye a "Just kidding" y dejar en claro que solo estas bromeando. "Nah Im just joshing u" : "Na te creas solo te estoy chingando/molestando"'>
       </the-card>
 
-      <!-- TIPS -->
+      <!-- TIPS --> 
       <section class="sliderTips">
         <tip-card card_title="tip"
           tip_description="Inglés es un idioma fonetico y no todas las palabras se pronuncian como se escriben">
@@ -67,12 +60,12 @@
       </section>
 
 
-      <the-card card_name="I'm bursting" txt_pronuntiation="am  brs-tin" meaning_es="¡Me estoy haciendo del baño!"
-        meaning='Sustituye a "I have to go to the bathroom" y de manera informal quieres dejar en claro que ya no aguantas las ganas de ir al baño.'>
+      <the-card card_name="I'm bursting" txt_pronuntiation="am  brs - tin" meaning_es="¡Me estoy haciendo del baño!"
+        meaning='Sustituye a "I have to go to the bathroom" pero de manera informal. "Yo, I am bursting!" : "Weey ¡Estoy cag$nd#me!"'>
       </the-card>
 
       <the-card card_name="I'm starving" txt_pronuntiation="am  s-tharvin" meaning_es="¡Muero de hambre! 🍗"
-        meaning='Sustituye a "I am so hungry", no es literal, pero expresa un sentimiento exagerado de ansiedad por comer.'>
+        meaning='Sustituye a "I am so hungry", expresa un sentimiento de ansiedad por comer. "Wanna go to eat" : ""'>
       </the-card>
 
       <the-card card_name="I would say" txt_pronuntiation="ai - gud-sei" meaning_es="Yo diría 😬"
@@ -146,6 +139,15 @@
         </tip-card>
       </section>
 
+
+
+
+
+
+
+
+
+
       <!-- TIPS -->
       <section class="sliderTips">
         <tip-card card_title="homophones"
@@ -155,8 +157,16 @@
         <tip-card card_title="homophones"
           tip_description='Las palabras "Good" y "Would" su pronunciación es exactamente igual: ghud'></tip-card>
 
-        <tip-card card_title="homophones" tip_description='La palabra "hour" y la pertenencia "our(nuestro)" suenan igual: a-our'></tip-card>
+        <tip-card card_title="homophones"
+          tip_description='La palabra "hour" y la pertenencia "our(nuestro)" suenan igual: a-our'></tip-card>
       </section>
+
+
+
+
+
+
+
 
       <!-- TIPS -->
       <section class="sliderTips">
@@ -168,33 +178,53 @@
           tip_description='Son palabras que suenan o se escriben similar pero no significan lo mismo'>
         </tip-card>
 
-        <tip-card card_title="False friends" tip_description='(ac-shuali) Actually ⇌ Realmente. NO Actualmente ⇌ Currently (co-renly)'>
+        <tip-card card_title="False friends"
+          tip_description='Actually ⇌ Realmente (NO actualmente) debido a que Actualmente ⇌ Currently'>
         </tip-card>
       </section>
 
 
+
+
+
+
+      <!-- TIPS -->
       <section class="sliderTips">
         <tip-card card_title="tip"
           tip_description='"Ya" suele ser otra manera informal de escribir o decir al pronombre "you"'>
         </tip-card>
 
-        <tip-card card_title="tip" tip_description='Recuerda que los idiomas no se traducen literalmente. Algunas palabras si...'></tip-card>
+        <tip-card card_title="tip"
+          tip_description='Recuerda que los idiomas no se traducen literalmente. Algunas palabras si...'></tip-card>
 
-        <tip-card card_title="tip" tip_description='pero algunas expresiones dependen de la cultura del pais o el contexto del idioma'></tip-card>
+        <tip-card card_title="tip"
+          tip_description='pero algunas expresiones dependen de la cultura del pais o el contexto del idioma'>
+        </tip-card>
       </section>
 
     </div>
   </div>
 
   <footer>&copy; 2022, Tolescro</footer>
+
+  <script src="../components/cards/card.js"></script>
+  <script src="../components/cards/introduction.js"></script>
+  <script src="../components/cards/tip.js"></script>
+  <script src="../components/finder/filterCards.js"></script>
+  <script src="../components/navBar/topBar.js"></script>
 </body>
+
 <!-- <class-words></class-words> 
   
 <the-card card_name='' txt_pronuntiation='' meaning_es='' meaning='"" : ""'></the-card>
+      
+    <section class="sliderTips">
+      <tip-card card_title="" tip_description=''></tip-card>
 
-<tip-card card_title="" tip_description=''></tip-card>
+      <tip-card card_title="" tip_description=''></tip-card>
 
-<slang-card slang_name="" slang_es="No problem : no hay problema 😌"></slang-card> 
+      <tip-card card_title="" tip_description=''></tip-card>
+    </section>
 -->
 
 </html>
