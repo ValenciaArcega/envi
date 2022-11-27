@@ -9,3 +9,7 @@ Tip
 
 Actually
 Currently
+
+- False friends
+Dude = Amigo
+Duda = Question
