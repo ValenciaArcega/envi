@@ -6,9 +6,9 @@ class AlterWords extends HTMLElement {
   connectedCallback() {
     this.innerHTML =
 `
-          
+
 `;
   }
 } // class
 
-window.customElements.define("class-alterWords", AlterWords);
+window.customElements.define("class-alter", AlterWords);

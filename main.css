@@ -316,8 +316,8 @@ li p {
 
 .cards-sections {
     height: 9.3rem;
-    width: 17rem;
-    margin-top: 20px;
+    width: 19rem;
+    margin-top: 32px;
     border: solid 1px var(--grayBorder);
     border-radius: 10px;
     text-align: center;
@@ -328,13 +328,13 @@ li p {
 
 .cards-sections-header-container {
     height: 50%;
-    margin: 0 14px;
+    margin: 2px 0px 0 18px;
     display: flex;
     text-align: start;
 }
 
 .cards-sections-header-container h1 {
-    width: 95%;
+    width: 85%;
     font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: -.8px;
