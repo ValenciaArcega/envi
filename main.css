@@ -134,8 +134,8 @@ body {
 /* SECTION CARDS & EXAMPLE CARD */
 .section-example-card {
     width: 100%;
-    margin-top: 20rem;
-    padding: 48px 0 96px 0;
+    margin-top: 15rem;
+    padding: 72px 0 96px 0;
     background-color: black;
 }
 
@@ -174,7 +174,7 @@ body {
 }
 
 .card-example {
-    height: 32rem;
+    height: 29rem;
     width: 21rem;
     margin-top: 2.4rem;
     padding: 18px;
@@ -308,16 +308,16 @@ li p {
 }
 
 .wrapper-cards-sections {  
-    margin: 5px 0;
+    margin: 10px 0;
     display: grid;
     gap: 8px;
     justify-items: center;
 }
 
 .cards-sections {
-    height: 9rem;
+    height: 9.3rem;
     width: 17rem;
-    margin-top: 40px;
+    margin-top: 20px;
     border: solid 1px var(--grayBorder);
     border-radius: 10px;
     text-align: center;
@@ -327,14 +327,14 @@ li p {
 
 
 .cards-sections-header-container {
-    height: 60%;
-    margin: 0 20px 0 20px;
+    height: 50%;
+    margin: 0 14px;
     display: flex;
     text-align: start;
 }
 
 .cards-sections-header-container h1 {
-    width: 90%;
+    width: 95%;
     font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: -.8px;
@@ -353,11 +353,11 @@ li p {
 
 .btn-Sections:link,
 .btn-Sections:visited {
-    width: 9rem;
-    margin: 2px auto 0 auto;
-    padding: 8px 6px;
+    width: 10rem;
+    margin: .5rem auto 0 auto;
+    padding: 10px 10px;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 17px;
     letter-spacing: 0px;
     font-weight: 500;
     display: inline-block;
@@ -668,7 +668,7 @@ li p {
 footer {
     height: 2rem;
     width: 90%;
-    margin: 50px auto 0 auto;
+    margin: 0 auto 0 auto;
     color: var(--black);
     text-align: center;
 }
