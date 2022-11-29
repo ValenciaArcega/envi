@@ -298,23 +298,17 @@ li p {
 }
 
 .header-sections h1 {
-    padding-top: 3rem;
+    padding-top: 1.3rem;
+    letter-spacing: -1.5px;
 }
 
-
-.main-container-sections {
-    margin: .3rem auto 15rem auto;
-}
-
-.wrapper-cards-sections {  
-    margin: 10px 0;
+.wrapper-cards-sections { 
     display: grid;
-    gap: 8px;
     justify-items: center;
 }
 
 .cards-sections {
-    height: 12.5rem;
+    height: 11rem;
     width: 19rem;
     margin-top: 32px;
     border: solid 1px var(--grayBorder);
@@ -362,8 +356,8 @@ li p {
 .btn-Sections:link,
 .btn-Sections:visited {
     width: 10rem;
-    margin: 1.2rem auto 0 auto;
-    padding: 10px 10px;
+    margin: .75rem auto 0 auto;
+    padding: 10px 14px;
     border-radius: 10px;
     font-size: 17px;
     letter-spacing: 0px;
@@ -676,7 +670,7 @@ li p {
 footer {
     height: 2rem;
     width: 90%;
-    margin: 0 auto 0 auto;
+    margin: 128px auto 0 auto;
     color: var(--black);
     text-align: center;
 }
