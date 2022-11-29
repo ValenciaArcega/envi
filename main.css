@@ -71,7 +71,8 @@ body {
 /* Section Welcome to tolescro */
 .container-welcomeIntroduction {
     width: 100%;
-    margin: 100px auto 250px auto;
+    margin: 0 auto 250px auto;
+    padding-top: 100px;
     text-align: center;
     display: flex;
     justify-content: center;    
