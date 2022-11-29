@@ -112,10 +112,10 @@ body {
 
 .btn-see-cards:link,
 .btn-see-cards:visited {
-    padding: 10px 45px;
+    padding: 12px 45px;
     border-radius: 10px;
     font-size: 19px;
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
     text-align: center;
     color: var(--white);
@@ -126,7 +126,6 @@ body {
 .btn-see-cards:hover {
     cursor: pointer;
     background: linear-gradient(to top left, #2285db 20%, rgb(180, 205, 237));
-    box-shadow: 0px 5px 8px 2px rgba(54, 128, 197, 0.27);
 }
 
 
@@ -246,7 +245,7 @@ li p {
 
 .section-features h2 {
     grid-column: 1/-1;
-    font-size: 2.75rem;
+    font-size: 2.51rem;
     letter-spacing: -1px;
     text-align: center;
     color: var(--black);
@@ -328,7 +327,7 @@ li p {
 
 .cards-sections-header-container {
     height: 35%;
-    margin: 2px 0px 0 18px;
+    margin: 2px 0px 0 20px;
     display: flex;
     text-align: start;
 }
@@ -346,7 +345,7 @@ li p {
 .cards-sections p {
     width: 85%;
     margin-top: -12px;
-    padding-left: 18px;
+    padding-left: 20px;
     text-align: start;
     font-size: 16px;
     line-height: 1.6;
