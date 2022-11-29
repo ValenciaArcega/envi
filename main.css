@@ -315,7 +315,7 @@ li p {
 }
 
 .cards-sections {
-    height: 9.3rem;
+    height: 12.5rem;
     width: 19rem;
     margin-top: 32px;
     border: solid 1px var(--grayBorder);
@@ -327,7 +327,7 @@ li p {
 
 
 .cards-sections-header-container {
-    height: 50%;
+    height: 35%;
     margin: 2px 0px 0 18px;
     display: flex;
     text-align: start;
@@ -335,12 +335,21 @@ li p {
 
 .cards-sections-header-container h1 {
     width: 85%;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: -.8px;
     justify-self: start;
     align-self: center;
     color: var(--black);
+}
+
+.cards-sections p {
+    width: 85%;
+    margin-top: -12px;
+    padding-left: 18px;
+    text-align: start;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .header-container-icon {
@@ -354,7 +363,7 @@ li p {
 .btn-Sections:link,
 .btn-Sections:visited {
     width: 10rem;
-    margin: .5rem auto 0 auto;
+    margin: 1.2rem auto 0 auto;
     padding: 10px 10px;
     border-radius: 10px;
     font-size: 17px;
