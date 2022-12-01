@@ -48,7 +48,7 @@ class TopBar extends HTMLElement {
 
         btnUp.addEventListener('click', function () {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-            document.querySelector("#finder").value = "";
+            document.querySelector("#finder").value = '';
             document.querySelector("#finder").focus();
         });
 
