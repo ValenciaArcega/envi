@@ -144,6 +144,30 @@ body {
     background-color: var(--white);
     box-shadow: 0 10px 12px 8px rgba(0, 0, 0, 0.032);
 }
+.card-building {
+    height: 31.2rem;
+    width: 21rem;
+    margin: 1.8rem 0;
+    border-radius: 14px;
+    background: linear-gradient(to bottom, var(--mainColor), var(--white)); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+}
+
+.card-building svg {
+    height: 40px;
+}
+.card-building h6 {
+    font-size: 3rem;
+    letter-spacing: -1px;
+}
+.card-building p {
+    font-size: 17px;
+}
+
 .container-exampleCard {
     width: 100%;
     margin-top: 15rem;
