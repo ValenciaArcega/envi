@@ -22,7 +22,7 @@ class CardSlang extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
         <div class="card-slang">
-        <h1 class="title-card">${this.card_slang_name}</h1>
+        <h1>${this.card_slang_name}</h1>
         <ul>
           <li>
             <div class="list-header">
