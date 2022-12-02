@@ -193,6 +193,8 @@ body {
     border-radius: 22px;
     border: solid 2px #3b3b3b;
     display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
     color: var(--white);
     background-color: var(--black);
 }
