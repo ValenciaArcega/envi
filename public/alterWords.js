@@ -29,13 +29,9 @@ class AlterWords extends HTMLElement {
       description="Slangs utilizados en mensajes de texto y redes sociales. Palabras comunes con muchas variantes y frases usuales en hablantes nativos, por lo que no viene mal remplazarlas por lo clasico que enseñan en la escuela. ">
     </intro-card>
 
-    <the-card card_name="I'm pissed off" txt_pronuntiation="am  pisr - of" meaning_es="¡Estoy encabronad@! 😡"
-      meaning='Sustituye a "I am so angry" y expresa coraje, de manera agresiva. "I am pissed at you" ⇌ "Estoy encabronado contigo" '>
-    </the-card>
+    <the-card card_name='Device' txt_pronuntiation='Di - vais' meaning_es='Dispositivo 📱' meaning='"You should connect your device to energy" ⇌ "Deberías conectar tu dispositivo a la energía"'></the-card>
 
-    <the-card card_name="Environment" txt_pronuntiation="in-vai-rn-mnt" meaning_es="Entorno, ambiente"
-      meaning='"My environment is full of people with good vibes" ⇌ "Mi entorno está lleno de gente con buena vibra"'>
-    </the-card>
+    <the-card card_name='Data' txt_pronuntiation='dei - ta' meaning_es='Datos 📊' meaning='"Esta aplicación esta robando mis datos" ⇌ "This application is stealing my data"'></the-card>
 
     <!-- TIPS ✅ -->
     <section class="sliderTips">
@@ -51,6 +47,23 @@ class AlterWords extends HTMLElement {
         tip_description="¡Animo!, ya hablas un idioma más dificil. El Inglés es 20% más fácil que el Español">
       </tip-card>
     </section>
+
+    <the-card card_name='Summary' txt_pronuntiation='' meaning_es='Resumen 📊' meaning='"This is a lil summary of the videos that you saw this year" ⇌ "Este es un pequeño resumen de los videos que viste este año"'></the-card>
+
+    <the-card card_name='Assets' txt_pronuntiation='' meaning_es='activos / bienes 🗂' meaning='De alto valor o calidad:"She is an asset to the company" ⇌ "Ella es muy valiosa para la compañia"'></the-card>
+
+    <the-card card_name='Settings' txt_pronuntiation='se - rings' meaning_es='Ajustes ⚙️' meaning='"U can turn on the dark mode on your smartphone settings" ⇌ "Puedes poner el modo obscuro en los ajustes de tu celular"'></the-card>
+
+    <the-card card_name='Reminder' txt_pronuntiation='rhi - main - dr' meaning_es='Recordatorio ⏰' meaning='"I will do it. Lemme set a reminder in my phone" ⇌ "Lo haré. Déjame poner un recordatorio en mi teléfono"'></the-card>
+
+
+    <the-card card_name="I'm pissed off" txt_pronuntiation="am  pisr - of" meaning_es="¡Estoy encabronad@! 😡"
+    meaning='Sustituye a "I am so angry" y expresa coraje, de manera agresiva. "I am pissed at you" ⇌ "Estoy encabronado contigo" '>
+    </the-card>
+
+    <the-card card_name="Environment" txt_pronuntiation="in-vai-rn-mnt" meaning_es="Entorno, ambiente"
+      meaning='"My environment is full of people with good vibes" ⇌ "Mi entorno está lleno de gente con buena vibra"'>
+    </the-card>
 
     <the-card card_name="Just joshing" txt_pronuntiation="yost  yosh - in" meaning_es="Solo bromeo 😆"
       meaning='Sustituye a "Just kidding" y dejar en claro que solo estas bromeando. "Nah Im just joshing u" ⇌ "Na te creas solo te estoy ch1ng@ndo"'>
@@ -354,7 +367,7 @@ class AlterWords extends HTMLElement {
           clip-rule="evenodd" />
       </svg>
       <h6>Creando</h6>
-      <p>¡Nuevas cartas vendrán mañana!</p>
+      <p>¡Nuevas cartas vendrán pronto!</p>
     </div>
 
   </div> <!-- cards -->

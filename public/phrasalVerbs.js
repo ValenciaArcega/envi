@@ -27,12 +27,14 @@ class PhrasalVerbs extends HTMLElement {
       description="Son frases acompañadas de un verbo, pero su significado no siempre tiene relación con el, son más informales pero ayudan a mejorar nuestra manera de expresarnos.">
     </intro-card>
 
+    <the-card card_name='Burn out' txt_pronuntiation='brn - auth' meaning_es='Quemarse de hacer algo 🥱' meaning='"I just coded a lot, therefore I burn out" ⇌ "He estado mucho tiempo programando, ya me fastidie"'></the-card>
+    
     <the-card card_name="Hold on" txt_pronuntiation="jhol - don" meaning_es="Aguanta / Espera"
       meaning='"Hold on I am tryna pay attention" ⇌ "Espera estoy tratando de poner atención"'></the-card>
 
     <the-card card_name="Show off" txt_pronuntiation="sho - u of" meaning_es="Presumir, alardear sobre algo"
       meaning='"Ranks doesnot matter at all, stop to Show off them" : "Las calificaciones no son del todo importantes, deja de presumir"'>
-    </the-card>
+    </the-card>    
 
     <the-card card_name="Hang out" txt_pronuntiation="jan - gaut" meaning_es="Pasar el rato"
       meaning='"I wanna hang out with my friends" ⇌ "Quiero pasar tiempo con mis amigos"'></the-card>
