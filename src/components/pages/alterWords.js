@@ -7,7 +7,7 @@ class AlterWords extends HTMLElement {
     this.innerHTML =
       `
 <!-- NAVBAR -->
-<top-bar src="../../public/index.html#welcom3"></top-bar>
+<top-bar src="../../../index.html#welcom3"></top-bar>
 <!-- ICON BEFORE SEARCHBAR -->
 <div class="section-icon">
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
