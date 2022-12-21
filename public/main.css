@@ -34,17 +34,15 @@ body {
     color: var(--black);
 }
 
-/* Section Hey explorer */
+/* HEY EXPLORER */
 .container-titleHey {
     height: 50rem;
     width: 100%;
     margin: 0 auto 0 auto;
-    display: inline-block;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--grayBackground);
 }
 
 .titleHey {
@@ -61,21 +59,19 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.titleHey p /* ('explorer') */ {
+.titleHey p {
     margin-top: -12px;
     font-size: 4.3rem;
 }
 
 
 
-/* Section Welcome to tolescro */
+/* Welcome to tolescro */
 .container-welcomeIntroduction {
-    width: 100%;
-    margin: 0 auto 250px auto;
     padding-top: 100px;
     text-align: center;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .welcomeIntroduction {
@@ -87,7 +83,7 @@ body {
     letter-spacing: -1px;
     line-height: 1;
 }
- 
+
 .welcomeIntroduction p {
     margin-top: 1rem;
     font-size: 19px;
@@ -95,10 +91,7 @@ body {
 }
 
 .wrapper-ankerToCategories {
-    width: 100%;
-    margin-top: 1.3rem;
-    display: flex;
-    justify-content: center;
+    margin-top: 1.65rem;
 }
 
 .ankerToCategories:link,
@@ -110,7 +103,7 @@ body {
     text-decoration: none;
     text-align: center;
     color: var(--white);
-    background: linear-gradient(to top left, var(--mainColor) 15%, rgb(180, 205, 237));
+    background: linear-gradient(to top left, var(--mainColor) 15%, #a7c6ee);
     box-shadow: 0px 5px 8px 3px rgba(54, 128, 197, 0.25);
 }
 
@@ -121,7 +114,7 @@ body {
 
 
 
-/* Section Cards */
+/* Cards */
 .cards {
     margin-top: 10px;
     display: grid;
@@ -144,12 +137,13 @@ body {
     background-color: var(--white);
     box-shadow: 0 10px 12px 8px rgba(0, 0, 0, 0.032);
 }
+
 .card-building {
     height: 31.2rem;
     width: 21rem;
     margin: 1.8rem 0;
     border-radius: 14px;
-    background: linear-gradient(to bottom, var(--mainColor), var(--white)); 
+    background: linear-gradient(to bottom, var(--mainColor), var(--white));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,18 +154,19 @@ body {
 .card-building svg {
     height: 40px;
 }
+
 .card-building h6 {
     font-size: 3rem;
     letter-spacing: -1px;
 }
+
 .card-building p {
     font-size: 17px;
 }
 
 .container-exampleCard {
-    width: 100%;
     margin-top: 15rem;
-    padding: 72px 0 96px 0;
+    padding: 48px 0 96px 0;
     background-color: rgb(15, 15, 15);
 }
 
@@ -185,6 +180,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .card-example {
     height: 31.5rem;
     width: 21rem;
@@ -199,7 +195,10 @@ body {
     background-color: var(--black);
 }
 
-.card h1 /* Title card */{
+.card h1
+
+/* Title card */
+    {
     margin: 20px 0 40px 0;
     font-size: 2.7rem;
     letter-spacing: -1.2px;
@@ -209,10 +208,12 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.card h4 /* Pronuntiation, Reverse context */ {
-    font-size: 1.15rem;
-    font-family: 'Inter';
-    font-weight: 700;
+.card h4
+
+/* Pronuntiation, Reverse context */
+    {
+    font-size: 1.1rem;
+    letter-spacing: 0.2px;
     -webkit-user-select: none;
     user-select: none;
 }
@@ -225,6 +226,7 @@ ul li {
 
 li p {
     font-size: 1rem;
+    font-family: 'Inter';
     letter-spacing: 0px;
     font-weight: 400;
     line-height: 1.5;
@@ -248,14 +250,14 @@ li p {
 
 
 
-/* Section Features */
-.section-features {
+/* Features */
+.container-features {
     width: 90%;
     margin: 200px auto 150px auto;
     text-align: center;
 }
 
-.section-features h2 {
+.container-features-h2 {
     grid-column: 1/-1;
     font-size: 2.4rem;
     letter-spacing: -1px;
@@ -263,7 +265,7 @@ li p {
     color: var(--black);
 }
 
-.section-features-grid {
+.features {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -280,28 +282,28 @@ li p {
     border-radius: 12px;
     text-align: center;
     color: var(--mainColor);
-    background-color: var(--white);
+    background-color: #fff;
 }
 
-.feature h3 {
+.feature-h3 {
     margin: 10px 0 1px 0;
     letter-spacing: -.5px;
     color: var(--black);
 }
 
-.feature p {
+.feature-p {
     line-height: 1.5;
     color: var(--black);
 }
 
-.icon-features {
+.feature-icon {
     margin-top: 20px;
 }
 
 
 
 
-/* SECTION SECTIONS */
+/* Learning */
 .header-sections {
     width: 85%;
     margin: 4rem auto 0 auto;
@@ -311,7 +313,6 @@ li p {
     text-align: center;
     user-select: none;
     color: var(--black);
-    background-color: var(--grayBackground);
 }
 
 .header-sections h1 {
@@ -319,7 +320,7 @@ li p {
     letter-spacing: -1.5px;
 }
 
-.wrapper-cards-sections { 
+.wrapper-cards-sections {
     display: grid;
     justify-items: center;
 }
@@ -471,7 +472,8 @@ li p {
 }
 
 #finder {
-    width: 18rem; /* 57vw */
+    width: 18rem;
+    /* 57vw */
     padding: 8px 14px;
     border: 2px solid var(--grayBorder);
     border-radius: 100px;
@@ -591,7 +593,7 @@ li p {
     margin-top: 2.3rem;
 }
 
-.list-header {    
+.list-header {
     margin: -22px 0 10px 0;
     display: flex;
     align-items: center;

@@ -50,7 +50,7 @@ class AlterWords extends HTMLElement {
 
     <the-card card_name='Summary' txt_pronuntiation='' meaning_es='Resumen 📊' meaning='"This is a lil summary of the videos that you saw this year" ⇌ "Este es un pequeño resumen de los videos que viste este año"'></the-card>
 
-    <the-card card_name='Assets' txt_pronuntiation='' meaning_es='activos / bienes 🗂' meaning='De alto valor o calidad:"She is an asset to the company" ⇌ "Ella es muy valiosa para la compañia"'></the-card>
+    <the-card card_name='Assets' txt_pronuntiation='' meaning_es='Activos / bienes 🗂' meaning='De alto valor o calidad:"She is an asset to the company" ⇌ "Ella es muy valiosa para la compañia"'></the-card>
 
     <the-card card_name='Settings' txt_pronuntiation='se - rings' meaning_es='Ajustes ⚙️' meaning='"U can turn on the dark mode on your smartphone settings" ⇌ "Puedes poner el modo obscuro en los ajustes de tu celular"'></the-card>
 
