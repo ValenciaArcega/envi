@@ -30,7 +30,7 @@ class CardElement extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML =
-      `<div class="card hidden">
+      `<div class="card">
         <h1 class="title-card">${this.card_name}</h1>
         <ul>
           <li>
