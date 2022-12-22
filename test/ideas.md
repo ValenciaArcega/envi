@@ -6,10 +6,12 @@ Tip
 - Homophones
 
 - Words 
-
 Actually
 Currently
 
 - False friends
 Dude = Amigo
 Duda = Question
+
+
+- Phrasal verbs
