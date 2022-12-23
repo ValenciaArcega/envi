@@ -21,16 +21,11 @@ The page founds to solve a big problematic that some people have; waste time in 
 To all those who want to improve their English vocabulary.
 
 ## What does Tolescro means?
-Is the contraction of the phrase **"To Learn Scrolling"**.
+Tolescro stands for To Learn Scrolling. It is always written with **T** in upper case and **olescro** in lower case.
 
+## The logo
+The isotype represents simplicity, the letter T as the content, easy to learn and the gradient the beauty of the design in a quality product and attention to detail.
 
-
-
--- Spanish documentation
-
-Tolescro significa To Learn Scrolling (aprende deslizando). Se escribe siempre con **T** en mayúscula y **olescro** en minúscula.
-
-El isotipo representa la simplicidad, la letra T como el contenido, facil de aprender y el gradiente la belleza del diseño en un producto de calidad y cariño a los detalles.
-
-Isotipo: #1292EE
-Texto: #FFF
+Tool: Pixlr.com
+Isotype: linear gradient to bottom #1C7ED6, #64B3F4
+T label: #FFF, font: Asap, size: 102, center and bold. Shadow; blur: 40, distance: 30, direction: 180, opacity: 100.
