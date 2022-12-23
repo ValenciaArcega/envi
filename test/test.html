@@ -9,7 +9,46 @@
 </head>
 
 <body>
+  <style>
+    body {
+      backdrop-filter: blur(12px);
+    }
+
+    .container {
+      height: 30rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;  
+      justify-items:center;    
+      align-items: center;      
+    }
+
+    .circlered {
+      height: 25rem;
+      width: 25rem;
+      border-radius: 300px;
+      background-color: red;
+    }
+
+    .circleblue {
+      height: 25rem;
+      width: 25rem;
+      border-radius: 300px;
+      background-color: blue;
+      border-radius: 50%;
+background: #e0e0e0;
+box-shadow: inset 14px 14px 28px #b8b8b8,
+            inset -14px -14px 28px #ffffff;
+    }
+
+  </style>
 
 </body>
+
+<div class="container">
+  <div class="circlered"></div>
+  <div class="circleblue"></div>  
+</div>
+
+<div class="backdrop"></div>
 
 </html>
