@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="description"
     content="Tolescro is a tool that can help people to learn english vocabulary with the easiest and popular way that the all people love, scrolling down the screen">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="IE=edge"><!-- http-equiv="X-UA-Compatible" -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- ICONS -->
   <link rel="icon" href="src/assets/icons/favicon.png" />
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="public/main.css">
   <script src="src/components/cards/card.js"></script>
   <script src="src/components/animations/animation.js"></script>
-
+  <script src="src/components/navigator/userAgent.js"></script>
   <title>Tolescro &mdash; Learn with cards!</title>
 </head>
 
@@ -47,7 +47,7 @@
         <ul>
           <li>
             <div class="list-header">
-              <img src="src/assets/icons/svg/icons card/24-speaker.svg">
+              <img src="src/assets/icons/svg/icons card/24-speaker.svg" alt="icon Pronunciation">
               <h4>Pronunciation</h4>
             </div>
             <p id="texto">ex - em - pl : es la pronunciación para un hispanohablante</p>
@@ -55,7 +55,7 @@
 
           <li>
             <div class="list-header">
-              <img src="src/assets/icons/svg/icons card/24-reverseContext.svg">
+              <img src="src/assets/icons/svg/icons card/24-reverseContext.svg" alt="icon ReverseContext">
               <h4>Reverse context</h4>
             </div>
             <p>Uno o más significados (en español) de la palabra en azul</p>
@@ -83,26 +83,26 @@
     <div class="features">
 
       <div class="feature">
-        <img class="feature-icon" src="src/assets/icons/svg/icons features/28-code.svg">
+        <img class="feature-icon" src="src/assets/icons/svg/icons features/28-code.svg" alt="icon featureOne">
         <br>
         <h3 class="feature-h3">Accesible</h3>
         <p class="feature-p">Un link y la web esta en todos los dispositivos.</p>
       </div>
 
       <div class="feature">
-        <img class="feature-icon" src="src/assets/icons/svg/icons features/28-book.svg">
+        <img class="feature-icon" src="src/assets/icons/svg/icons features/28-book.svg" alt="icon featureTwo">
         <h3 class="feature-h3">Simple</h3>
         <p class="feature-p">Una carta, definiciones concretas y sencillas.</p>
       </div>
 
       <div class="feature">
-        <img class="feature-icon" src="src/assets/icons/svg/icons features/28-money.svg">
+        <img class="feature-icon" src="src/assets/icons/svg/icons features/28-money.svg" alt="icon featureThree">
         <h3 class="feature-h3">Libre</h3>
         <p class="feature-p">No hay excusas, el conocimiento es gratuito.</p>
       </div>
 
       <div class="feature">
-        <img class="feature-icon" src="src/assets/icons/svg/icons features/28-update.svg">
+        <img class="feature-icon" src="src/assets/icons/svg/icons features/28-update.svg" alt="icon featureFour">
         <h3 class="feature-h3">Al día</h3>
         <p class="feature-p">El vocabulario crece y se actualiza diariamente.</p>
       </div>
@@ -120,7 +120,7 @@
       <div class="card-ankerToSections">
         <div class="card-ankerToSections-header">
           <h1 class="card-ankerToSections-header-h1">Alternatives</h1>
-          <img class="ankerToSections-header-icon" src="src/assets/icons/svg/icons sections/22-newsPaper.svg">
+          <img class="ankerToSections-header-icon" src="src/assets/icons/svg/icons sections/22-newsPaper.svg" alt="icon Alternatives">
         </div> 
         <p>Words, slangs, tips, homophones and more!</p>
         <a href="src/views/alterWords.html" class="btn-Sections" aria-label="See section">See tCards</a>
@@ -129,7 +129,7 @@
       <div class="card-ankerToSections">
         <div class="card-ankerToSections-header">
           <h1 class="card-ankerToSections-header-h1">Phrasal verbs</h1>
-          <img class="ankerToSections-header-icon" src="src/assets/icons/svg/icons sections/22-tools.svg">
+          <img class="ankerToSections-header-icon" src="src/assets/icons/svg/icons sections/22-tools.svg" alt="icon Phrasal verbs">
         </div>
         <p>Actions, emotions, phrases, expressions and more!</p>
         <a href="src/views/phrasalVerbs.html" class="btn-Sections" aria-label="See section">See tCards</a>

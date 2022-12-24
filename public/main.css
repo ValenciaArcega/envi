@@ -47,8 +47,6 @@ body {
 .titleHey {
   font-size: 7.5rem;
   font-weight: 700;
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 .gradient-text,
@@ -204,8 +202,6 @@ body {
 .card h4 {
   font-size: 1.1rem;
   letter-spacing: 0.2px;
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 ul li {
@@ -293,8 +289,7 @@ li p {
 
 
 
-/* Learning */
-
+/* To learn */
 .container-ankerToSections {
   display: flex;
   flex-direction: column;
@@ -309,7 +304,6 @@ li p {
   letter-spacing: -1.3px;
   line-height: .9;
   text-align: center;
-  user-select: none;
   color: var(--black);
 }
 
@@ -576,8 +570,6 @@ li p {
 .card-slang h4 {
   font-size: 1.14rem;
   letter-spacing: -0.5px;
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 .card-slang p {
@@ -638,7 +630,6 @@ li p {
   margin: 0 1.2rem 0 1.2rem;
   padding: .8rem .8rem 0 .8rem;
   border-radius: 18px;
-  user-select: none;
   color: var(--white);
   background: linear-gradient(to top right, var(--mainColor), #4dabf7);
 }
