@@ -381,7 +381,7 @@ li p {
 
 
 
-/* SECTION TOPBAR */
+/* topBar */
 .topBar {
   height: 3.3rem;
   width: 17rem;
@@ -399,11 +399,11 @@ li p {
   justify-items: center;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.06);
 }
 
 .topBar-anker-backHome {  
-  margin-top: -4px;
+  margin-top: -2px;
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -427,13 +427,9 @@ li p {
 .topBar-btnSearch,
 .topBar-btnDark,
 .topBar-btnLight {
-  margin-top: -4px;
+  margin-top: -2px;
   border: none;
   background-color: transparent;
-}
-
-.topBar-btnSearch {
-  transition: all 0.4s;
 }
 
 
