@@ -382,15 +382,15 @@ li p {
 
 
 /* SECTION TOPBAR */
-.top-bar {
-  height: 2.7rem;
-  width: 16rem;
+.topBar {
+  height: 3.3rem;
+  width: 17rem;
   margin: 0;
   padding-top: 2px;
   border: solid 1px var(--borderCards);
   border-radius: 12px;
   position: fixed;
-  top: 10px;
+  bottom: 7px;
   left: 50%;
   transform: translateX(-50%);
   display: grid;
@@ -399,37 +399,42 @@ li p {
   justify-items: center;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.085);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 
-.icon-top-bar {
+.topBar-anker-backHome {  
+  margin-top: -4px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.topBar-anker-svg,
+.topBar-btn-svg {
   height: 24px;
   width: 24px;
   stroke: var(--iconTopBar);
 }
 
-.btn-BackHome {
-  display: inline-block;
-  text-decoration: none;
+.topBar-anker-p,
+.topBar-btn-p {
+  font-family: 'Inter';
+  font-size: 12px;
+  margin-top: -2px;
+  color: var(--iconTopBar)
 }
 
-.btn-Dark,
-.btn-Light {
+.topBar-btnSearch,
+.topBar-btnDark,
+.topBar-btnLight {
+  margin-top: -4px;
   border: none;
-  display: inline-block;
-  text-decoration: none;
   background-color: transparent;
 }
 
-.btn-Search {
-  border: none;
-  display: inline-block;
-  text-decoration: none;
+.topBar-btnSearch {
   transition: all 0.4s;
-  background-color: transparent;
 }
-
-
 
 
 
