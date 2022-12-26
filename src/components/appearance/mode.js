@@ -10,8 +10,9 @@ btnUp.addEventListener('click', function () {
 });
 
 btnDark.addEventListener('click', function () {
+  root.style.setProperty('--mainColor', '#76ACDC');
   root.style.setProperty('--white', '#181818');
-  root.style.setProperty('--black', 'white');
+  root.style.setProperty('--black', '#f2f2f7');
   root.style.setProperty('--grayBackground', '#121212');
   root.style.setProperty('--grayBorder', '#353535');
   root.style.setProperty('--borderCards', '#3b3b3b');
@@ -21,6 +22,7 @@ btnDark.addEventListener('click', function () {
 });
 
 btnLight.addEventListener('click', function () {
+  root.style.setProperty('--mainColor', '#1c7ed6');
   root.style.setProperty('--white', 'white');
   root.style.setProperty('--black', '#121212');
   root.style.setProperty('--grayBackground', '#f2f2f7');

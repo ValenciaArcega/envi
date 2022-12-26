@@ -6,11 +6,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
 
 :root {
-  --mainColor: #1c7ed6;
+  --mainColor: #1c7ed6; /* 76ACDC : tint  1665ab : shade */
   --white: #fff;
   --black: #121212;
   --grayBackground: #f2f2f7;
-  --iconTopBar: #000;
+  --iconTopBar: #181818;
   --grayBorder: #d9d9d9;
   --tester: #353535;
   --borderCards: transparent;
@@ -390,7 +390,7 @@ li p {
   border: solid 1px var(--borderCards);
   border-radius: 12px;
   position: fixed;
-  bottom: 7px;
+  top: 7px;
   left: 50%;
   transform: translateX(-50%);
   display: grid;
@@ -514,7 +514,7 @@ li p {
   border-radius: 1rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  background: linear-gradient(180deg, var(--mainColor), var(--white));
+  background: linear-gradient(180deg, #1c7ed6, var(--white));
 }
 
 .header-introduction h1 {
@@ -636,7 +636,7 @@ li p {
   padding: .8rem .8rem 0 .8rem;
   border-radius: 18px;
   color: var(--white);
-  background: linear-gradient(to top right, var(--mainColor), #4dabf7);
+  background: linear-gradient(to top right, #1c7ed6 , #4dabf7);
 }
 
 .tip p {
