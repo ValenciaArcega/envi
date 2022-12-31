@@ -678,6 +678,94 @@ footer {
   text-align: center;
 }
 
+
+
+
+
+/* Documentation */
+
+.topBar-docs {
+  height: 3.3rem;
+  width: 13rem;
+  margin: 0;
+  padding-top: 2px;
+  border: solid 1px var(--borderCards);
+  border-radius: 10px;
+  position: fixed;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(12px);
+  background-color: #a7c6ee75;
+}
+.container-bodyPage {
+  display: grid;
+  gap: 6px;
+  grid-template-columns: 16rem auto;
+}
+
+.wrapper-ankerDocs {  
+  height: auto;
+  background-color: #fff;
+}
+
+.ankerDocks {
+  width: 16rem;
+  margin-top: 4rem;
+  padding: 0 16px;
+  position: fixed;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.ankerDocks-h1 {
+  margin-top: 2rem;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.ankerDocks-a {  
+  padding-top: 16px;
+  font-size: 16px;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--mainColor);
+}
+
+.ankerDocks-a:hover {
+  color: #1b4c77;
+}
+
+
+
+
+
+
+
+
+.wrapper-bodyDocs {
+  height: 90rem;
+  background-color: #d3d3d3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  Tools */
 .title-transition {
   opacity: 0.1;
