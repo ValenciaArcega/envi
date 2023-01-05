@@ -1,18 +1,18 @@
 class TopBar extends HTMLElement {
-    constructor() {
-        super();
-        this.source_back;
+  constructor() {
+    super();
+    this.source_back;
+  }
+  static get observedAttributes() {
+    return ['src'];
+  }
+  attributeChangedCallback(Attr, oldValue, newValue) {
+    if (Attr == "src") {
+      this.source_back = newValue;
     }
-    static get observedAttributes() {
-        return ['src'];
-    }
-    attributeChangedCallback(Attr, oldValue, newValue) {
-        if (Attr == "src") {
-            this.source_back = newValue;
-        }
-    }
-    connectedCallback() {
-        this.innerHTML = `
+  }
+  connectedCallback() {
+    this.innerHTML = `
 <div class="topBar">
     <a href="${this.source_back}" class="topBar-anker-backHome" aria-label="Go back">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -50,7 +50,7 @@ class TopBar extends HTMLElement {
         <p class="topBar-btn-p">Light</p>
     </button>
 </div>`;
-    } // callback inner
+  } // callback inner
 } // class
 
 window.customElements.define("top-bar", TopBar);
