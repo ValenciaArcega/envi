@@ -1,4 +1,2 @@
 - Mineful
 - Mindset
-- Within
-- Achivments
