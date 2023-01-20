@@ -42,6 +42,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
 }
 
 .titleHey {
@@ -69,6 +70,7 @@ body {
   text-align: center;
   display: flex;
   justify-content: center;
+  background-color: #fff;
 }
 
 .welcomeIntroduction {
@@ -126,13 +128,13 @@ body {
   width: 21rem;
   margin: 1.8rem 0;
   padding: 18px;
-  border-radius: 12px;
+  border-radius: 14px;
   border: 1px solid var(--borderCards);
   overflow-x: hidden;
   overflow-y: hidden;
   color: var(--black);
   background-color: var(--white);
-  box-shadow: 0 10px 12px 8px rgba(0, 0, 0, 0.032);
+  box-shadow: 0 10px 12px 8px rgba(0, 0, 0, 0.022);
 }
 
 .card-building {
@@ -308,8 +310,9 @@ li p {
 }
 
 .ankerToSections-h1 {
-  font-size: 3.4rem;
+  font-size: 3.7rem;
   padding-top: 1.3rem;
+  margin-bottom: -8px;
   letter-spacing: -1.5px;
 }
 
@@ -317,7 +320,7 @@ li p {
 .card-ankerToSections {
   height: 11rem;
   width: 19rem;
-  margin-top: 32px;
+  margin-top: 28px;
   border: solid 1px var(--grayBorder);
   border-radius: 10px;
   text-align: center;
@@ -420,7 +423,7 @@ li p {
 .topBar-btn-p {
   font-family: 'Inter';
   font-size: 12px;
-  margin-top: -2px;
+  margin-top: -3px;
   color: var(--iconTopBar)
 }
 
@@ -695,6 +698,7 @@ footer {
   top: 7px;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   background-color: #a7c6ee75;
 }
