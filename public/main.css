@@ -66,7 +66,7 @@ body {
 
 /* Welcome to tolescro */
 .container-welcomeIntroduction {
-  padding-top: 100px;
+  padding: 1.65rem 0 15rem 0;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -128,7 +128,7 @@ body {
   width: 21rem;
   margin: 1.8rem 0;
   padding: 18px;
-  border-radius: 14px;
+  border-radius: 16px;
   border: 1px solid var(--borderCards);
   overflow-x: hidden;
   overflow-y: hidden;
@@ -161,7 +161,6 @@ body {
 
 
 .container-exampleCard {
-  margin-top: 15rem;
   padding: 48px 0 96px 0;
   background-color: rgb(15, 15, 15);
 }
@@ -310,7 +309,7 @@ li p {
 }
 
 .ankerToSections-h1 {
-  font-size: 3.7rem;
+  font-size: 4.3rem;
   padding-top: 1.3rem;
   margin-bottom: -8px;
   letter-spacing: -1.5px;
@@ -536,12 +535,6 @@ li p {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.card-introduction-icon {
-  height: 36px;
-  width: 36px;
-  fill: #20c997;
 }
 
 
