@@ -6,32 +6,32 @@ document.addEventListener("keyup", e => {
 
     document.querySelectorAll('.card').forEach(carta => {
       carta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-        ? carta.classList.remove("filter")
-        : carta.classList.add("filter")
+        ? carta.classList.remove("hidden")
+        : carta.classList.add("hidden")
     });
 
     document.querySelectorAll(".card-introduction").forEach(introCard => {
       introCard.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-        ? introCard.classList.remove("filter")
-        : introCard.classList.add("filter")
+        ? introCard.classList.remove("hidden")
+        : introCard.classList.add("hidden")
     });
 
     document.querySelectorAll(".card-slang").forEach(carta => {
       carta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-        ? carta.classList.remove("filter")
-        : carta.classList.add("filter")
+        ? carta.classList.remove("hidden")
+        : carta.classList.add("hidden")
     });
 
     document.querySelectorAll('.sliderTips').forEach(carta => {
       carta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-        ? carta.classList.remove("filter")
-        : carta.classList.add("filter")
+        ? carta.classList.remove("hidden")
+        : carta.classList.add("hidden")
     });
 
     document.querySelectorAll('.tip').forEach(carta => {
       carta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-        ? carta.classList.remove("filter")
-        : carta.classList.add("filter")
+        ? carta.classList.remove("hidden")
+        : carta.classList.add("hidden")
     });
   }
 });
