@@ -1,7 +1,9 @@
+'use strict';
+
 let root = document.querySelector(':root');
-let btnUp = document.querySelector('.topBar-btnSearch');
-let btnDark = document.querySelector('.topBar-btnDark');
-let btnLight = document.querySelector('.topBar-btnLight');
+const btnUp = document.querySelector('.topBar-btnSearch');
+const btnDark = document.querySelector('.topBar-btnDark');
+const btnLight = document.querySelector('.topBar-btnLight');
 
 btnUp.addEventListener('click', function () {
   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -9,7 +11,7 @@ btnUp.addEventListener('click', function () {
   document.querySelector("#finder").focus();
 });
 
-btnDark.addEventListener('click', function () {
+btnDark.addEventListener('click', () => {
   root.style.setProperty('--mainColor', '#76ACDC');
   root.style.setProperty('--white', '#181818');
   root.style.setProperty('--black', '#f2f2f7');
@@ -17,11 +19,11 @@ btnDark.addEventListener('click', function () {
   root.style.setProperty('--grayBorder', '#353535');
   root.style.setProperty('--borderCards', '#3b3b3b');
   root.style.setProperty('--iconTopBar', 'white');
-  btnDark.classList.add('filter');
-  btnLight.classList.remove('filter');
+  btnDark.classList.add('hidden');
+  btnLight.classList.remove('hidden');
 });
 
-btnLight.addEventListener('click', function () {
+btnLight.addEventListener('click', () => {
   root.style.setProperty('--mainColor', '#1c7ed6');
   root.style.setProperty('--white', 'white');
   root.style.setProperty('--black', '#121212');
@@ -29,6 +31,6 @@ btnLight.addEventListener('click', function () {
   root.style.setProperty('--grayBorder', '#d9d9d9');
   root.style.setProperty('--borderCards', 'transparent');
   root.style.setProperty('--iconTopBar', 'black');
-  btnLight.classList.add('filter');
-  btnDark.classList.remove('filter');
+  btnLight.classList.add('hidden');
+  btnDark.classList.remove('hidden');
 });

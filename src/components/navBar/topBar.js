@@ -41,7 +41,7 @@ class TopBar extends HTMLElement {
         <p class="topBar-btn-p">Dark</p>
     </button>
         
-    <button type="button" title="Button turn light mode" class="topBar-btnLight filter">
+    <button type="button" title="Button turn light mode" class="topBar-btnLight hidden">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                 class="topBar-btn-svg">
                 <path stroke-linecap="round" stroke-linejoin="round"

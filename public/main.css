@@ -774,7 +774,7 @@ footer {
   transition: all 2.2s;
 }
 
-.filter {
+.hidden {
   display: none;
 }
 

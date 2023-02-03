@@ -12,7 +12,6 @@ class CardElement extends HTMLElement {
   }
 
   attributeChangedCallback(Attr, oldValue, newValue) {
-
     if (Attr == "card_name") {
       this.card_name = newValue;
     }
@@ -25,7 +24,6 @@ class CardElement extends HTMLElement {
     if (Attr == "meaning") {
       this.meaning = newValue;
     }
-
   }
 
   connectedCallback() {
