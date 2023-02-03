@@ -1,35 +1,35 @@
-class CardElement extends HTMLElement {
+class TCards extends HTMLElement {
   constructor() {
     super();
-    this.card_name;
-    this.txt_pronuntiation;
-    this.meaning_es;
-    this.meaning;
+    this.cn;
+    this.pro;
+    this.es;
+    this.ex;
   }
 
   static get observedAttributes() {
-    return ['card_name', 'txt_pronuntiation', 'meaning_es', 'meaning'];
+    return ['cn', 'pro', 'es', 'ex'];
   }
 
   attributeChangedCallback(Attr, oldValue, newValue) {
-    if (Attr == "card_name") {
-      this.card_name = newValue;
+    if (Attr == "cn") {
+      this.cn = newValue;
     }
-    if (Attr == "txt_pronuntiation") {
-      this.txt_pronuntiation = newValue;
+    if (Attr == "pro") {
+      this.pro = newValue;
     }
-    if (Attr == "meaning_es") {
-      this.meaning_es = newValue;
+    if (Attr == "es") {
+      this.es = newValue;
     }
-    if (Attr == "meaning") {
-      this.meaning = newValue;
+    if (Attr == "ex") {
+      this.ex = newValue;
     }
   }
 
   connectedCallback() {
     this.innerHTML =
       `<div class="card">
-        <h1 class="title-card">${this.card_name}</h1>
+        <h1 class="title-card">${this.cn}</h1>
         <ul>
           <li>
             <div class="list-header">
@@ -38,7 +38,7 @@ class CardElement extends HTMLElement {
               </svg>
               <h4>Pronunciation</h4>
             </div>
-            <p>${this.txt_pronuntiation}</p>
+            <p>${this.pro}</p>
           </li>
 
           <li>
@@ -50,7 +50,7 @@ class CardElement extends HTMLElement {
               </svg>
               <h4>Reverse context</h4>
             </div>
-            <p>${this.meaning_es}</p>
+            <p>${this.es}</p>
           </li>
 
           <li>
@@ -60,10 +60,10 @@ class CardElement extends HTMLElement {
               </svg>
               <h4>Example</h4>
             </div>
-            <p>${this.meaning}</p>
+            <p>${this.ex}</p>
           </li>
         </ul>
       </div>`;
   }
 } // class
-window.customElements.define("the-card", CardElement);
+window.customElements.define("t-card", TCards);

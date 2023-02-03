@@ -1,28 +1,28 @@
-class CardSlang extends HTMLElement {
+'use strict';
+
+class SCard extends HTMLElement {
 
   constructor() {
     super();
-    this.card_slang_name;
-    this.card_meaning_es;
+    this.cn;
+    this.es;
   }
 
-  static get observedAttributes() {
-    return ['slang_name', 'slang_es'];
-  } // observed
+  static get observedAttributes() { return ['cn', 'es']; }
 
   attributeChangedCallback(Attr, oldValue, newValue) {
-    if (Attr == "slang_name") {
-      this.card_slang_name = newValue;
+    if (Attr == "cn") {
+      this.cn = newValue;
     }
-    if (Attr == "slang_es") {
-      this.card_meaning_es = newValue;
+    if (Attr == "es") {
+      this.es = newValue;
     }
   }
 
   connectedCallback() {
     this.innerHTML = `
         <div class="card-slang">
-        <h1>${this.card_slang_name}</h1>
+        <h1>${this.cn}</h1>
         <ul>
           <li>
             <div class="list-header">
@@ -33,11 +33,11 @@ class CardSlang extends HTMLElement {
               </svg>
               <h4>Meaning</h4>
             </div>
-            <p>${this.card_meaning_es}</p>
+            <p>${this.es}</p>
           </li>
         </ul>
       </div>
         `
   }
-} // class
-window.customElements.define("slang-card", CardSlang);
+}
+window.customElements.define("s-card", SCard);
