@@ -21,16 +21,16 @@ class CardIntroduction extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML =
-      `<div class="card-introduction">
-          <div class="header-introduction">
-              <h1>${this.card_title}</h1>
-          </div>
-          <p>${this.card_description}</p>
-          <div class="card-introduction-container-icon">
-            <lord-icon src="https://cdn.lordicon.com/albqovim.json"          trigger="loop"            colors="primary:#20c997"             style="width:32px;height:32px">
+    `<div class="card-introduction">
+      <div class="header-introduction">
+          <h1>${this.card_title}</h1>
+      </div>
+      <p>${this.card_description}</p>
+      <div class="card-introduction-container-icon">
+        <lord-icon src="https://cdn.lordicon.com/albqovim.json"          trigger="loop"            colors="primary:#20c997"             style="width:32px;height:32px">
             </lord-icon>
-          </div>
-      </div>`;
+      </div>
+    </div>`;
   }
 } // class
 window.customElements.define("intro-card", CardIntroduction);

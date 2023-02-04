@@ -6,7 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
 
 :root {
-  --mainColor: #1c7ed6; /* 76ACDC : tint  1665ab : shade */
+  --mainColor: #1c7ed6;
+  /* 76ACDC : tint  1665ab : shade */
   --white: #fff;
   --black: #121212;
   --grayBackground: #f2f2f7;
@@ -334,7 +335,7 @@ li p {
   text-align: start;
 }
 
-.card-ankerToSections-header-h1{
+.card-ankerToSections-header-h1 {
   width: 85%;
   font-size: 1.8rem;
   font-weight: 700;
@@ -398,12 +399,12 @@ li p {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.06);
 }
 
-.topBar-anker-backHome {  
+.topBar-anker-backHome {
   margin-top: -2px;
   display: inline-block;
   text-align: center;
@@ -414,7 +415,7 @@ li p {
 .topBar-btn-svg {
   height: 24px;
   width: 24px;
-  stroke: var(--iconTopBar);
+  stroke: var(--iconTopBar);  
 }
 
 .topBar-anker-p,
@@ -589,6 +590,11 @@ li p {
   stroke: var(--mainColor);
 }
 
+.card-svg {
+  font-size: 22px;
+  color: var(--mainColor);
+}
+
 
 /* SLIDER TIPS */
 .sliderTips {
@@ -627,7 +633,7 @@ li p {
   padding: .8rem .8rem 0 .8rem;
   border-radius: 18px;
   color: var(--white);
-  background: linear-gradient(to top right, #1c7ed6 , #4dabf7);
+  background: linear-gradient(to top right, #1c7ed6, #4dabf7);
 }
 
 .tip p {
@@ -694,13 +700,14 @@ footer {
   backdrop-filter: blur(12px);
   background-color: #a7c6ee75;
 }
+
 .container-bodyPage {
   display: grid;
   gap: 6px;
   grid-template-columns: 16rem auto;
 }
 
-.wrapper-ankerDocs {  
+.wrapper-ankerDocs {
   height: auto;
   background-color: #fff;
 }
@@ -720,7 +727,7 @@ footer {
   font-weight: 800;
 }
 
-.ankerDocks-a {  
+.ankerDocks-a {
   padding-top: 16px;
   font-size: 16px;
   display: inline-block;
