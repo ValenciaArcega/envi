@@ -411,11 +411,14 @@ li p {
   text-decoration: none;
 }
 
-.topBar-anker-svg,
 .topBar-btn-svg {
-  height: 24px;
-  width: 24px;
-  stroke: var(--iconTopBar);  
+  font-size: 24px;
+  color: var(--iconTopBar);  
+}
+
+.topBar-anker-svg {
+  font-size: 24px;
+  color: var(--iconTopBar);
 }
 
 .topBar-anker-p,
