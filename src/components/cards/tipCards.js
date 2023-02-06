@@ -2,16 +2,16 @@
 
 const tipCards = [
   { ntc: "tip", des: "El Inglés es un idioma fonetico y no todas las palabras se pronuncian como se escriben" },
-  { ntc: "tip", des: "En Español pronunciamos tal cual leemos, y resulta un tanto dificil dar el salto" },
-  { ntc: "tip", des: "¡Animo!, ya hablas un idioma más dificil. El Inglés es 20% más fácil que el Español" },
+  { ntc: "", des: "En Español pronunciamos tal cual leemos, y resulta un tanto dificil dar el salto" },
+  { ntc: "", des: "¡Animo!, ya hablas un idioma más dificil. El Inglés es 20% más fácil que el Español" },
 
   { ntc: "tip", des: "Diferencia entre could y might, ambas palabras significan los mismo, pero..." },
-  { ntc: "tip", des: "Might is used to express a lower level of possibility and is common in formal English" },
-  { ntc: "tip", des: "Could is used to express past ability or high possibility and is common in informal English" },
+  { ntc: "Might", des: "Might is used to express a lower level of possibility and is common in formal English" },
+  { ntc: "Could", des: "Could is used to express past ability or high possibility and is common in informal English" },
 
   { ntc: "tip", des: "Diferencia entre do y make, ambas palabras significan los mismo, pero..." },
-  { ntc: "tip", des: "Do is used to describe actions or activities that involve a specific task or purpose" },
-  { ntc: "tip", des: "While Make is used to describe the creation of something (imagination)" },
+  { ntc: "Do", des: "Do is used to describe actions or activities that involve a specific task or purpose" },
+  { ntc: "Make", des: "While Make is used to describe the creation of something (imagination)" },
 
   { ntc: "homophones", des: "Los homófonos son palabras con la misma pronunciación, pero un significado distinto" },
   { ntc: "homophones", des: "Las palabras Write, Right y Rite(rito) se pronuncian exactamente igual: rhait" },
@@ -22,8 +22,8 @@ const tipCards = [
   { ntc: "homophones", des: "eye y el pronombre I son homófonos, es decir, ambas suenan igual: ay" },
 
   { ntc: "tip", des: "Puedes agregar un icono de cualquier sección de Tolescro en tu pantalla de inicio" },
-  { ntc: "tip", des: "Ve al menu del navegador y da click en la opción Agregar icono a pantalla de inicio" },
-  { ntc: "tip", des: "Listo tendras un acceso directo, esto lo puedes hacer con cualquier sección" },
+  { ntc: "", des: "Ve al menu del navegador y da click en la opción Agregar icono a pantalla de inicio" },
+  { ntc: "", des: "Listo tendras un acceso directo, esto lo puedes hacer con cualquier sección" },
 
   { ntc: "homophones", des: "La letra U y la palabra you son homófonos, de manera informal suelen sustituirse" },
   { ntc: "homophones", des: "Las palabras Good y Would su pronunciación es exactamente igual: ghud" },
