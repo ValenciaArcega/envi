@@ -47,7 +47,8 @@ const tCards = [
   { cn: "Likewise", pro: "laik - guais", es: "Asimismo", ex: "Sustituye a also. de manera más formal. Likewise, we must deliver it signed ⇌ Así mismo, debemos entregarla firmada" },
   { cn: "However", pro: "jau - ever", es: "Sin embargo", ex: "Sustituye a but a manera más formal. I love code, however, is complicated ⇌ Me encanta programar, sin embargo, es complicado" },
   { cn: "Wallpaper", pro: "guol - peipr", es: "Fondo de pantalla", ex: "Hey babe, look at my new wallpaper, It is you! ⇌ Oye nena, mira mi nuevo fondo de pantalla, ¡Eres tú!" },
-  
+
+  { cn: "", pro: "", es: "", ex: "" },
   { cn: "", pro: "", es: "", ex: "" },
 ];
 

@@ -1,76 +1,93 @@
 'use strict';
 
-let outputPhrasalV = '';
-const phrasalVerbs = [
-  { cn: "Cut in", pro: "coth in", es: "Interrumpir, cortar", ex: "Oh sorry if I cutting in, I gotta go right now! ⇌ ¡Oh, lo siento si interrumpo, tengo que irme ahora mismo!" },
-  { cn: "Work out", pro: "wuork aut", es: "Ejercicio físico / Entrenamiento", ex: "Sorry I wont be able to come to the party. I have to work out, today is legs day ⇌ Lo siento, no podré ir a la fiesta. Tengo que hacer ejercicio, hoy es día de pierna" },
-  { cn: "Warm up", pro: "guarm up", es: "Calentamiento", ex: "I did not warm up enough before work out, and now I got injured ⇌ No calenté lo suficiente antes de hacer ejercicio y ahora me lesioné" },
-  { cn: "Tell off", pro: "thel of", es: "Regañar", ex: "Ima tell u off when we get home ⇌ Vas a ver cuando lleguemos a la casa" },
-  { cn: "Keep away", pro: "kip awey", es: "Alejar, mantener alejado", ex: "I have to keep she away, cuz she just hurts me ⇌ Tengo que mantenerla alejada, porque solo me hace daño" },
-  { cn: "Come from", pro: "khom  from", es: "Ser originario de", ex: "He does not speak spanish \'cause he comes from abroad ⇌ El no habla español porque viene del extranjero" },
-  { cn: "Give in", pro: "Giv in", es: "Rendirse / Darse por vencido", ex: "I cannot do that, Imma just give in Im sorry ⇌ No puedo hacerlo, voy a rendirme lo siento" },
-  { cn: "Keep on", pro: "kip on", es: "Seguir, continuar", ex: "U must to keep on working hard to grow yourself ⇌ Debes seguir trabajando duro para crecer" },
-  { cn: "Give away", pro: "Giv awey", es: "Donar / Regalar", ex: "My sister gave money away to help abandoned puppies ⇌ Mi hermana donó dinero para ayudar a cachorritos abandonados" },
-  { cn: "Keep up", pro: "Kip op", es: "Mantenerse al día", ex: "I have to keep up, cuz the technology never stop ⇌ Tengo que mantenerme al día, porque la tecnología nunca se detiene" },
-  { cn: "Carry out", pro: "kerhi  auth", es: "Llevar a cabo", ex: "The company is carrying out a restructuring plan to improve efficiency ⇌ La compañía está llevando a cabo un plan de reestructuración para mejorar la eficiencia" },
-  { cn: "Find out", pro: "faind  auth", es: "Averiguar / enterarse", ex: "My mom found out that I am pregnant ⇌ Mi mamá se enteró que estoy embarazada" },
-  { cn: "Bring up", pro: "bring  op", es: "Criar / educar", ex: "I will bring up my child, as my father brought me up ⇌ Criaré a mi hijo, como me crió mi padre" },
-  { cn: "Carry off", pro: "ke - rhi  of", es: "Lograr algo / Tener éxito", ex: "The thief managed to carry off the money without anyone noticing ⇌ El ladrón logró llevarse el dinero sin que nadie se diera cuenta" },
-  { cn: "Answer back", pro: "an - sr bakh", es: "Responder de mala gana", ex: "Her son answered her back ⇌ Su hijo le contestó de mala gana / algo grosero" },
-  { cn: "Burn out", pro: "brn - auth", es: "Hartarse de hacer algo", ex: "I just coded a lot, therefore I burn out ⇌ He estado mucho tiempo programando, ya me fastidie" },
-  { cn: "Hold on", pro: "jhol - don", es: "Aguanta / Espera", ex: "Hold on I am tryna pay attention ⇌ Espera estoy tratando de poner atención" },
-  { cn: "Show off", pro: "sho - u of", es: "Presumir, alardear sobre algo", ex: "Ranks doesnot matter at all, stop to Show off them ⇌ Las calificaciones no son del todo importantes, deja de presumir" },
-  { cn: "Hang out", pro: "jan - gaut", es: "Pasar el rato", ex: "I wanna hang out with my friends ⇌ Quiero pasar tiempo con mis amigos" },
-  { cn: "Break out", pro: "bre - ik aut", es: "Escaparse", ex: "The prisoners broke out of jail when nobody looking ⇌ Los prisioneros escaparon de la cárcel cuando nadie miraba" },
-  { cn: "Ask out", pro: "ask auth", es: "Invitar a una cita", ex: "She wanted to Ask him out however is too shy ⇌ Ella quería invitarlo a salir, sin embargo es demasiado tímida" },
-  { cn: "Back up", pro: "bak op", es: "Respaldar información", ex: "You must Back up important documents on your computer ⇌ Debes hacer una copia de seguridad de los documentos importantes en tu pc" },
-  { cn: "Bitch up", pro: "bich op", es: "Arruinar algo", ex: "I just bitched up the interview, was terrible ⇌ Arruiné / Jodí la entrevista, fue terrible" },
-  { cn: "Block off", pro: "blok of", es: "Obstruir la salida para evitar que alguien se vaya", ex: "The firemen Blocked off the building after the fire ⇌ Los bomberos bloquearon el edificio tras el incendio" },
-  { cn: "Book in", pro: "buk in", es: "Reservar en un hotel", ex: "I took a taxi from the airport to the hotel and Booked in ⇌ Tomé un taxi desde el aeropuerto hasta el hotel y reservé" },
-  { cn: "Call up", pro: "khal op", es: "Llamar / Marcar por teléfono", ex: "I Called her up as soon as I got my phone ⇌ La llamé tan pronto como obtuve mi teléfono" },
-  { cn: "Calm down", pro: "kalm daun", es: "Relajarse / Bajar el enojo", ex: "You need to calm down, you are too angry ⇌ Necesitas calmarte, estás demasiado enojada" },
-  { cn: "Carry on", pro: "kerui onkerui on", es: "Continuar / Proseguir", ex: "You have to carry on with your exam, until the teacher comes ⇌ Tienes que continuar con tu examen, hasta que venga la profesora" },
-  { cn: "Break up", pro: "bre - ik op", es: "Terminar una relación", ex: "We broke up before get back college ⇌ Rompimos antes de volver a la universidad" },
+const tCards = [
+  { cn: "Within", pro: "wi - din", es: "Dentro / en (tiempo)", ex: "I called the ambulance, gonna arrive within 10 minutes ⇌ Llamé a la ambulancia, llegará dentro de 10 minutos" },
+  { cn: "Achievements", pro: "ah - chiv - menths", es: "Logros alcanzados", ex: "My best achievement have been to learn three languages ⇌ Mi mayor logro ha sido aprender tres idiomas" },
+  { cn: "Kidnap", pro: "kid - nap", es: "Secuestrar", ex: "Kidnapping are common on this country unfortunately ⇌ Desafortunadamente, los secuestros son comunes en este país" },
+  { cn: "Device", pro: "Di - vais", es: "Dispositivo", ex: "You should connect your device to energy ⇌ Deberías conectar tu dispositivo a la energía" },
+  { cn: "Data", pro: "dei - ta", es: "Datos", ex: "Esta aplicación esta robando mis datos ⇌ This application is stealing my data" },
+  { cn: "Summary", pro: "so - mha - rhi", es: "Resumen", ex: "This is a lil summary of the videos that you saw this year ⇌ Este es un pequeño resumen de los videos que viste este año" },
+  { cn: "Assets", pro: "asset / assets", es: "Activos / bienes de alto valor o calidad", ex: "She is an asset to the company ⇌ Ella es muy valiosa para la compañia" },
+  { cn: "Settings", pro: "se - rings", es: "Ajustes", ex: "U can turn on the dark mode on your smartphone settings ⇌ Puedes poner el modo obscuro en los ajustes de tu celular" },
+  { cn: "Reminder", pro: "rhi - main - dr", es: "Recordatorio", ex: "I will do it. Lemme set a reminder in my phone ⇌ Lo haré. Déjame poner un recordatorio en mi teléfono" },
+  { cn: "I'm pissed off", pro: "am  pisr - of", es: "¡Estoy encabronad@!", ex: "Sustituye a I am so angry y expresa coraje, de manera agresiva. I am pissed at you ⇌ Estoy encabronado contigo" },
+  { cn: "Environment", pro: "in-vai-rn-mnt", es: "Entorno, ambiente", ex: "My environment is full of people with good vibes ⇌ Mi entorno está lleno de gente con buena vibra" },
+  { cn: "Just joshing", pro: "ost  yosh - in", es: "Solo bromeo", ex: "Sustituye a Just kidding y dejar en claro que solo estas bromeando. Nah Im just joshing u ⇌ Na te creas solo te estoy ch1ng@ndo" },
+  { cn: "Inquisitive", pro: "in - ki - sitiv", es: "Preguntona, muy curiosa", ex: "Children are naturally inquisitive ⇌ Los niños son naturalmente curiosos" },
+  { cn: "I'm bursting", pro: "am  brs - tin", es: "¡Me estoy haciendo del baño!", ex: "Sustituye a I have to go to the bathroom pero de manera informal. Brh, I am bursting! ⇌ Weey ¡Estoy cag$nd#me!" },
+  { cn: "I'm starving", pro: "am  s-tharvin", es: "¡Muero de hambre!", ex: "Sustituye a I am so hungry, expresa un sentimiento de ansiedad por comer. I wanna eat bruh Im starving ⇌ Quiero comer we, muero de hambre" },
+  { cn: "Knowledge", pro: "no - lech", es: "Conocimiento", ex: "You are so brilliant, you must have a lotta knowledges ⇌ Eres tan brillante, debes tener muchos conocimientos" },
+  { cn: "I would say", pro: "ai - gud-sei", es: "Yo diría", ex: "Sustituye a I think, se usa antes de dar una opinión. I would say lets do homework first ⇌ Yo diría que primero hagamos la tarea" },
+  { cn: "Do u get me?", pro: "du yu get mi", es: "¿Me entendiste?", ex: "Sustituye a Did you understand me? de manera informal, para preguntar si hemos sido claros So...Do you get me, right? ⇌ Mmm... ¿Me entiendes, verdad?" },
+  { cn: "Native", pro: "nei - rif", es: "Nativa / Nativo", ex: "I am a native Spanish speaker ⇌ Soy un hispanohablante nativo" },
+  { cn: "How u doing?", pro: "jau yu du-in", es: "¿Cómo te va?", ex: "Sustituye a How are you? y se usa para iniciar una platica con mayor confianza y de manera más amigable. Hey mate, how u doin'?" },
+  { cn: "Should", pro: "sh - ud", es: "Deberí a/mos/as/an/", ex: "It is too late, you should sleep rn ⇌ Ya es muy tarde, deberías dormir ahora mismo" },
+  { cn: "Could", pro: "kh - ud", es: "Podrí a/mos/as/an/", ex: "I could not do it either ⇌ Yo tampoco podría hacerlo, She could get it ⇌ Ella podría conseguirlo" },
+  { cn: "Would", pro: "gh - ud", es: "ría / haría", ex: "I would like score a goal in the world cup ⇌ Me gustaría anotar un gol en el mundial" },
+  { cn: "Overview", pro: "ow - vr - viu", es: "Vistazo / Vista general", ex: "Imma give u a lil overview to the project ⇌ Voy a darte una pequeña descripción general del proyecto" },
+  { cn: "Enhance", pro: "in - hans", es: "Incrementar / Intensificar", ex: "I want to enhance my English, to talk with native speakers ⇌ Quiero mejorar mi Inglés para platicar con hablantes nativos" },
+  { cn: "I Thought", pro: "thot (saca el aire, con la lengua pegada a los dientes de arriba)", es: "Pensé", ex: "He thought he could do it ⇌ El pensó que podría hacerlo" },
+  { cn: "Commitment", pro: "co - mid - ment", es: "Compromiso / Dar tu palabra", ex: "I am sorry, I already have a commitment to my family ⇌ Lo siento, ya tengo un compromiso con mi familia" },
+  { cn: "Between", pro: "bi - thuin", es: "Entre / en medio de", ex: "Guess her/his age, is between 18 and 27 ⇌ Adivina su edad, es entre 18 y 27" },
+  { cn: "Effortless", pro: "eforh - les", es: "Sin mayor esfuerzo / Poco esfuerzo / Sin esfuerzo aparente", ex: "I made no efforless to bench 225lb ⇌ No hice ningún esfuerzo para levantar 115kg" },
+  { cn: "Storage", pro: "s - to - rech", es: "Almacenamiento", ex: "The storage in my cellphone is completely full ⇌ El almacenamiento en mi celular está completamente lleno" },
+  { cn: "Measure", pro: "me - shu - r", es: "Medida", ex: "The measure of earth can be measured in Kilometers ⇌ La medida de la tierra se puede medir en kilómetros" },
+  { cn: "Through", pro: "thru", es: "A través de / Mediante", ex: "I sent you a gift through delivery ⇌ Te envié un regalo mediante paqueteria" },
+  { cn: "Throw", pro: "dhrow", es: "Arrojar / Lanzar", ex: "Patrick throwed a perfect pass on second half ⇌ Patrick lanzó un pase perfecto en la segunda mitad" },
+  { cn: "Though", pro: "dho", es: "Aunque / Sin embargo", ex: "I am into him/her, though he makes me angry sometimes ⇌ Me gusta, aunque a veces me hace enojar" },
+  { cn: "Improve", pro: "im - pruv", es: "Mejorar / Aumentar", ex: "I love English and work hard to improve my knowledges ⇌ Me encanta el inglés y estudiar duro para mejorar mis conocimientos" },
+  { cn: "Behavior", pro: "bi - hey -viur", es: "Comportamiento / Conducta", ex: "Your behavior is disgusting, calm down ⇌ Tu comportamiento es desagradable, cálmate" },
+  { cn: "Childhood", pro: "cha - il - jud", es: "Infancia", ex: "Not gonna lie, I had a lovely childhood ⇌ No lo negaré, tuve una infancia hermosa" },
+  { cn: "Weird", pro: "wi - rd", es: "Raro / Extraño", ex: "Bro dont get me wrong, but u are kinda weird ⇌ Wey no me malinterpretes, pero eres un poco raro" },
+  { cn: "Naturally", pro: "na - chr - li", es: "Naturalmente", ex: "She/He has naturally curly hair ⇌ Ella/El tiene el cabello naturalmente rizado" },
+  { cn: "Brilliant", pro: "bri - liant", es: "Brillante", ex: "Yea u right, u are so brilliant! ⇌ Sí, tienes razón, eres tan brillante" },
+  { cn: "Vibes", pro: "va - ibs", es: "Vibras", ex: "I send my good vibes to the Mexican team in the World Cup ⇌ Le mando mis buenas vibras a la seleccion Mexicana en el mundial" },
+  { cn: "By all means", pro: "bye ol mins", es: "Por supuesto / Claro que si", ex: "Sustituye a yes, of course o sure. By all means! I will be there, just just lemme know ⇌ Por supuesto que estaré ahí, solo hazmelo saber" },
+  { cn: "Lovely", pro: "lof - li", es: "Encantador/a, precioso/a", ex: "Sustituye a beautiful y describe algo es lindo o se ve bien. Oh thank u, u are so lovely ⇌ Oh gracias eres tan encantador/a" },
+  { cn: "Likewise", pro: "laik - guais", es: "Asimismo", ex: "Sustituye a also. de manera más formal. Likewise, we must deliver it signed ⇌ Así mismo, debemos entregarla firmada" },
+  { cn: "However", pro: "jau - ever", es: "Sin embargo", ex: "Sustituye a but a manera más formal. I love code, however, is complicated ⇌ Me encanta programar, sin embargo, es complicado" },
+  { cn: "Wallpaper", pro: "guol - peipr", es: "Fondo de pantalla", ex: "Hey babe, look at my new wallpaper, It is you! ⇌ Oye nena, mira mi nuevo fondo de pantalla, ¡Eres tú!" },
 
-  // { cn: "", pro: "", es: "", ex: "" },
+  { cn: "", pro: "", es: "", ex: "" },
+  { cn: "", pro: "", es: "", ex: "" },
 ];
 
-for (let pv = 0; pv < phrasalVerbs.length; pv++) {
-  outputPhrasalV += `
-  <div class='card'>
-  <h1 class='title-card'>${phrasalVerbs[pv].cn}</h1>
-  <ul>
-    <li>
-      <div class='list-header'>
-        <ion-icon class='card-svg' name='mic-outline'></ion-icon>
-        <h4>Pronunciation</h4>
-      </div>
-      <p>${phrasalVerbs[pv].pro}</p>
-    </li>
+let outputTCards = '';
 
-    <li>
-      <div class='list-header'>
-        <ion-icon class='card-svg' name='language-outline'></ion-icon>
-        <h4>Reverse context</h4>
-      </div>
-      <p>${phrasalVerbs[pv].es}</p>
-    </li>
-
-    <li>
-      <div class='list-header'>
-        <ion-icon class='card-svg' name='extension-puzzle-outline'></ion-icon>  
-        <h4>Example</h4>
-      </div>
-      <p>${phrasalVerbs[pv].ex}</p>
-    </li>
-  </ul>
-</div>
-  `;
+for (let tc = 0; tc < tCards.length; tc++) {
+  outputTCards += ` 
+    <div class="card">
+        <h1 class="title-card">${tCards[tc].cn}</h1>
+        <ul>
+          <li>
+            <div class="list-header">
+              <ion-icon class="card-svg" name="mic-outline"></ion-icon>
+              <h4>Pronunciation</h4>
+            </div>
+            <p>${tCards[tc].pro}</p>
+          </li>
+  
+          <li>
+            <div class="list-header">
+              <ion-icon class="card-svg" name="language-outline"></ion-icon>
+              <h4>Reverse context</h4>
+            </div>
+            <p>${tCards[tc].es}</p>
+          </li>
+  
+          <li>
+            <div class="list-header">
+              <ion-icon class="card-svg" name="extension-puzzle-outline"></ion-icon>             
+              <h4>Example</h4>
+            </div>
+            <p>${tCards[tc].ex}</p>
+          </li>
+        </ul>
+    </div>`
 }
+document.querySelector('.cards').innerHTML = outputTCards;
 
-document.querySelector('.cards').innerHTML = outputPhrasalV;
-/*'use strict';
-
+/*
 class TCards extends HTMLElement {
   constructor() {
     super();
@@ -132,5 +149,4 @@ class TCards extends HTMLElement {
   }
 }
 window.customElements.define('t-card", TCards);
-
 */
