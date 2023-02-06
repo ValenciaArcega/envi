@@ -17,6 +17,15 @@
   --borderCards: transparent;
 }
 
+::selection {
+  color: var(--white);
+  background-color: var(--mainColor);
+}
+::-moz-selection {
+  color: var(--white);
+  background-color: var(--mainColor);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -116,6 +125,7 @@ body {
 
 /* Cards */
 .cards {
+  width: 95%;
   margin-top: 10px;
   display: grid;
   gap: 0 3.2rem;
@@ -434,6 +444,10 @@ li p {
   text-align: center;
   stroke: var(--mainColor);
 }
+.icon-section-svg {
+  font-size: 36px;
+  color: var(--mainColor);
+}
 
 .searchBar {
   width: 100%;
@@ -473,6 +487,8 @@ li p {
 .section-cards {
   height: auto;
   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 /* SLANGS CARD */
@@ -535,7 +551,7 @@ li p {
 .sliderTips {
   margin-top: 10px;
   display: grid;
-  gap: 4rem 2rem;
+  gap: 3rem 2rem;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-auto-flow: dense;
   justify-items: center;
