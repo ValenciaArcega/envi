@@ -244,7 +244,7 @@ li p {
 .features {
   margin-top: 25px;
   display: grid;
-  grid-gap: 15px;
+  grid-gap: 24px 10px;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   justify-items: center;
 }
@@ -329,15 +329,14 @@ li p {
   background-color: var(--white);
   position: relative;
 }
-.card-ankerToSections:nth-child(3)::before {
-  content: 'NEW';  
-  padding: 3px 16px;
+.card-ankerToSections:nth-child(3)::after {
+  content: '+20';  
+  padding: 3px 12px;
   border-radius: 4px;
   position: absolute;
-  font-weight: 500;
-  letter-spacing: 2px;
   top: -15px;
   right: -15px;
+  font-weight: 500;  
   color: var(--white);
   background-color: rgb(255, 49, 49);
 }
@@ -383,7 +382,7 @@ li p {
 .btn-Sections:link,
 .btn-Sections:visited {
   width: 80%;
-  margin: .75rem auto 0 auto;
+  margin-top: .75rem;
   padding: 10px 28px;
   border-radius: 8px;
   font-size: 17px;
