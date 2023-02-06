@@ -125,7 +125,7 @@ body {
 
 /* Cards */
 .cards {
-  width: 95%;
+  width: 100%;
   margin-top: 10px;
   display: grid;
   gap: 0 3.2rem;
@@ -229,7 +229,7 @@ li p {
 /* Features */
 .container-features {
   width: 90%;
-  margin: 200px auto 150px auto;
+  margin: 200px auto 0 auto;
   text-align: center;
 }
 
@@ -279,78 +279,85 @@ li p {
 
 
 
-/* To learn */
+/* Sections. */
 .container-ankerToSections {
+  margin-top: 18rem;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
 }
 
-.header-ankerToSections {
-  width: 85%;
-  margin: 4rem auto 0 auto;
-  font-size: 2rem;
-  letter-spacing: -1.3px;
-  line-height: .9;
-  text-align: center;
-  color: var(--black);
-}
-
 .ankerToSections-h1 {
   font-size: 4.3rem;
-  padding-top: 1.3rem;
-  margin-bottom: -8px;
   letter-spacing: -1.5px;
 }
 
+/* //////////////////// */
+.wrapper-ankerToSections {
+  width: 95%;
+  margin-top: 12px;
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  text-align: start;
+  align-items: center;
+  justify-items: center;
+}
 
 .card-ankerToSections {
-  height: 11rem;
-  width: 19rem;
-  margin-top: 28px;
-  border: solid 1px var(--grayBorder);
+  height: 17rem;
+  width: 20rem;
   border-radius: 10px;
+  border: solid 1px var(--grayBorder);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--black);
   background-color: var(--white);
 }
 
-
-.card-ankerToSections-header {
-  height: 35%;
-  margin: 2px 0px 0 20px;
-  display: flex;
-  text-align: start;
+/* ////////////////////////// */
+.card-ankerToSections-header {  
+  height: 24%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 90% 1fr;
+  align-items: center;
+  text-align: justify;
 }
 
-.card-ankerToSections-header-h1 {
+.ankerToSections-header-h1 {
   width: 85%;
   font-size: 1.8rem;
   font-weight: 700;
-  letter-spacing: -.9px;
+  letter-spacing: -1px;
   justify-self: start;
   align-self: center;
   color: var(--black);
 }
 
-.card-ankerToSections p {
-  width: 85%;
-  margin-top: -12px;
-  padding-left: 20px;
-  text-align: start;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
 .ankerToSections-header-icon {
-  width: 22px;
+  font-size: 24px;
+  color: var(--mainColor);
   align-self: center;
+  justify-self: center;
 }
 
+/* ////////////////// */
+.ankerToSections-p {
+  height: 47%;
+  width: 81%;
+  text-align: start;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ////////////////// */
 .btn-Sections:link,
 .btn-Sections:visited {
-  width: 12rem;
+  width: 80%;
   margin: .75rem auto 0 auto;
   padding: 10px 28px;
   border-radius: 8px;
@@ -549,13 +556,15 @@ li p {
 
 /* SLIDER TIPS */
 .sliderTips {
+  width: 100%;
   margin-top: 10px;
   display: grid;
   gap: 3rem 2rem;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-auto-flow: dense;
+  /* grid-auto-flow: dense; */
   justify-items: center;
 }
+
 .tip {
   height: 12rem;
   width: 18rem;

@@ -4,17 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description"
-    content="Tolescro is a tool that can help people to learn english vocabulary with the easiest and popular way that the all people love, scrolling down the screen">  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    content="Tolescro is a tool that can help people to learn english vocabulary with the easiest and popular way that the all people love, scrolling down the screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- ICONS -->
   <link rel="icon" href="src/assets/icons/favicon.png" />
   <link rel="apple-touch-icon" href="src/assets/icons/touch-icon.png" />
   <link rel="manifest" href="../manifest.webmanifest" />
   <!-- IMPORTS -->
   <link rel="stylesheet" href="public/main.css">
-  <script src="src/components/cards/card.js"></script>
   <script src="src/components/animations/fadeTitle.js"></script>
   <script src="src/components/animations/loadPage.js"></script>
   <script src="src/components/navigator/userAgent.js"></script>
+  <!-- ICON SCRIPTS -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <title>Tolescro &mdash; Learn with cards!</title>
 </head>
 
@@ -110,41 +113,40 @@
   </div>
 
   <!-- SECTIONS -->
-  <div class="container-ankerToSections">
-    <div class="header-ankerToSections" id="sections">
-      <h1 class="ankerToSections-h1"><span class="gradient-text">To learn</span>.</h1>
-    </div> <!-- header -->
+  <div class="container-ankerToSections" id="sections">
+    <h1 class="ankerToSections-h1"><span class="gradient-text">Sections</span></h1>
 
     <div class="wrapper-ankerToSections">
+
       <div class="card-ankerToSections">
         <div class="card-ankerToSections-header">
-          <h1 class="card-ankerToSections-header-h1">Alternatives</h1>
-          <img class="ankerToSections-header-icon" src="src/assets/icons/svg/icons sections/22-newsPaper.svg" alt="icon Alternatives">
-        </div> 
-        <p>Words, slangs, tips, homophones and more!</p>
+          <h1 class="ankerToSections-header-h1">Alternatives</h1>
+          <ion-icon class="ankerToSections-header-icon" name="swap-horizontal-outline"></ion-icon>
+        </div>
+        <p class="ankerToSections-p">Palabras comunes con muchas variantes y frases usuales en hablantes nativos, por lo que no viene mal remplazarlas por lo clásico.</p>
         <a href="src/views/alterWords.html" class="btn-Sections" aria-label="See section">See tCards</a>
-      </div> <!-- card Alternatives -->
-  
+      </div>
+
       <div class="card-ankerToSections">
         <div class="card-ankerToSections-header">
-          <h1 class="card-ankerToSections-header-h1">Phrasal verbs</h1>
-          <img class="ankerToSections-header-icon" src="src/assets/icons/svg/icons sections/22-tools.svg" alt="icon Phrasal verbs">
+          <h1 class="ankerToSections-header-h1">Phrasal verbs</h1>
+          <ion-icon class="ankerToSections-header-icon" name="rocket-outline"></ion-icon>
         </div>
-        <p>Actions, emotions, phrases and expressions</p>
+        <p class="ankerToSections-p">Son frases acompañadas de un verbo, pero su significado no siempre tiene relación con el. Además ayudan a sonar más naturales al expresarnos.</p>
         <a href="src/views/phrasalVerbs.html" class="btn-Sections" aria-label="See section">See tCards</a>
-      </div><!-- card phrasalVerbs -->
+      </div>
 
       <div class="card-ankerToSections">
         <div class="card-ankerToSections-header">
-          <h1 class="card-ankerToSections-header-h1">Tips</h1>
-          <img class="ankerToSections-header-icon" src="src/assets/icons/svg/icons sections/22-tools.svg" alt="icon Phrasal verbs">
+          <h1 class="ankerToSections-header-h1">Tips</h1>
+          <ion-icon class="ankerToSections-header-icon" name="extension-puzzle-outline"></ion-icon>
         </div>
-        <p>Homophones, false friends, advices and more!</p>
-        <a href="src/views/globalTips.html" class="btn-Sections" aria-label="See section">See tCards</a>
-      </div><!-- card phrasalVerbs -->
+        <p class="ankerToSections-p">La experiencia genera aprendizaje, si esta se comparte, el conocimiento crece, experiencias y consejos para dominar el idioma.</p>
+        <a href="src/views/globalTips.html" class="btn-Sections" aria-label="See section">See Tips</a>
+      </div>
 
-    </div> <!-- child -->
-  </div> <!-- super -->
+    </div>
+  </div>
 
   <footer id="fin">&copy; 2022, Tolescro</footer>
 
