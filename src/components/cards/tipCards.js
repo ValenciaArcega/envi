@@ -32,17 +32,17 @@ const tipCards = [
   { ntc: 'Cognates', des: 'Son palabras que se escriben o suenan similar en dos idiomas y significan lo mismo' },
   { ntc: 'False friends', des: 'Son palabras que suenan o se escriben similar pero no significan lo mismo' },
   { ntc: 'False friends', des: 'Actually ⇌ Realmente (NO actualmente) debido a que Actualmente ⇌ Currently' },
-  
-  { ntc: 'tip', des: '"Ya" suele ser otra manera informal de escribir o decir al pronombre "you"' },  
-  { ntc: 'tip', des: 'Recuerda que los idiomas no se traducen literalmente. Algunas palabras si...' },  
+
+  { ntc: 'tip', des: '"Ya" suele ser otra manera informal de escribir o decir al pronombre "you"' },
+  { ntc: 'tip', des: 'Recuerda que los idiomas no se traducen literalmente. Algunas palabras si...' },
   { ntc: 'tip', des: 'pero algunas expresiones dependen de la cultura del pais o el contexto del idioma' },
 
-  { ntc: 'False friends', des: 'Advice ⇌ Consejo (NO confundir con: aviso) debido a que Aviso ⇌ Warning' },  
-  { ntc: 'False friends', des: 'Conductor ⇌ Director de orquesta (NO: conductor) ya que Conductor ⇌ Driver' },  
-  { ntc: 'False friends', des: 'Dude ⇌ Amigo (NO confundir con: duda) debido a que Duda ⇌ Doubt(da-uth)' }, 
+  { ntc: 'False friends', des: 'Advice ⇌ Consejo (NO confundir con: aviso) debido a que Aviso ⇌ Warning' },
+  { ntc: 'False friends', des: 'Conductor ⇌ Director de orquesta (NO: conductor) ya que Conductor ⇌ Driver' },
+  { ntc: 'False friends', des: 'Dude ⇌ Amigo (NO confundir con: duda) debido a que Duda ⇌ Doubt(da-uth)' },
 
-  { ntc: 'False friends', des: 'Groceries ⇌ Comestibles (NO groserias) debido a que Groserias ⇌ Rudeness' },  
-  { ntc: 'False friends', des: 'Advice ⇌ Consejo (NO confundir con aviso) debido a que Aviso ⇌ Warning / Ad' },  
+  { ntc: 'False friends', des: 'Groceries ⇌ Comestibles (NO groserias) debido a que Groserias ⇌ Rudeness' },
+  { ntc: 'False friends', des: 'Advice ⇌ Consejo (NO confundir con aviso) debido a que Aviso ⇌ Warning / Ad' },
   { ntc: 'False friends', des: 'Exit ⇌ Salir de / La salida (NO confundir con éxito) debido a que Éxito ⇌ Success' },
 
   // { ntc: '', des: '' },  

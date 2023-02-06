@@ -242,8 +242,9 @@ li p {
 }
 
 .features {
+  margin-top: 25px;
   display: grid;
-  grid-gap: 5px;
+  grid-gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   justify-items: center;
 }
@@ -252,36 +253,46 @@ li p {
 .feature {
   height: 11rem;
   width: 15rem;
-  margin-top: 25px;
-  padding: 0 20px;
+  padding: 24px 20px;
   border: solid 1px var(--grayBorder);
   border-radius: 12px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   color: var(--mainColor);
   background-color: #fff;
 }
 
+.feature-icon-svg {
+  font-size: 28px;
+  color: var(--mainColor);
+}
+
+.wrapper-featureText {
+  display: flex;
+  flex-direction: column;  
+}
+
 .feature-h3 {
-  margin: 10px 0 1px 0;
   letter-spacing: -.5px;
   color: var(--black);
 }
 
 .feature-p {
-  line-height: 1.5;
+  line-height: 1.6;
   color: var(--black);
 }
 
-.feature-icon {
-  margin-top: 20px;
-}
 
 
 
 
-/* Sections. */
+/* Sections */
 .container-ankerToSections {
   margin-top: 18rem;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -289,7 +300,7 @@ li p {
 }
 
 .ankerToSections-h1 {
-  font-size: 4.3rem;
+  font-size: 4rem;
   letter-spacing: -1.5px;
 }
 
@@ -298,7 +309,7 @@ li p {
   width: 95%;
   margin-top: 12px;
   display: grid;
-  gap: 22px;
+  gap: 36px 22px;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   text-align: start;
   align-items: center;
@@ -316,7 +327,21 @@ li p {
   align-items: center;
   color: var(--black);
   background-color: var(--white);
+  position: relative;
 }
+.card-ankerToSections:nth-child(3)::before {
+  content: 'NEW';  
+  padding: 3px 16px;
+  border-radius: 4px;
+  position: absolute;
+  font-weight: 500;
+  letter-spacing: 2px;
+  top: -15px;
+  right: -15px;
+  color: var(--white);
+  background-color: rgb(255, 49, 49);
+}
+
 
 /* ////////////////////////// */
 .card-ankerToSections-header {  
@@ -385,7 +410,7 @@ li p {
   width: 17rem;
   margin: 0;
   padding-top: 2px;
-  border: solid 1px var(--borderCards);
+  /* border: solid 1px var(--borderCards); */
   border-radius: 12px;
   position: fixed;
   top: 7px;
@@ -629,7 +654,6 @@ li p {
 */
 
 
-
 footer {
   height: 2rem;
   width: 90%;
@@ -637,95 +661,6 @@ footer {
   color: var(--black);
   text-align: center;
 }
-
-
-
-
-
-/* Documentation */
-
-.topBar-docs {
-  height: 3.3rem;
-  width: 13rem;
-  margin: 0;
-  padding-top: 2px;
-  border: solid 1px var(--borderCards);
-  border-radius: 10px;
-  position: fixed;
-  top: 7px;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  background-color: #a7c6ee75;
-}
-
-.container-bodyPage {
-  display: grid;
-  gap: 6px;
-  grid-template-columns: 16rem auto;
-}
-
-.wrapper-ankerDocs {
-  height: auto;
-  background-color: #fff;
-}
-
-.ankerDocks {
-  width: 16rem;
-  margin-top: 4rem;
-  padding: 0 16px;
-  position: fixed;
-  color: var(--black);
-  background-color: var(--white);
-}
-
-.ankerDocks-h1 {
-  margin-top: 2rem;
-  font-size: 18px;
-  font-weight: 800;
-}
-
-.ankerDocks-a {
-  padding-top: 16px;
-  font-size: 16px;
-  display: inline-block;
-  text-decoration: none;
-  color: var(--mainColor);
-}
-
-.ankerDocks-a:hover {
-  color: #1b4c77;
-}
-
-
-
-
-
-
-
-
-.wrapper-bodyDocs {
-  height: 90rem;
-  background-color: #d3d3d3;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*  Tools */

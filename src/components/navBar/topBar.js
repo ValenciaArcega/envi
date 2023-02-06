@@ -15,12 +15,12 @@ class TopBar extends HTMLElement {
     this.innerHTML = `
 <div class="topBar">
     <a href="${this.source_back}" class="topBar-anker-backHome" aria-label="Go back">
-      <ion-icon class="topBar-anker-svg" name="layers"></ion-icon>        
+      <ion-icon class="topBar-anker-svg" name="layers-outline"></ion-icon>        
         <p class="topBar-anker-p">Sections</p>
     </a>
         
     <button type="button" title="Button focus search bar" class="topBar-btnSearch">
-    <ion-icon class="topBar-btn-svg" name="search"></ion-icon>
+    <ion-icon class="topBar-btn-svg" name="search-outline"></ion-icon>
         <p class="topBar-btn-p">Search</p>
     </button>
         
