@@ -12,6 +12,28 @@
 
 <body>
 
+  <div class="topBar">
+    <a href="" class="topBar-anker-backHome" aria-label="Go back">
+      <ion-icon class="topBar-anker-svg" name="layers-outline"></ion-icon>
+      <p class="topBar-anker-p">Sections</p>
+    </a>
+
+    <button type="button" title="Button focus search bar" class="topBar-btnSearch">
+      <ion-icon class="topBar-btn-svg" name="search-outline"></ion-icon>
+      <p class="topBar-btn-p">Search</p>
+    </button>
+
+    <button type="button" title="Button turn dark mode" class="topBar-btnDark">
+      <ion-icon class="topBar-btn-svg" name="moon-outline"></ion-icon>
+      <p class="topBar-btn-p">Dark</p>
+    </button>
+
+    <button type="button" title="Button turn light mode" class="topBar-btnLight hidden">
+      <ion-icon class="topBar-btn-svg" name="sunny-outline"></ion-icon>
+      <p class="topBar-btn-p">Light</p>
+    </button>
+  </div>
+
   <!-- ICON BEFORE SEARCHBAR -->
   <div class="section-icon">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -27,6 +49,9 @@
   <!-- CARDS -->
   <div class="section-cards">
     <div class="cards">
+      <intro-card title="Welcome to phrasal verbs"
+      description="Son frases acompañadas de un verbo, pero su significado no siempre tiene relación con el, son más informales pero ayudan a mejorar nuestra manera de expresarnos y sonar más naturales.">
+    </intro-card>
 
     </div>
   </div>
@@ -41,7 +66,6 @@
   <script src="../src/"></script>
   <script src="../src/components/appearance/appearance.js"></script>
   <script src="../src/components/finder/filterCards.js"></script>
-  <script src="../src/components/cards/introduction.js"></script>
   <script src="../src/components/cards/tCard.js"></script>
   <script src="../src/components/cards/tip.js"></script>
   <script src="../src/components/cards/sCard.js"></script>
