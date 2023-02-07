@@ -321,6 +321,17 @@ li p {
   position: relative;
 }
 
+.card-sections:first-child::after {
+  content: '+25';
+  padding: 3px 12px;
+  border-radius: 4px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  font-weight: 500;
+  color: var(--white);
+  background-color: #ff3131;
+}
 .card-sections:nth-child(3)::after {
   content: '+20';
   padding: 3px 12px;
@@ -330,9 +341,8 @@ li p {
   right: -15px;
   font-weight: 500;
   color: var(--white);
-  background-color: rgb(255, 49, 49);
+  background-color: #ff3131;
 }
-
 /* /////////////////////////////////////////////////////////////////*/
 .card-sections-header {
   height: 24%;

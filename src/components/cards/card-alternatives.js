@@ -56,8 +56,9 @@ const tCards = [
   { cn: "Likewise", pro: "laik - guais", es: "Asimismo", ex: "Sustituye a also. de manera más formal. Likewise, we must deliver it signed ⇌ Así mismo, debemos entregarla firmada" },
   { cn: "However", pro: "jau - ever", es: "Sin embargo", ex: "Sustituye a but a manera más formal. I love code, however, is complicated ⇌ Me encanta programar, sin embargo, es complicado" },
   { cn: "Wallpaper", pro: "guol - peipr", es: "Fondo de pantalla", ex: "Hey babe, look at my new wallpaper, It is you! ⇌ Oye nena, mira mi nuevo fondo de pantalla, ¡Eres tú!" },
-
   { cn: "Dunno", pro: "ai dhunow", es: "I donot know ⇌ no lo se", ex: "I dunno how that got there, I was out of the house all day ⇌ Realmente no sé cómo llegó eso ahí, estuve todo el dia fuera de casa" },
+  { cn: "ngl", pro: "not gona lai", es: "Not gonna lie ⇌ no voy a mentir", ex: "Ngl, that dress looks gorgeous on you, in my opinion ⇌ No lo puedo negar ese vestido se te ve hermoso a mi parecer" },
+  { cn: "Lemme", pro: "lemi", es: "Let me ⇌ Déjame (mostrarte, adivinar, ver, probar, etc.)", ex: "Lemme show u, why you should study English and all its benefits ⇌ Dejame mostrarte por que deberias estudiar ingles y todos sus beneficios" },
   
   // { cn: "", pro: "", es: "", ex: " ⇌ " },
 ];
