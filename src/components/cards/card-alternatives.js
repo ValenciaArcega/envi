@@ -5,6 +5,7 @@ const tCards = [
   { cn: "Kidnap", pro: "kid - nap", es: "Secuestrar", ex: "Kidnapping are common on this country unfortunately ⇌ Desafortunadamente, los secuestros son comunes en este país" },
   { cn: "smh", pro: "sheik mai jed", es: "Shaking my head ⇌ mover la cabeza con desaprobación", ex: "That comment was so immature, smh 🤦 ⇌ Ese comentario fue tan inmaduro, no lo puedo creer" },
   { cn: "Device", pro: "Di - vais", es: "Dispositivo", ex: "You should connect your device to energy ⇌ Deberías conectar tu dispositivo a la energía" },
+  { cn: "af", pro: "as fock", es: "As fuck ⇌ ¡Como la mi3rd@!", ex: "I fell on my skateboard and my wound hurts af ⇌ Me caí en la patineta y la herida me duele como la mi3rd@" },
   { cn: "Data", pro: "dei - ta", es: "Datos", ex: "Esta aplicación esta robando mis datos ⇌ This application is stealing my data" },
   { cn: "Summary", pro: "so - mha - rhi", es: "Resumen", ex: "This is a lil summary of the videos that you saw this year ⇌ Este es un pequeño resumen de los videos que viste este año" },
   { cn: "btw", pro: "bye de wey", es: "by the way ⇌ por cierto", ex: "btw, I wanted to ask u... Do u wanna go out tonight? ⇌ Por cierto queria preguntarte... ¿Quieres salir esta noche?" },
@@ -59,8 +60,11 @@ const tCards = [
   { cn: "Dunno", pro: "ai dhunow", es: "I donot know ⇌ no lo se", ex: "I dunno how that got there, I was out of the house all day ⇌ Realmente no sé cómo llegó eso ahí, estuve todo el dia fuera de casa" },
   { cn: "ngl", pro: "not gona lai", es: "Not gonna lie ⇌ no voy a mentir", ex: "Ngl, that dress looks gorgeous on you, in my opinion ⇌ No lo puedo negar ese vestido se te ve hermoso a mi parecer" },
   { cn: "Lemme", pro: "lemi", es: "Let me ⇌ Déjame (mostrarte, adivinar, ver, probar, etc.)", ex: "Lemme show u, why you should study English and all its benefits ⇌ Dejame mostrarte por que deberias estudiar ingles y todos sus beneficios" },
-  { cn: "nvm", pro: "nhevr maind", es: "Never mind ⇌ No importa, olvidalo", ex: "Don't forget to bring what I asked for, hmm nvm, I'll go at night ⇌ No olvides traer lo que te pedi, mmm bueno no olvidalo, yo voy en la noche" },
-  { cn: "Kinda", pro: "khainda", es: "Kind of ⇌ Más o menos", ex: " ⇌ " },
+  { cn: "nvm", pro: "nhevr maind", es: "Never mind ⇌ no importa, olvidalo", ex: "Don't forget to bring what I asked for, hmm nvm, I'll go at night ⇌ No olvides traer lo que te pedi, mmm bueno no olvidalo, yo voy en la noche" },
+  { cn: "Kinda", pro: "khainda", es: "Kind of ⇌ Más o menos", ex: "The weather is kinda strange, we are at 25 degrees but is cold af! ⇌ El clima esta algo raro, estamos a 25 grados, pero hace un frio para morirse" },
+  { cn: "Gimme", pro: "Gimi", es: "Give me ⇌ dame (un minuto, tiempo, la oportunidad. etc.)", ex: "Come on dude gimme 2 more days, and I will pay u everything u lent me ⇌ Vamos amigo dame 2 días más y te pagaré todo lo que me prestaste" },
+  { cn: "fr", pro: "fr rhil", es: "For real ⇌ de verdad", ex: "Brh I hate this school fr! we pay too much and the quality is lousy ⇌ Amigo odio esta escuela, de verdad, pagamos demasiado y la calidad es pésima " },
+  
   
   // { cn: "", pro: "", es: "", ex: " ⇌ " },
 ];
