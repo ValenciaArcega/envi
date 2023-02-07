@@ -22,6 +22,7 @@
   color: var(--white);
   background-color: var(--mainColor);
 }
+
 ::-moz-selection {
   color: var(--white);
   background-color: var(--mainColor);
@@ -119,6 +120,7 @@ body {
   cursor: pointer;
   background: linear-gradient(to top left, #2285db 20%, rgb(180, 205, 237));
 }
+
 /* /////////////////////////////////////////////////////////////////*/
 .cards,
 .cardsPV {
@@ -187,6 +189,7 @@ li p {
   width: 24px;
   stroke: var(--mainColor);
 }
+
 /* /////////////////////////////////////////////////////////////////*/
 .container-exampleCard {
   padding: 48px 0 96px 0;
@@ -217,8 +220,8 @@ li p {
   color: var(--white);
   background-color: var(--black);
 }
-/* /////////////////////////////////////////////////////////////////*/
 
+/* /////////////////////////////////////////////////////////////////*/
 .container-features {
   width: 90%;
   margin: 200px auto 0 auto;
@@ -264,7 +267,7 @@ li p {
 
 .wrapper-featureText {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .feature-h3 {
@@ -277,11 +280,7 @@ li p {
   color: var(--black);
 }
 
-
-
-
-
-/* Sections */
+/* /////////////////////////////////////////////////////////////////*/
 .container-sections {
   margin-top: 18rem;
   padding-top: 1rem;
@@ -296,7 +295,7 @@ li p {
   letter-spacing: -1.5px;
 }
 
-/* //////////////////// */
+/* /////////////////////////////////////////////////////////////////*/
 .wrapper-sections {
   width: 95%;
   margin-top: 12px;
@@ -321,21 +320,21 @@ li p {
   background-color: var(--white);
   position: relative;
 }
+
 .card-sections:nth-child(3)::after {
-  content: '+20';  
+  content: '+20';
   padding: 3px 12px;
   border-radius: 4px;
   position: absolute;
   top: -15px;
   right: -15px;
-  font-weight: 500;  
+  font-weight: 500;
   color: var(--white);
   background-color: rgb(255, 49, 49);
 }
 
-
-/* ////////////////////////// */
-.card-sections-header {  
+/* /////////////////////////////////////////////////////////////////*/
+.card-sections-header {
   height: 24%;
   width: 80%;
   display: grid;
@@ -361,7 +360,6 @@ li p {
   justify-self: center;
 }
 
-/* ////////////////// */
 .card-sections-p {
   height: 47%;
   width: 81%;
@@ -370,7 +368,6 @@ li p {
   line-height: 1.5;
 }
 
-/* ////////////////// */
 .card-sections-anker:link,
 .card-sections-anker:visited {
   width: 80%;
@@ -425,7 +422,7 @@ li p {
 
 .topBar-btn-svg {
   font-size: 24px;
-  color: var(--iconTopBar);  
+  color: var(--iconTopBar);
 }
 
 .topBar-anker-svg {
@@ -467,6 +464,7 @@ li p {
   text-align: center;
   stroke: var(--mainColor);
 }
+
 .icon-section-svg {
   font-size: 36px;
   color: var(--mainColor);
@@ -583,7 +581,7 @@ li p {
 }
 
 .tip-icon-svg {
-  font-size: 1.6rem;  
+  font-size: 1.6rem;
   justify-self: flex-end;
   color: var(--white);
 }
