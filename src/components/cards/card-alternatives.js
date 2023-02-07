@@ -59,6 +59,8 @@ const tCards = [
   { cn: "Dunno", pro: "ai dhunow", es: "I donot know ⇌ no lo se", ex: "I dunno how that got there, I was out of the house all day ⇌ Realmente no sé cómo llegó eso ahí, estuve todo el dia fuera de casa" },
   { cn: "ngl", pro: "not gona lai", es: "Not gonna lie ⇌ no voy a mentir", ex: "Ngl, that dress looks gorgeous on you, in my opinion ⇌ No lo puedo negar ese vestido se te ve hermoso a mi parecer" },
   { cn: "Lemme", pro: "lemi", es: "Let me ⇌ Déjame (mostrarte, adivinar, ver, probar, etc.)", ex: "Lemme show u, why you should study English and all its benefits ⇌ Dejame mostrarte por que deberias estudiar ingles y todos sus beneficios" },
+  { cn: "nvm", pro: "nhevr maind", es: "Never mind ⇌ No importa, olvidalo", ex: "Don't forget to bring what I asked for, hmm nvm, I'll go at night ⇌ No olvides traer lo que te pedi, mmm bueno no olvidalo, yo voy en la noche" },
+  { cn: "Kinda", pro: "khainda", es: "Kind of ⇌ Más o menos", ex: " ⇌ " },
   
   // { cn: "", pro: "", es: "", ex: " ⇌ " },
 ];
