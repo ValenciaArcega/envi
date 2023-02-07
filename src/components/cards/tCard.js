@@ -4,26 +4,33 @@ const tCards = [
   { cn: "Within", pro: "wi - din", es: "Dentro / en (tiempo)", ex: "I called the ambulance, gonna arrive within 10 minutes ⇌ Llamé a la ambulancia, llegará dentro de 10 minutos" },
   { cn: "Achievements", pro: "ah - chiv - menths", es: "Logros alcanzados", ex: "My best achievement have been to learn three languages ⇌ Mi mayor logro ha sido aprender tres idiomas" },
   { cn: "Kidnap", pro: "kid - nap", es: "Secuestrar", ex: "Kidnapping are common on this country unfortunately ⇌ Desafortunadamente, los secuestros son comunes en este país" },
+  { cn: "smh", pro: "sheik mai jed", es: "Shaking my head ⇌ mover la cabeza con desaprobación", ex: "That comment was so immature, smh 🤦 ⇌ Ese comentario fue tan inmaduro, no lo puedo creer" },
   { cn: "Device", pro: "Di - vais", es: "Dispositivo", ex: "You should connect your device to energy ⇌ Deberías conectar tu dispositivo a la energía" },
   { cn: "Data", pro: "dei - ta", es: "Datos", ex: "Esta aplicación esta robando mis datos ⇌ This application is stealing my data" },
   { cn: "Summary", pro: "so - mha - rhi", es: "Resumen", ex: "This is a lil summary of the videos that you saw this year ⇌ Este es un pequeño resumen de los videos que viste este año" },
+  { cn: "btw", pro: "bye de wey", es: "by the way ⇌ por cierto", ex: "btw, I wanted to ask u... Do u wanna go out tonight? ⇌ Por cierto queria preguntarte... ¿Quieres salir esta noche?" },
   { cn: "Assets", pro: "asset / assets", es: "Activos / bienes de alto valor o calidad", ex: "She is an asset to the company ⇌ Ella es muy valiosa para la compañia" },
   { cn: "Settings", pro: "se - rings", es: "Ajustes", ex: "U can turn on the dark mode on your smartphone settings ⇌ Puedes poner el modo obscuro en los ajustes de tu celular" },
   { cn: "Reminder", pro: "rhi - main - dr", es: "Recordatorio", ex: "I will do it. Lemme set a reminder in my phone ⇌ Lo haré. Déjame poner un recordatorio en mi teléfono" },
   { cn: "I'm pissed off", pro: "am  pisr - of", es: "¡Estoy encabronad@!", ex: "Sustituye a I am so angry y expresa coraje, de manera agresiva. I am pissed at you ⇌ Estoy encabronado contigo" },
+  { cn: "np", pro: "nou prablm", es: "No problem ⇌ no hay problema", ex: "Np, u don't need to apologize, just do things carefully ⇌ No hay problema, no necesitas disculparte, solo haz las cosas con cuidado" },
   { cn: "Environment", pro: "in-vai-rn-mnt", es: "Entorno, ambiente", ex: "My environment is full of people with good vibes ⇌ Mi entorno está lleno de gente con buena vibra" },
   { cn: "Just joshing", pro: "ost  yosh - in", es: "Solo bromeo", ex: "Sustituye a Just kidding y dejar en claro que solo estas bromeando. Nah Im just joshing u ⇌ Na te creas solo te estoy ch1ng@ndo" },
   { cn: "Inquisitive", pro: "in - ki - sitiv", es: "Preguntona, muy curiosa", ex: "Children are naturally inquisitive ⇌ Los niños son naturalmente curiosos" },
+  { cn: "pls", pro: "plis", es: "Please ⇌ por favor", ex: "Could you remind me that I have to put on the ointment pls? ⇌ ¿Podrias recordarme que tengo que ponerme la pomada porfavor?" },
   { cn: "I'm bursting", pro: "am  brs - tin", es: "¡Me estoy haciendo del baño!", ex: "Sustituye a I have to go to the bathroom pero de manera informal. Brh, I am bursting! ⇌ Weey ¡Estoy cag$nd#me!" },
   { cn: "I'm starving", pro: "am  s-tharvin", es: "¡Muero de hambre!", ex: "Sustituye a I am so hungry, expresa un sentimiento de ansiedad por comer. I wanna eat bruh Im starving ⇌ Quiero comer we, muero de hambre" },
+  { cn: "thx", pro: "thenks", es: "Thanks ⇌ gracias", ex: "Thx, this article that you sent me was really helpful ⇌ Gracias, en verdad me fue de mucha ayuda este articulo que me mandaste" },
   { cn: "Knowledge", pro: "no - lech", es: "Conocimiento", ex: "You are so brilliant, you must have a lotta knowledges ⇌ Eres tan brillante, debes tener muchos conocimientos" },
   { cn: "I would say", pro: "ai - gud-sei", es: "Yo diría", ex: "Sustituye a I think, se usa antes de dar una opinión. I would say lets do homework first ⇌ Yo diría que primero hagamos la tarea" },
   { cn: "Do u get me?", pro: "du yu get mi", es: "¿Me entendiste?", ex: "Sustituye a Did you understand me? de manera informal, para preguntar si hemos sido claros So...Do you get me, right? ⇌ Mmm... ¿Me entiendes, verdad?" },
+  { cn: "rn", pro: "rhait nau", es: "Right now ⇌ ahora mismo", ex: "I'm sorry I have to take my sister to school rn, see u ⇌ Lo siento tengo que llevar a mi hermana a la escuela ahora mismo, nos vemos" },
   { cn: "Native", pro: "nei - rif", es: "Nativa / Nativo", ex: "I am a native Spanish speaker ⇌ Soy un hispanohablante nativo" },
   { cn: "How u doing?", pro: "jau yu du-in", es: "¿Cómo te va?", ex: "Sustituye a How are you? y se usa para iniciar una platica con mayor confianza y de manera más amigable. Hey mate, how u doin'?" },
   { cn: "Should", pro: "sh - ud", es: "Deberí a/mos/as/an/", ex: "It is too late, you should sleep rn ⇌ Ya es muy tarde, deberías dormir ahora mismo" },
   { cn: "Could", pro: "kh - ud", es: "Podrí a/mos/as/an/", ex: "I could not do it either ⇌ Yo tampoco podría hacerlo, She could get it ⇌ Ella podría conseguirlo" },
   { cn: "Would", pro: "gh - ud", es: "ría / haría", ex: "I would like score a goal in the world cup ⇌ Me gustaría anotar un gol en el mundial" },
+  { cn: "lil", pro: "li - rl", es: "Little ⇌ Pequeñx", ex: "U can take a lil break, you've worked so hard ⇌ Puedes tomar un pequeño descanso, haz trabajado muy duro" },
   { cn: "Overview", pro: "ow - vr - viu", es: "Vistazo / Vista general", ex: "Imma give u a lil overview to the project ⇌ Voy a darte una pequeña descripción general del proyecto" },
   { cn: "Enhance", pro: "in - hans", es: "Incrementar / Intensificar", ex: "I want to enhance my English, to talk with native speakers ⇌ Quiero mejorar mi Inglés para platicar con hablantes nativos" },
   { cn: "I Thought", pro: "thot (saca el aire, con la lengua pegada a los dientes de arriba)", es: "Pensé", ex: "He thought he could do it ⇌ El pensó que podría hacerlo" },
@@ -47,9 +54,13 @@ const tCards = [
   { cn: "Likewise", pro: "laik - guais", es: "Asimismo", ex: "Sustituye a also. de manera más formal. Likewise, we must deliver it signed ⇌ Así mismo, debemos entregarla firmada" },
   { cn: "However", pro: "jau - ever", es: "Sin embargo", ex: "Sustituye a but a manera más formal. I love code, however, is complicated ⇌ Me encanta programar, sin embargo, es complicado" },
   { cn: "Wallpaper", pro: "guol - peipr", es: "Fondo de pantalla", ex: "Hey babe, look at my new wallpaper, It is you! ⇌ Oye nena, mira mi nuevo fondo de pantalla, ¡Eres tú!" },
+  // slangs
 
-  { cn: "", pro: "", es: "", ex: "" },
-  { cn: "", pro: "", es: "", ex: "" },
+
+
+
+
+  // { cn: "", pro: "", es: "", ex: " ⇌ " },
 ];
 
 let outputTCards = '';
