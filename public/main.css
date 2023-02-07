@@ -1,9 +1,10 @@
-/*
-|| SPACING SYSTEM (px): 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-|| FONT SIZE SYSTEM (px): 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
-*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+/*
+ * author: Valencia Arcega Luis Angel
+ * icons by: ionic.io
+ * SPACING SYSTEM (px): 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+ * FONT SIZE SYSTEM (px): 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+*/
 
 :root {
   --mainColor: #1c7ed6;
@@ -39,11 +40,11 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
-  background-color: var(--grayBackground);
   color: var(--black);
+  background-color: var(--grayBackground);
 }
 
-/* HEY EXPLORER */
+/* /////////////////////////////////////////////////////////////////*/
 .container-titleHey {
   height: 50rem;
   width: 100%;
@@ -72,9 +73,7 @@ body {
   font-size: 4.3rem;
 }
 
-
-
-/* Welcome to tolescro */
+/* /////////////////////////////////////////////////////////////////*/
 .container-welcomeIntroduction {
   padding: 1.65rem 0 15rem 0;
   text-align: center;
@@ -87,13 +86,13 @@ body {
   width: 21rem;
 }
 
-.welcomeIntroduction h1 {
+.welcomeIntroduction-h1 {
   font-size: 2.75rem;
   letter-spacing: -1px;
   line-height: 1;
 }
 
-.welcomeIntroduction p {
+.welcomeIntroduction-p {
   margin-top: 1rem;
   font-size: 19px;
   line-height: 1.7;
@@ -120,10 +119,7 @@ body {
   cursor: pointer;
   background: linear-gradient(to top left, #2285db 20%, rgb(180, 205, 237));
 }
-
-
-
-/* Cards */
+/* /////////////////////////////////////////////////////////////////*/
 .cards,
 .cardsPV {
   width: 100%;
@@ -147,37 +143,6 @@ body {
   color: var(--black);
   background-color: var(--white);
   box-shadow: 0 12px 12px 8px rgba(0, 0, 0, 0.018);
-}
-
-
-.container-exampleCard {
-  padding: 48px 0 96px 0;
-  background-color: rgb(15, 15, 15);
-}
-
-.container-exampleCard h2 {
-  margin-bottom: -20px;
-  font-size: 4rem;
-  letter-spacing: -1.5px;
-  font-weight: 700;
-  text-align: center;
-  background: linear-gradient(180deg, var(--mainColor), black 98.5%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.card-example {
-  height: 31.5rem;
-  width: 21rem;
-  margin-top: 2.4rem;
-  padding: 18px;
-  border-radius: 22px;
-  border: solid 2px #3b3b3b;
-  display: block;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  color: var(--white);
-  background-color: var(--black);
 }
 
 .card h1 {
@@ -222,12 +187,38 @@ li p {
   width: 24px;
   stroke: var(--mainColor);
 }
+/* /////////////////////////////////////////////////////////////////*/
+.container-exampleCard {
+  padding: 48px 0 96px 0;
+  background-color: rgb(15, 15, 15);
+}
 
+.container-exampleCard h2 {
+  margin-bottom: -20px;
+  font-size: 4rem;
+  letter-spacing: -1.5px;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(180deg, var(--mainColor), black 98.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+.card-example {
+  height: 31.5rem;
+  width: 21rem;
+  margin-top: 2.4rem;
+  padding: 18px;
+  border-radius: 22px;
+  border: solid 2px #3b3b3b;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: var(--white);
+  background-color: var(--black);
+}
+/* /////////////////////////////////////////////////////////////////*/
 
-
-
-/* Features */
 .container-features {
   width: 90%;
   margin: 200px auto 0 auto;
@@ -291,7 +282,7 @@ li p {
 
 
 /* Sections */
-.container-ankerToSections {
+.container-sections {
   margin-top: 18rem;
   padding-top: 1rem;
   display: flex;
@@ -300,13 +291,13 @@ li p {
   align-items: center;
 }
 
-.ankerToSections-h1 {
+.sections-h1 {
   font-size: 4rem;
   letter-spacing: -1.5px;
 }
 
 /* //////////////////// */
-.wrapper-ankerToSections {
+.wrapper-sections {
   width: 95%;
   margin-top: 12px;
   display: grid;
@@ -317,7 +308,7 @@ li p {
   justify-items: center;
 }
 
-.card-ankerToSections {
+.card-sections {
   height: 17rem;
   width: 20rem;
   border-radius: 10px;
@@ -330,7 +321,7 @@ li p {
   background-color: var(--white);
   position: relative;
 }
-.card-ankerToSections:nth-child(3)::after {
+.card-sections:nth-child(3)::after {
   content: '+20';  
   padding: 3px 12px;
   border-radius: 4px;
@@ -344,7 +335,7 @@ li p {
 
 
 /* ////////////////////////// */
-.card-ankerToSections-header {  
+.card-sections-header {  
   height: 24%;
   width: 80%;
   display: grid;
@@ -353,7 +344,7 @@ li p {
   text-align: justify;
 }
 
-.ankerToSections-header-h1 {
+.sections-header-h1 {
   width: 85%;
   font-size: 1.8rem;
   font-weight: 700;
@@ -363,7 +354,7 @@ li p {
   color: var(--black);
 }
 
-.ankerToSections-header-icon {
+.sections-header-icon {
   font-size: 24px;
   color: var(--mainColor);
   align-self: center;
@@ -371,7 +362,7 @@ li p {
 }
 
 /* ////////////////// */
-.ankerToSections-p {
+.card-sections-p {
   height: 47%;
   width: 81%;
   text-align: start;
@@ -380,8 +371,8 @@ li p {
 }
 
 /* ////////////////// */
-.btn-Sections:link,
-.btn-Sections:visited {
+.card-sections-anker:link,
+.card-sections-anker:visited {
   width: 80%;
   margin-top: .75rem;
   padding: 10px 28px;
@@ -396,7 +387,7 @@ li p {
   box-shadow: 5px 7px 15px 2px rgba(116, 177, 235, 0.35);
 }
 
-.btn-Sections:hover {
+.card-sections-anker:hover {
   cursor: pointer;
   background: linear-gradient(to top left, #2285db 20%, #a8d8fc);
   box-shadow: 5px 7px 15px 2px rgba(116, 177, 235, 0.37);
