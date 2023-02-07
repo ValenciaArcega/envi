@@ -1,8 +1,7 @@
 'use strict';
 
 const tCards = [
-  { cn: "Within", pro: "wi - din", es: "Dentro / en (tiempo)", ex: "I called the ambulance, gonna arrive within 10 minutes ⇌ Llamé a la ambulancia, llegará dentro de 10 minutos" },
-  { cn: "Achievements", pro: "ah - chiv - menths", es: "Logros alcanzados", ex: "My best achievement have been to learn three languages ⇌ Mi mayor logro ha sido aprender tres idiomas" },
+  { cn: "Within", pro: "wi - din", es: "Dentro / en (tiempo)", ex: "I called the ambulance, gonna arrive within 10 minutes ⇌ Llamé a la ambulancia, llegará dentro de 10 minutos" },  
   { cn: "Kidnap", pro: "kid - nap", es: "Secuestrar", ex: "Kidnapping are common on this country unfortunately ⇌ Desafortunadamente, los secuestros son comunes en este país" },
   { cn: "smh", pro: "sheik mai jed", es: "Shaking my head ⇌ mover la cabeza con desaprobación", ex: "That comment was so immature, smh 🤦 ⇌ Ese comentario fue tan inmaduro, no lo puedo creer" },
   { cn: "Device", pro: "Di - vais", es: "Dispositivo", ex: "You should connect your device to energy ⇌ Deberías conectar tu dispositivo a la energía" },
@@ -13,6 +12,7 @@ const tCards = [
   { cn: "Settings", pro: "se - rings", es: "Ajustes", ex: "U can turn on the dark mode on your smartphone settings ⇌ Puedes poner el modo obscuro en los ajustes de tu celular" },
   { cn: "Reminder", pro: "rhi - main - dr", es: "Recordatorio", ex: "I will do it. Lemme set a reminder in my phone ⇌ Lo haré. Déjame poner un recordatorio en mi teléfono" },
   { cn: "I'm pissed off", pro: "am  pisr - of", es: "¡Estoy encabronad@!", ex: "Sustituye a I am so angry y expresa coraje, de manera agresiva. I am pissed at you ⇌ Estoy encabronado contigo" },
+  { cn: "Achievements", pro: "ah - chiv - menths", es: "Logros alcanzados", ex: "My best achievement have been to learn three languages ⇌ Mi mayor logro ha sido aprender tres idiomas" },
   { cn: "np", pro: "nou prablm", es: "No problem ⇌ no hay problema", ex: "Np, u don't need to apologize, just do things carefully ⇌ No hay problema, no necesitas disculparte, solo haz las cosas con cuidado" },
   { cn: "Environment", pro: "in-vai-rn-mnt", es: "Entorno, ambiente", ex: "My environment is full of people with good vibes ⇌ Mi entorno está lleno de gente con buena vibra" },
   { cn: "Just joshing", pro: "ost  yosh - in", es: "Solo bromeo", ex: "Sustituye a Just kidding y dejar en claro que solo estas bromeando. Nah Im just joshing u ⇌ Na te creas solo te estoy ch1ng@ndo" },
@@ -33,9 +33,11 @@ const tCards = [
   { cn: "lil", pro: "li - rl", es: "Little ⇌ Pequeñx", ex: "U can take a lil break, you've worked so hard ⇌ Puedes tomar un pequeño descanso, haz trabajado muy duro" },
   { cn: "Overview", pro: "ow - vr - viu", es: "Vistazo / Vista general", ex: "Imma give u a lil overview to the project ⇌ Voy a darte una pequeña descripción general del proyecto" },
   { cn: "Enhance", pro: "in - hans", es: "Incrementar / Intensificar", ex: "I want to enhance my English, to talk with native speakers ⇌ Quiero mejorar mi Inglés para platicar con hablantes nativos" },
+  { cn: "jk", pro: "yost kirin", es: "Just kidding ⇌ solo bromeo", ex: "jkjkjkjk don't take it personally, u 'now I like to joke ⇌ Estoy jugando jaja no te lo tomes personal, sabes que me gusta bromear" },
   { cn: "I Thought", pro: "thot (saca el aire, con la lengua pegada a los dientes de arriba)", es: "Pensé", ex: "He thought he could do it ⇌ El pensó que podría hacerlo" },
   { cn: "Commitment", pro: "co - mid - ment", es: "Compromiso / Dar tu palabra", ex: "I am sorry, I already have a commitment to my family ⇌ Lo siento, ya tengo un compromiso con mi familia" },
   { cn: "Between", pro: "bi - thuin", es: "Entre / en medio de", ex: "Guess her/his age, is between 18 and 27 ⇌ Adivina su edad, es entre 18 y 27" },
+  { cn: "Lotta", pro: "lo - ra", es: "Lot of ⇌ Mucho / Bastante de", ex: "I have a lotta friends and unfortunately none of them came to the party ⇌ Tengo un montón de amigos y desafortunadamente ninguno vino a la fiesta" },
   { cn: "Effortless", pro: "eforh - les", es: "Sin mayor esfuerzo / Poco esfuerzo / Sin esfuerzo aparente", ex: "I made no efforless to bench 225lb ⇌ No hice ningún esfuerzo para levantar 115kg" },
   { cn: "Storage", pro: "s - to - rech", es: "Almacenamiento", ex: "The storage in my cellphone is completely full ⇌ El almacenamiento en mi celular está completamente lleno" },
   { cn: "Measure", pro: "me - shu - r", es: "Medida", ex: "The measure of earth can be measured in Kilometers ⇌ La medida de la tierra se puede medir en kilómetros" },
@@ -54,8 +56,9 @@ const tCards = [
   { cn: "Likewise", pro: "laik - guais", es: "Asimismo", ex: "Sustituye a also. de manera más formal. Likewise, we must deliver it signed ⇌ Así mismo, debemos entregarla firmada" },
   { cn: "However", pro: "jau - ever", es: "Sin embargo", ex: "Sustituye a but a manera más formal. I love code, however, is complicated ⇌ Me encanta programar, sin embargo, es complicado" },
   { cn: "Wallpaper", pro: "guol - peipr", es: "Fondo de pantalla", ex: "Hey babe, look at my new wallpaper, It is you! ⇌ Oye nena, mira mi nuevo fondo de pantalla, ¡Eres tú!" },
-  // slangs
 
+  { cn: "Dunno", pro: "ai dhunow", es: "I donot know ⇌ no lo se", ex: "I dunno how that got there, I was out of the house all day ⇌ Realmente no sé cómo llegó eso ahí, estuve todo el dia fuera de casa" },
+  
   // { cn: "", pro: "", es: "", ex: " ⇌ " },
 ];
 
