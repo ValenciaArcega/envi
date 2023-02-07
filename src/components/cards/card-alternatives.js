@@ -56,10 +56,6 @@ const tCards = [
   { cn: "Wallpaper", pro: "guol - peipr", es: "Fondo de pantalla", ex: "Hey babe, look at my new wallpaper, It is you! ⇌ Oye nena, mira mi nuevo fondo de pantalla, ¡Eres tú!" },
   // slangs
 
-
-
-
-
   // { cn: "", pro: "", es: "", ex: " ⇌ " },
 ];
 
