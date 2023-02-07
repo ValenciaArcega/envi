@@ -64,9 +64,24 @@ const tCards = [
   { cn: "Kinda", pro: "khainda", es: "Kind of ⇌ Más o menos", ex: "The weather is kinda strange, we are at 25 degrees but is cold af! ⇌ El clima esta algo raro, estamos a 25 grados, pero hace un frio para morirse" },
   { cn: "Gimme", pro: "Gimi", es: "Give me ⇌ dame (un minuto, tiempo, la oportunidad. etc.)", ex: "Come on dude gimme 2 more days, and I will pay u everything u lent me ⇌ Vamos amigo dame 2 días más y te pagaré todo lo que me prestaste" },
   { cn: "fr", pro: "fr rhil", es: "For real ⇌ de verdad", ex: "Brh I hate this school fr! we pay too much and the quality is lousy ⇌ Amigo odio esta escuela, de verdad, pagamos demasiado y la calidad es pésima " },
-  
-  
+  { cn: "tbh", pro: "thu bi onest", es: "To be honest ⇌ Para ser honesto/a", ex: "Tbh, I haven't been able to reply to u because I've been, extremely busy ⇌ Para ser honesto, no he podido responderte porque he estado sumamente ocupado" },
+  { cn: "Gotta", pro: "gora", es: "Have got to ⇌ Tener que", ex: "I'm sorry, I gotta go, my aunt is sick and I hafta take care of her ⇌ Lo siento, tengo que irme, mi tía esta enferma y tengo que cuidarla" },
+  /*
+  { cn: "hbd", pro: "japi burth dei", es: "Happy birthday ⇌ Feliz cumpleaños", ex: " ⇌ " },
+  { cn: "wdym?", pro: "guat du iu min?", es: "What do you mean? ⇌ ¿A que te refieres?, ¿Qué quieres decir?", ex: " ⇌ " },
+  { cn: "wyd?", pro: "", es: "What you doing? ⇌ ¿Qué haces?", ex: " ⇌ " },
+  { cn: "wby?", pro: "", es: "What about you? ⇌ ¿Y tu? / ¿Qué hay de ti?", ex: " ⇌ " },
+  { cn: "lmk", pro: "", es: "Let me know ⇌ Házmelo saber", ex: " ⇌ " },
+  { cn: "idts", pro: "", es: "I donot think so ⇌ No lo creo / no pienso lo mismo", ex: " ⇌ " },
+  { cn: "idc", pro: "", es: "I donot care ⇌ No me importa", ex: " ⇌ " },
+  { cn: "Tryna", pro: "", es: "Trying to ⇌ Tratando de...", ex: " ⇌ " },
+  { cn: "Hafta", pro: "", es: "Have to ⇌ Tener que...", ex: " ⇌ " },
+  { cn: "Outta", pro: "", es: "Out of ⇌ Fuera de...", ex: " ⇌ " },
+  { cn: "Gonna", pro: "", es: "Going to ⇌ Voy a / vas a / va a / van a", ex: " ⇌ " },
+  { cn: "Imma", pro: "", es: "I'm gonna ⇌ Voy a...", ex: " ⇌ " },
+  { cn: "Wanna", pro: "", es: "Want to ⇌ Quiero/es, quiere/n / queremos", ex: " ⇌ " },
   // { cn: "", pro: "", es: "", ex: " ⇌ " },
+  */
 ];
 
 let outputTCards = '';
