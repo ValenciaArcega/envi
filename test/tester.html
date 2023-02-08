@@ -7,59 +7,146 @@
   <link rel="stylesheet" href="../public/main.css">
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="../src/components/animations/fadeTitle.js"></script>
+  <script src="../src/components/animations/loadPage.js"></script>
+  <script src="../src/components/navigator/userAgent.js"></script>
   <title>Tester</title>
 </head>
 
 <body>
 
-  <div class="topBar">
-    <a href="" class="topBar-anker-backHome" aria-label="Go back">
-      <ion-icon class="topBar-anker-svg" name="layers-outline"></ion-icon>
-      <p class="topBar-anker-p">Sections</p>
-    </a>
+  <div class="screen-homaPage hidden">
+    <header class="container-titleHey">
+      <h1 class="titleHey title-transition">Hey <p>explorer.</p>
+      </h1>
+    </header>
 
-    <button type="button" title="Button focus search bar" class="topBar-btnSearch">
-      <ion-icon class="topBar-btn-svg" name="search-outline"></ion-icon>
-      <p class="topBar-btn-p">Search</p>
-    </button>
-
-    <button type="button" title="Button turn dark mode" class="topBar-btnDark">
-      <ion-icon class="topBar-btn-svg" name="moon-outline"></ion-icon>
-      <p class="topBar-btn-p">Dark</p>
-    </button>
-
-    <button type="button" title="Button turn light mode" class="topBar-btnLight hidden">
-      <ion-icon class="topBar-btn-svg" name="sunny-outline"></ion-icon>
-      <p class="topBar-btn-p">Light</p>
-    </button>
-  </div>
-
-  <!-- ICON BEFORE SEARCHBAR -->
-  <div class="section-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-      class="icon-section">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
-    </svg>
-  </div>
-  <!-- SEARCHBAR -->
-  <div class="searchBar">
-    <input type="text" name="finder" id="finder" placeholder="Search words, slangs and more">
-  </div>
-  <!-- CARDS -->
-  <div class="section-cards">
-    <div class="cards">
-      
+    <div class="container-welcomeIntroduction" id="welcom3">
+      <div class="welcomeIntroduction">
+        <h1 class="welcomeIntroduction-h1">Welcome to <span class="gradient-text">tolescro</span></h1>
+        <p class="welcomeIntroduction-p"> Un diccionario de cartas, que te ayudará a expandir tu vocabulario en Inglés
+          mientras deslizas tu pantalla.
+        </p>
+        <div class="wrapper-ankerToCategories">
+          <a class="ankerToCategories" href="#sections" aria-label="Show me the cards">Categories ↓</a>
+        </div>
+      </div>
     </div>
+
+    <div class="container-exampleCard">
+      <h2 class="word-transition">tCards</h2>
+      <div class="cards">
+        <div class="card card-example">
+          <h1 class="title-card">Example</h1>
+          <ul>
+            <li>
+              <div class="list-header">
+                <ion-icon class="card-svg" name="mic-outline"></ion-icon>
+                <h4>Pronunciation</h4>
+              </div>
+              <p id="texto">ex - em - pl : la pronunciación para un hispanohablante</p>
+            </li>
+
+            <li>
+              <div class="list-header">
+                <ion-icon class="card-svg" name="language-outline"></ion-icon>
+                <h4>Reverse context</h4>
+              </div>
+              <p>Uno o más significados (en español) de la palabra en azul</p>
+            </li>
+
+            <li>
+              <div class="list-header">
+                <ion-icon class="card-svg" name="extension-puzzle-outline"></ion-icon>
+                <h4>Example</h4>
+              </div>
+              <p>Un ejemplo de un uso cotidiano de la palabra en azul</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-features">
+      <h2 class="container-features-h2">¿Por qué aprender con <span class=" gradient-text">tCards</span>?</h2>
+      <div class="features">
+
+        <div class="feature">
+          <ion-icon class="feature-icon-svg" name="desktop-outline"></ion-icon>
+          <div class="wrapper-featureText">
+            <h3 class="feature-h3">Multiplataforma</h3>
+            <p class="feature-p">Un link y la web esta en todos los dispositivos.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <ion-icon class="feature-icon-svg" name="leaf-outline"></ion-icon>
+          <div class="wrapper-featureText">
+            <h3 class="feature-h3">Simple</h3>
+            <p class="feature-p">Una carta, definiciones concretas y útiles.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <ion-icon class="feature-icon-svg" name="cash-outline"></ion-icon>
+          <div class="wrapper-featureText">
+            <h3 class="feature-h3">Libre</h3>
+            <p class="feature-p">No hay excusas, el conocimiento es gratuito.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <ion-icon class="feature-icon-svg" name="sync-outline"></ion-icon>
+          <div class="wrapper-featureText">
+            <h3 class="feature-h3">Al día</h3>
+            <p class="feature-p">El vocabulario crece y se actualiza diariamente.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-sections" id="sections">
+      <h1 class="sections-h1"><span class="gradient-text">Sections</span></h1>
+      <div class="wrapper-sections">
+        <div class="card-sections">
+          <div class="card-sections-header">
+            <h1 class="sections-header-h1">Alternatives</h1>
+            <ion-icon class="sections-header-icon" name="swap-horizontal-outline"></ion-icon>
+          </div>
+          <p class="card-sections-p">Palabras comunes con muchas variantes y frases usuales en hablantes nativos, por lo
+            que no viene mal remplazarlas por lo clásico.</p>
+          <a href="../src/views/view-alternatives.html" class="card-sections-anker" aria-label="See section">See tCards</a>
+        </div>
+
+        <div class="card-sections">
+          <div class="card-sections-header">
+            <h1 class="sections-header-h1">Phrasal verbs</h1>
+            <ion-icon class="sections-header-icon" name="rocket-outline"></ion-icon>
+          </div>
+          <p class="card-sections-p">Son frases acompañadas de un verbo, pero su significado no siempre tiene relación
+            con el. Además ayudan a sonar más naturales al expresarnos.</p>
+          <a href="../src/views/view-phrasalVerbs.html" class="card-sections-anker" aria-label="See section">See tCards</a>
+        </div>
+
+        <div class="card-sections">
+          <div class="card-sections-header">
+            <h1 class="sections-header-h1">Tips</h1>
+            <ion-icon class="sections-header-icon" name="extension-puzzle-outline"></ion-icon>
+          </div>
+          <p class="card-sections-p">La experiencia genera aprendizaje, si esta se comparte, el conocimiento crece,
+            experiencias y consejos para dominar el idioma.</p>
+          <a href="../src/views/view-tips.html" class="card-sections-anker" aria-label="See section">See Tips</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>&copy; 2022, Tolescro</footer>
   </div>
 
-  <footer>&copy; 2022, Tolescro</footer>
 
-  <!-- NAVBAR -->
-  <top-bar src="../../index.html#welcom3"></top-bar>
-
-  <script src="../src/components/appearance/appearance.js"></script>
-  <script src="../src/components/finder/filterCards.js"></script>
+  <script src="../../src/components/appearance/appearance.js"></script>
+  <script src="../../src/components/finder/filterCards.js"></script>
   <script src="tester.js"></script>
 </body>
 

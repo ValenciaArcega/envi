@@ -34,14 +34,14 @@ const phrasalVerbs = [
   // { cn: "", pro: "", es: "", ex: "" },
 ];
 let outputPhrasalV = '';
-let index, randomNum, k;
+let arrSize, randomNumber, index;
 
-for (index = phrasalVerbs.length; index; index--) {
-  randomNum = Math.floor(Math.random() * index);
-  k = phrasalVerbs[index - 1];
-  phrasalVerbs[index - 1] = phrasalVerbs[randomNum];
-  phrasalVerbs[randomNum] = k;
-} 
+for (arrSize = phrasalVerbs.length; arrSize; arrSize--) {
+  randomNumber = Math.floor(Math.random() * arrSize);
+  index = phrasalVerbs[arrSize - 1];
+  phrasalVerbs[arrSize - 1] = phrasalVerbs[randomNumber];
+  phrasalVerbs[randomNumber] = index;
+}
 
 for (let pv = 0; pv < phrasalVerbs.length; pv++) {
   outputPhrasalV += `

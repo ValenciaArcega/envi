@@ -84,14 +84,14 @@ const tCards = [
   */
 ];
 let outputTCards = '';
-let index, randomNum, k;
+let arrSize, randomNumber, index;
 
-for (index = tCards.length; index; index--) {
-  randomNum = Math.floor(Math.random() * index);
-  k = tCards[index - 1];
-  tCards[index - 1] = tCards[randomNum];
-  tCards[randomNum] = k;
-} 
+for (arrSize = tCards.length; arrSize; arrSize--) {
+  randomNumber = Math.floor(Math.random() * arrSize);
+  index = tCards[arrSize - 1];
+  tCards[arrSize - 1] = tCards[randomNumber];
+  tCards[randomNumber] = index;
+}
 
 for (let tc = 0; tc < tCards.length; tc++) {
   outputTCards += ` 
@@ -125,7 +125,19 @@ for (let tc = 0; tc < tCards.length; tc++) {
     </div>`
 }
 document.querySelector('.cards').innerHTML = outputTCards;
-
+/*
+function checkVisibility(entries) {
+  let entry = entries;
+  if (entry.isIntersecting) {
+    console.log('El elemento es visible');
+  } else {
+    console.log('El elemento no es visible');
+  }
+}
+let observer = new IntersectionObserver(checkVisibility, {})
+let cody = document.querySelector('.card');
+observer.observe(cody);
+*/
 /*
 class TCards extends HTMLElement {
   constructor() {

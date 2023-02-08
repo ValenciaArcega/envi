@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 const arrTest = [
   { cn: "Within", pro: "wi - din", es: "Dentro / en (tiempo)", ex: "I called the ambulance, gonna arrive within 10 minutes ⇌ Llamé a la ambulancia, llegará dentro de 10 minutos" },
   { cn: "Achievements", pro: "ah - chiv - menths", es: "Logros alcanzados", ex: "My best achievement have been to learn three languages ⇌ Mi mayor logro ha sido aprender tres idiomas" },
@@ -47,7 +47,7 @@ for (let indx = 0; indx < arrTest.length; indx++) {
     </div>`
 }
 document.querySelector('.cards').innerHTML = outputTest;
-
+*/
 
 
 
