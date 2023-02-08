@@ -15,7 +15,7 @@
 
 <body>
 
-  <div class="screen-homaPage hidden">
+  <div class="screen-homePage hidden">
     <header class="container-titleHey">
       <h1 class="titleHey title-transition">Hey <p>explorer.</p>
       </h1>
@@ -116,7 +116,8 @@
           </div>
           <p class="card-sections-p">Palabras comunes con muchas variantes y frases usuales en hablantes nativos, por lo
             que no viene mal remplazarlas por lo clásico.</p>
-          <a href="../src/views/view-alternatives.html" class="card-sections-anker" aria-label="See section">See tCards</a>
+          <a href="../src/views/view-alternatives.html" class="card-sections-anker" aria-label="See section">See
+            tCards</a>
         </div>
 
         <div class="card-sections">
@@ -126,7 +127,8 @@
           </div>
           <p class="card-sections-p">Son frases acompañadas de un verbo, pero su significado no siempre tiene relación
             con el. Además ayudan a sonar más naturales al expresarnos.</p>
-          <a href="../src/views/view-phrasalVerbs.html" class="card-sections-anker" aria-label="See section">See tCards</a>
+          <a href="../src/views/view-phrasalVerbs.html" class="card-sections-anker" aria-label="See section">See
+            tCards</a>
         </div>
 
         <div class="card-sections">
@@ -144,9 +146,33 @@
     <footer>&copy; 2022, Tolescro</footer>
   </div>
 
+  <div class="screen-section-tips">
 
-  <script src="../../src/components/appearance/appearance.js"></script>
-  <script src="../../src/components/finder/filterCards.js"></script>
+    <div class="section-icon">
+      <ion-icon class="icon-section-svg" name="extension-puzzle-outline"></ion-icon>
+    </div>
+
+    <div class="searchBar">
+      <ion-icon class="finder-svg" name="search-outline"></ion-icon>
+      <input type="text" name="finder" id="finder" placeholder="Homophones and more">
+    </div>
+
+    <div class="section-cards">
+      <section class="sliderTips"></section>
+    </div>
+
+    <footer>&copy; 2022, Tolescro</footer>
+
+    <top-bar src="../../index.html#sections"></top-bar>
+  </div>
+
+  <script src="../src/components/navBar/topBar.js"></script>
+  <script src="../src/components/appearance/appearance.js"></script>
+  <script src="../src/components/finder/filterCards.js"></script>
+  <!-- -------------------------------------------------- -->
+  <script src="../src/components/cards/card-tips.js"></script>
+  <script src="../src/components/cards/card-phrasalVerbs.js"></script>
+  <script src="../src/components/cards/card-alternatives.js"></script>
   <script src="tester.js"></script>
 </body>
 

@@ -1,5 +1,5 @@
 'use strict';
-/*
+
 const arrTest = [
   { cn: "Within", pro: "wi - din", es: "Dentro / en (tiempo)", ex: "I called the ambulance, gonna arrive within 10 minutes ⇌ Llamé a la ambulancia, llegará dentro de 10 minutos" },
   { cn: "Achievements", pro: "ah - chiv - menths", es: "Logros alcanzados", ex: "My best achievement have been to learn three languages ⇌ Mi mayor logro ha sido aprender tres idiomas" },
@@ -7,12 +7,12 @@ const arrTest = [
 ];
 
 let outputTest = '';
-let index, randomNum, k;
-for (index = arrTest.length; index; index--) {
-  randomNum = Math.floor(Math.random() * index);
-  k = arrTest[index - 1];
-  arrTest[index - 1] = arrTest[randomNum];
-  arrTest[randomNum] = k;
+let arrSize, randomNumber, index;
+for (arrSize = arrTest.length; arrSize; arrSize--) {
+  randomNumber = Math.floor(Math.random() * arrSize);
+  index = arrTest[arrSize - 1];
+  arrTest[arrSize - 1] = arrTest[randomNumber];
+  arrTest[randomNumber] = index;
 } 
 
 for (let indx = 0; indx < arrTest.length; indx++) {
@@ -47,8 +47,3 @@ for (let indx = 0; indx < arrTest.length; indx++) {
     </div>`
 }
 document.querySelector('.cards').innerHTML = outputTest;
-*/
-
-
-
-
