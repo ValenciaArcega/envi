@@ -144,7 +144,7 @@ body {
   overflow-y: hidden;
   color: var(--black);
   background-color: var(--white);
-  box-shadow: 0 12px 12px 8px rgba(0, 51, 255, 0.018);
+  box-shadow: 0 12px 12px 8px rgba(0, 0, 0, 0.018);
 }
 
 .card h1 {

@@ -1,7 +1,7 @@
 'use strict';
 
 const tCards = [
-  { cn: "Within", pro: "wi - din", es: "Dentro / en (tiempo)", ex: "I called the ambulance, gonna arrive within 10 minutes ⇌ Llamé a la ambulancia, llegará dentro de 10 minutos" },  
+  { cn: "Within", pro: "wi - din", es: "Dentro / en (tiempo)", ex: "I called the ambulance, gonna arrive within 10 minutes ⇌ Llamé a la ambulancia, llegará dentro de 10 minutos" },
   { cn: "Kidnap", pro: "kid - nap", es: "Secuestrar", ex: "Kidnapping are common on this country unfortunately ⇌ Desafortunadamente, los secuestros son comunes en este país" },
   { cn: "smh", pro: "sheik mai jed", es: "Shaking my head ⇌ mover la cabeza con desaprobación", ex: "That comment was so immature, smh 🤦 ⇌ Ese comentario fue tan inmaduro, no lo puedo creer" },
   { cn: "Device", pro: "Di - vais", es: "Dispositivo", ex: "You should connect your device to energy ⇌ Deberías conectar tu dispositivo a la energía" },
@@ -66,20 +66,20 @@ const tCards = [
   { cn: "fr", pro: "fr rhil", es: "For real ⇌ de verdad", ex: "Brh I hate this school fr! we pay too much and the quality is lousy ⇌ Amigo odio esta escuela, de verdad, pagamos demasiado y la calidad es pésima " },
   { cn: "tbh", pro: "thu bi onest", es: "To be honest ⇌ Para ser honesto/a", ex: "Tbh, I haven't been able to reply to u because I've been, extremely busy ⇌ Para ser honesto, no he podido responderte porque he estado sumamente ocupado" },
   { cn: "Gotta", pro: "gora", es: "Have got to ⇌ Tener que", ex: "I'm sorry, I gotta go, my aunt is sick and I hafta take care of her ⇌ Lo siento, tengo que irme, mi tía esta enferma y tengo que cuidarla" },
+  { cn: "wdym?", pro: "guat du iu min?", es: "What do you mean? ⇌ ¿A que te refieres?, ¿Qué quieres decir?", ex: "Bro I didn't catch what you said, what do you mean? ⇌ Hermano no entendí lo que dijiste, ¿A qué te refieres?" },
+  { cn: "wyd?", pro: "guat iu duin", es: "What you doing? ⇌ ¿Qué haces?", ex: "Sorry for the delay, I was working, wyd rn? ⇌ Perdón por la demora estaba trabajando, ¿Qué estas haciendo ahorita?" },
+  { cn: "wby?", pro: "guat baut iu?", es: "What about you? ⇌ ¿Y tu? / ¿Qué hay de ti?", ex: "I'm pretty good bud, thx for ask, wbu? ⇌ Estoy muy bien amigo gracias, ¿Y tú?" },
+  { cn: "lmk", pro: "let mi nou", es: "Let me know ⇌ Házmelo saber", ex: "Go eat buddy, when you're done, we play, just lmk ⇌ Ve a comer we, cuando termines jugamos, solo avisame" },
+  { cn: "idts", pro: "ai dont dhink so", es: "I donot think so ⇌ No lo creo / no pienso lo mismo", ex: "Idts, I mean it's a good point but I would say ask him first ⇌ No lo creo, es decir es un buen punto pero yo diría que primero le preguntes" },
+  { cn: "Tryna", pro: "thraina", es: "Trying to ⇌ Tratando de...", ex: "I don't give a fuck about your opinion, I'm tryna do this for myself ⇌ No me importa un carajo tu opinión, estoy tratando de hacer esto por mí misma" },
+  { cn: "Imma", pro: "ama", es: "I'm gonna(going to) ⇌ Voy a...", ex: "Hold on Imma be back real quick, Imma have dinner with my parents ⇌ Aguanta, vuelvo en seguida, voy a cenar con mis padres." },
+  { cn: "Gonna", pro: "gona", es: "Going to ⇌ Voy a / vas a / va a / van a", ex: "She's gonna buy the brand-new iPhone 15 in september ⇌ Ella va a comprar el nuevo iPhone 15 en septiembre." },
   /*
-  { cn: "hbd", pro: "japi burth dei", es: "Happy birthday ⇌ Feliz cumpleaños", ex: " ⇌ " },
-  { cn: "wdym?", pro: "guat du iu min?", es: "What do you mean? ⇌ ¿A que te refieres?, ¿Qué quieres decir?", ex: " ⇌ " },
-  { cn: "wyd?", pro: "", es: "What you doing? ⇌ ¿Qué haces?", ex: " ⇌ " },
-  { cn: "wby?", pro: "", es: "What about you? ⇌ ¿Y tu? / ¿Qué hay de ti?", ex: " ⇌ " },
-  { cn: "lmk", pro: "", es: "Let me know ⇌ Házmelo saber", ex: " ⇌ " },
-  { cn: "idts", pro: "", es: "I donot think so ⇌ No lo creo / no pienso lo mismo", ex: " ⇌ " },
-  { cn: "idc", pro: "", es: "I donot care ⇌ No me importa", ex: " ⇌ " },
-  { cn: "Tryna", pro: "", es: "Trying to ⇌ Tratando de...", ex: " ⇌ " },
   { cn: "Hafta", pro: "", es: "Have to ⇌ Tener que...", ex: " ⇌ " },
   { cn: "Outta", pro: "", es: "Out of ⇌ Fuera de...", ex: " ⇌ " },
-  { cn: "Gonna", pro: "", es: "Going to ⇌ Voy a / vas a / va a / van a", ex: " ⇌ " },
-  { cn: "Imma", pro: "", es: "I'm gonna ⇌ Voy a...", ex: " ⇌ " },
   { cn: "Wanna", pro: "", es: "Want to ⇌ Quiero/es, quiere/n / queremos", ex: " ⇌ " },
+
+  
   // { cn: "", pro: "", es: "", ex: " ⇌ " },
   */
 ];
