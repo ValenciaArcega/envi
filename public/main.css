@@ -16,6 +16,8 @@
   --grayBorder: #d9d9d9;
   --tester: #353535;
   --borderCards: transparent;
+
+  --finderColor: #d9d9d9;
 }
 
 ::selection {
@@ -43,6 +45,13 @@ body {
   overflow-x: hidden;
   color: var(--black);
   background-color: var(--grayBackground);
+}
+
+button, input {
+  font-family: 'Inter', sans-serif;
+}
+input {
+  caret-color: var(--mainColor);
 }
 
 /* /////////////////////////////////////////////////////////////////*/
@@ -489,11 +498,19 @@ li p {
   align-items: center;
   justify-content: center;
 }
-
+.searchBar-p {
+  margin-top: 18px;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 72, 72);
+}
 #finder {
   width: 18rem;
-  /* 57vw */
-  padding: 8px 14px;
+  margin-left: -36px;
+  padding: 8px 12px 8px 42px;
   border: 2px solid var(--grayBorder);
   border-radius: 100px;
   font-size: 1rem;
@@ -503,11 +520,19 @@ li p {
   color: var(--black);
   background-color: var(--white);
 }
+.finder-svg {
+  --searchSVG: #979797;
+  font-size: 22px;
+  color: var(--searchSVG);
+}
 
 #finder:focus {
   border: 2px solid var(--mainColor);
 }
 
+.finder-svg:has(+ #finder:is(:focus)) {
+  color: var(--mainColor);
+}
 
 
 
