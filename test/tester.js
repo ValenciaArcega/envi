@@ -1,22 +1,18 @@
+ import { arrTest } from './data_alternatives.js'
 'use strict';
 
-const arrTest = [
-  { cn: "Within", pro: "wi - din", es: "Dentro / en (tiempo)", ex: "I called the ambulance, gonna arrive within 10 minutes ⇌ Llamé a la ambulancia, llegará dentro de 10 minutos" },
-  { cn: "Achievements", pro: "ah - chiv - menths", es: "Logros alcanzados", ex: "My best achievement have been to learn three languages ⇌ Mi mayor logro ha sido aprender tres idiomas" },
-  { cn: "Kidnap", pro: "kid - nap", es: "Secuestrar", ex: "Kidnapping are common on this country unfortunately ⇌ Desafortunadamente, los secuestros son comunes en este país" },
-];
+const btn = document.querySelector('.card-sections-btnSectionAlternatives');
+const screen1 = document.querySelector('.screen-homePage');
+const screen2 = document.querySelector('.screen-section-tips');
 
-let outputTest = '';
-let arrSize, randomNumber, index;
-for (arrSize = arrTest.length; arrSize; arrSize--) {
-  randomNumber = Math.floor(Math.random() * arrSize);
-  index = arrTest[arrSize - 1];
-  arrTest[arrSize - 1] = arrTest[randomNumber];
-  arrTest[randomNumber] = index;
-} 
+btn.addEventListener('click', () => {
+  screen1.classList.add('hidden')
+  screen2.classList.remove('hidden')
 
-for (let indx = 0; indx < arrTest.length; indx++) {
-  outputTest += ` 
+  let outputTest = '';
+
+  for (let indx = 0; indx < arrTest.length; indx++) {
+    outputTest += ` 
     <div class="card">
         <h1 class="title-card">${arrTest[indx].cn}</h1>
         <ul>
@@ -45,5 +41,7 @@ for (let indx = 0; indx < arrTest.length; indx++) {
           </li>
         </ul>
     </div>`
-}
-document.querySelector('.cards').innerHTML = outputTest;
+  }
+  document.querySelector('.section-cards').innerHTML = outputTest;
+
+});

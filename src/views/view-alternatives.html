@@ -17,25 +17,26 @@
 
 <body>
 
-  <!-- ICON BEFORE SEARCHBAR -->
   <div class="section-icon">
     <ion-icon class="icon-section-svg" name="swap-horizontal-outline"></ion-icon>
   </div>
-  <!-- SEARCHBAR -->
+
   <div class="searchBar">
     <input type="text" name="finder" id="finder" placeholder="Search Words and slangs">
   </div>
-  <!-- CARDS -->
+
   <div class="section-cards">
     <div class="cards"></div>
   </div>
 
   <footer>&copy; 2022, Tolescro</footer>
 
-  <!-- NAVBAR -->
-  <top-bar src="../../index.html#sections"></top-bar>
+  <top-bar></top-bar>
 
-  <script src="../components/cards/card-alternatives.js"></script>
+  <!-- ------------------------------------ -->
+  <script type="module" src="../data/data-alternatives.js"></script>
+  <script type="module" src="../components/cards/card-alternatives.js"></script>
+  <!-- ------------------------------------ -->
   <script src="../components/navBar/topBar.js"></script>
   <script src="../components/appearance/appearance.js"></script>
   <script src="../components/finder/filterCards.js"></script>

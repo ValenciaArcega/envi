@@ -331,7 +331,7 @@ li p {
 }
 
 .card-sections:first-child::after {
-  content: '+25';
+  content: '+7';
   padding: 3px 12px;
   border-radius: 4px;
   position: absolute;
@@ -342,7 +342,7 @@ li p {
   background-color: #ff3131;
 }
 .card-sections:nth-child(3)::after {
-  content: '+20';
+  content: '+4';
   padding: 3px 12px;
   border-radius: 4px;
   position: absolute;
@@ -665,13 +665,3 @@ footer {
   opacity: 1;
   transform: none;
 }
-
-
-
-
-
-
-/* //////////////////////////////////////////////////// */
-/* TESTER */
-
-
