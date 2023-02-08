@@ -83,8 +83,15 @@ const tCards = [
   // { cn: "", pro: "", es: "", ex: " ⇌ " },
   */
 ];
-
 let outputTCards = '';
+let index, randomNum, k;
+
+for (index = tCards.length; index; index--) {
+  randomNum = Math.floor(Math.random() * index);
+  k = tCards[index - 1];
+  tCards[index - 1] = tCards[randomNum];
+  tCards[randomNum] = k;
+} 
 
 for (let tc = 0; tc < tCards.length; tc++) {
   outputTCards += ` 

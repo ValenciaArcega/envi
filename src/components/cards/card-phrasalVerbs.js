@@ -1,6 +1,5 @@
 'use strict';
 
-let outputPhrasalV = '';
 const phrasalVerbs = [
   { cn: "Cut in", pro: "coth in", es: "Interrumpir, cortar", ex: "Oh sorry if I cutting in, I gotta go right now! ⇌ ¡Oh, lo siento si interrumpo, tengo que irme ahora mismo!" },
   { cn: "Work out", pro: "wuork aut", es: "Ejercicio físico / Entrenamiento", ex: "Sorry I wont be able to come to the party. I have to work out, today is legs day ⇌ Lo siento, no podré ir a la fiesta. Tengo que hacer ejercicio, hoy es día de pierna" },
@@ -34,6 +33,15 @@ const phrasalVerbs = [
 
   // { cn: "", pro: "", es: "", ex: "" },
 ];
+let outputPhrasalV = '';
+let index, randomNum, k;
+
+for (index = phrasalVerbs.length; index; index--) {
+  randomNum = Math.floor(Math.random() * index);
+  k = phrasalVerbs[index - 1];
+  phrasalVerbs[index - 1] = phrasalVerbs[randomNum];
+  phrasalVerbs[randomNum] = k;
+} 
 
 for (let pv = 0; pv < phrasalVerbs.length; pv++) {
   outputPhrasalV += `
