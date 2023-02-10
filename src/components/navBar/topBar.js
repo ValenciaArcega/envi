@@ -19,12 +19,12 @@ class TopBar extends HTMLElement {
             
         <button type="button" title="Button turn dark mode" class="topBar-btnDark">
         <ion-icon class="topBar-btn-svg" name="cloudy-night-outline"></ion-icon>     
-            <p class="topBar-btn-p">Dark</p>
+            <p class="topBar-btn-p">Night</p>
         </button>
             
         <button type="button" title="Button turn light mode" class="topBar-btnLight hidden">
           <ion-icon class="topBar-btn-svg" name="sunny-outline"></ion-icon>
-          <p class="topBar-btn-p">Light</p>
+          <p class="topBar-btn-p">Day</p>
         </button>
     </div>`;
   }

@@ -51,7 +51,7 @@ button, input {
   font-family: 'Inter', sans-serif;
 }
 input {
-  caret-color: var(--mainColor);
+  caret-color: red;
 }
 
 /* /////////////////////////////////////////////////////////////////*/
