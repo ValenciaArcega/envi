@@ -1,18 +1,14 @@
- import { arrTest } from './data_alternatives.js'
 'use strict';
 
-const btn = document.querySelector('.card-sections-btnSectionAlternatives');
-const screen1 = document.querySelector('.screen-homePage');
-const screen2 = document.querySelector('.screen-section-tips');
+import { arrTest } from './data_alternatives.js'
 
-btn.addEventListener('click', () => {
-  screen1.classList.add('hidden')
-  screen2.classList.remove('hidden')
+screen1.classList.add('hidden')
+screen2.classList.remove('hidden')
 
-  let outputTest = '';
+let outputTest = '';
 
-  for (let indx = 0; indx < arrTest.length; indx++) {
-    outputTest += ` 
+for (let indx = 0; indx < arrTest.length; indx++) {
+  outputTest += ` 
     <div class="card">
         <h1 class="title-card">${arrTest[indx].cn}</h1>
         <ul>
@@ -41,7 +37,5 @@ btn.addEventListener('click', () => {
           </li>
         </ul>
     </div>`
-  }
-  document.querySelector('.section-cards').innerHTML = outputTest;
-
-});
+}
+document.querySelector('.section-cards').innerHTML = outputTest;

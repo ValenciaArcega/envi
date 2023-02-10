@@ -8,8 +8,8 @@ class TopBar extends HTMLElement {
     this.innerHTML = `
     <div class="topBar">
         <a href="../../index.html#welcom3" class="topBar-anker-backHome" aria-label="Go back">
-          <ion-icon class="topBar-anker-svg" name="albums-outline"></ion-icon>        
-            <p class="topBar-anker-p">Sections</p>
+          <ion-icon class="topBar-anker-svg" name="home-outline"></ion-icon> 
+            <p class="topBar-anker-p">Home</p>
         </a>
             
         <button type="button" title="Button focus search bar" class="topBar-btnSearch">
@@ -23,7 +23,7 @@ class TopBar extends HTMLElement {
         </button>
             
         <button type="button" title="Button turn light mode" class="topBar-btnLight hidden">
-          <ion-icon class="topBar-btn-svg" name="bulb-outline"></ion-icon>
+          <ion-icon class="topBar-btn-svg" name="sunny-outline"></ion-icon>
           <p class="topBar-btn-p">Light</p>
         </button>
     </div>`;
