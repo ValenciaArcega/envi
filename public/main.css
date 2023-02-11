@@ -297,11 +297,13 @@ li p {
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  background-color: var(--grayBackground);
 }
 
 .sections-h1 {
   font-size: 4rem;
   letter-spacing: -1.5px;
+  background-color: var(--grayBackground);
 }
 
 /* /////////////////////////////////////////////////////////////////*/
