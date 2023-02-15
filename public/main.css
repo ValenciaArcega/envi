@@ -301,7 +301,7 @@ li p {
 }
 
 .sections-h1 {
-  font-size: 4rem;
+  font-size: 3.7rem;
   letter-spacing: -1.5px;
   background-color: var(--grayBackground);
 }
@@ -320,7 +320,7 @@ li p {
 
 .card-sections {
   height: 17rem;
-  width: 20rem;
+  width: 19.5rem;
   border-radius: 10px;
   border: solid 1px var(--grayBorder);
   text-align: center;
@@ -338,10 +338,10 @@ li p {
   border-radius: 4px;
   position: absolute;
   top: -15px;
-  right: -15px;
+  right: -8px;
   font-weight: 500;
   color: var(--white);
-  background-color: #ff3131;
+  background-color: #fc4343;
 }
 .card-sections:nth-child(2)::after {
   content: '+7';
@@ -349,10 +349,10 @@ li p {
   border-radius: 4px;
   position: absolute;
   top: -15px;
-  right: -15px;
+  right: -8px;
   font-weight: 500;
   color: var(--white);
-  background-color: #ff3131;
+  background-color: #fc4343;
 }
 .card-sections:nth-child(3)::after {
   content: 'New';
@@ -360,10 +360,10 @@ li p {
   border-radius: 4px;
   position: absolute;
   top: -15px;
-  right: -15px;
+  right: -8px;
   font-weight: 500;
   color: var(--white);
-  background-color: #ff3131;
+  background-color: #fc4343;
 }
 /* /////////////////////////////////////////////////////////////////*/
 .card-sections-header {

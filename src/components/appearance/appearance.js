@@ -1,6 +1,6 @@
 'use strict';
 
-let root = document.querySelector(':root');
+const root = document.querySelector(':root');
 const btnUp = document.querySelector('.topBar-btnSearch');
 const btnDark = document.querySelector('.topBar-btnDark');
 const btnLight = document.querySelector('.topBar-btnLight');

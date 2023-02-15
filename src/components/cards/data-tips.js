@@ -10,8 +10,8 @@ export const tipCards = [
   { ntc: "Could", des: "Se usa para expresar el pasado de un habilidad o una mayor posibilidad, es más informal" },
 
   { ntc: "tip", des: "Puedes agregar un icono de cualquier sección de Tolescro en tu pantalla de inicio" },
-  { ntc: "", des: "Ve al menu del navegador y da click en la opción Agregar icono a pantalla de inicio" },
-  { ntc: "", des: "Listo tendras un acceso directo, esto lo puedes hacer con cualquier sección" },
+  { ntc: "", des: "Ve al menú del navegador y da click en la opción 'Agregar icono a pantalla de inicio'" },
+  { ntc: "", des: "Listo tendras un acceso directo, esto lo puedes hacer con cualquier página" },
 
   { ntc: "tip", des: "Diferencia entre do y make, ambas palabras significan 'hacer', pero..." },
   { ntc: "Do", des: "Se usa para describir acciones que involucran un proposito, es decir 'hacer' literalmente" },
