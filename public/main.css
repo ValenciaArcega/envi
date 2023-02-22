@@ -344,7 +344,7 @@ li p {
   background-color: #fc4343;
 }
 .card-sections:nth-child(2)::after {
-  content: '+7';
+  content: '+1';
   padding: 3px 12px;
   border-radius: 4px;
   position: absolute;
@@ -355,7 +355,7 @@ li p {
   background-color: #fc4343;
 }
 .card-sections:nth-child(3)::after {
-  content: 'New';
+  content: '+2';
   padding: 3px 12px;
   border-radius: 4px;
   position: absolute;

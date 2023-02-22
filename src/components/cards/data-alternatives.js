@@ -74,12 +74,11 @@ export const tCards = [
   { cn: "Tryna", pro: "thraina", es: "Trying to ⇌ Tratando de...", ex: "I don't give a fuck about your opinion, I'm tryna do this for myself ⇌ No me importa un carajo tu opinión, estoy tratando de hacer esto por mí misma" },
   { cn: "Imma", pro: "ama", es: "I'm gonna(going to) ⇌ Voy a...", ex: "Hold on Imma be back real quick, Imma have dinner with my parents ⇌ Aguanta, vuelvo en seguida, voy a cenar con mis padres." },
   { cn: "Gonna", pro: "gona", es: "Going to ⇌ Voy a / vas a / va a / van a", ex: "She's gonna buy the brand-new iPhone 15 in september ⇌ Ella va a comprar el nuevo iPhone 15 en septiembre." },
-  /*
-  { cn: "Hafta", pro: "", es: "Have to ⇌ Tener que...", ex: " ⇌ " },
-  { cn: "Outta", pro: "", es: "Out of ⇌ Fuera de...", ex: " ⇌ " },
-  { cn: "Wanna", pro: "", es: "Want to ⇌ Quiero/es, quiere/n / queremos", ex: " ⇌ " },
+  { cn: "Hafta", pro: "jaf - ta", es: "Have to ⇌ Tener que...", ex: "We hafta finish this project by tomorrow fr ⇌ De verdad tenemos que terminar este proyecto para mañana." },
+  { cn: "Outta", pro: "au - ra", es: "Out of ⇌ Fuera de... / No tener", ex: "Let\'s get outta this place is so expensive and I'm outta cash rn ⇌ Salgamos de este lugar, es muy caro y no tengo efectivo ahora mismo." },
+  { cn: "Wanna", pro: "gua - na", es: "Want to ⇌ Quiero/es, quiere/n / queremos", ex: "Do you wanna go to the RBD concert the next week? ⇌ ¿Quieres ir al concierto de RBD la próxima semana?" },
 
-  
-  // { cn: "", pro: "", es: "", ex: " ⇌ " },
+  /*
+  { cn: "", pro: "", es: "", ex: " ⇌ " },
   */
 ];

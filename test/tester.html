@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <!-- IMPORTS -->
+  <link href="tester.css" rel="stylesheet" />
+  <!-- SCRIPTS -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>Tolescro &mdash; Tester</title>
+</head>
+
+<body>
+
+  <div class="topBar">
+    <a href="../../index.html#welcom3" class="topBar-anker-backHome" aria-label="Go back">
+      <ion-icon class="topBar-anker-svg" name="home-outline"></ion-icon>
+      <p class="topBar-anker-p">Home</p>
+    </a>
+
+    <button type="button" title="Button focus search bar" class="topBar-btnSearch">
+      <ion-icon class="topBar-btn-svg" name="search-outline"></ion-icon>
+      <p class="topBar-btn-p">Search</p>
+    </button>
+
+    <button type="button" title="Button turn dark mode" class="topBar-btnDark">
+      <ion-icon class="topBar-btn-svg" name="cloudy-night-outline"></ion-icon>
+      <p class="topBar-btn-p">Night</p>
+    </button>
+
+    <button type="button" title="Button turn light mode" class="topBar-btnLight hidden">
+      <ion-icon class="topBar-btn-svg" name="sunny-outline"></ion-icon>
+      <p class="topBar-btn-p">Day</p>
+    </button>
+  </div>
+
+  <!-- ------------------------------------ -->
+  <script type="module" src="../data/data-alternatives.js"></script>
+  <script type="module" src="../src/components/cards/card-alternatives.js"></script>
+  <!-- ------------------------------------ -->
+  <script src="../src/components/navBar/topBar.js"></script>
+  <script src="tester.js"></script>
+  <script src="../src/components/appearance/appearance.js"></script>
+  <script src="../src/components/finder/filterCards.js"></script>
+</body>
+
+</html>
