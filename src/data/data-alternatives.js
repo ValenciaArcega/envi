@@ -1,6 +1,8 @@
 'use strict';
 
 export const tCards = [
+  { cn: "Naive", pro: "nai - v", es: "Ingunuo / Inocente", ex: "Do u really thought u could get money for free?, u were so naive! ⇌ ¿De verdad pensaste que podrías conseguir dinero gratis? ¡Fuiste tan ingenuo!" },
+  { cn: "Tease", pro: "Tis", es: "Provocar / Burlarse", ex: "Naah he is just teasing you, try to do not get mad  ⇌ No le hagas caso, solo se esta burlando de ti, trata de no enfadarte" },
   { cn: "Within", pro: "wi - din", es: "Dentro / en (tiempo)", ex: "I called the ambulance, gonna arrive within 10 minutes ⇌ Llamé a la ambulancia, llegará dentro de 10 minutos" },
   { cn: "Kidnap", pro: "kid - nap", es: "Secuestrar", ex: "Kidnapping are common on this country unfortunately ⇌ Desafortunadamente, los secuestros son comunes en este país" },
   { cn: "smh", pro: "sheik mai jed", es: "Shaking my head ⇌ mover la cabeza con desaprobación", ex: "That comment was so immature, smh 🤦 ⇌ Ese comentario fue tan inmaduro, no lo puedo creer" },

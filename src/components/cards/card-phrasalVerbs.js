@@ -1,6 +1,6 @@
 'use strict';
 
-import { phrasalVerbs } from './data-phrasalVerbs.js'
+import { phrasalVerbs } from '../../data/data-phrasalVerbs.js';
 
 let outputPhrasalV = '';
 let arrSize, randomNumber, index;

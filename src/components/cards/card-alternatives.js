@@ -1,6 +1,6 @@
 'use strict';
 
-import { tCards } from './data-alternatives.js'
+import { tCards } from '../../data/data-alternatives.js';
 
 let outputTCards = '';
 let arrSize_a, randomNumber_a, index_a;
@@ -41,6 +41,6 @@ for (let tc = 0; tc < tCards.length; tc++) {
             <p>${tCards[tc].ex}</p>
           </li>
         </ul>
-    </div>`
+    </div>`;
 }
 document.querySelector('.cards').innerHTML = outputTCards;

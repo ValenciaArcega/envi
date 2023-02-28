@@ -1,6 +1,6 @@
 'use strict';
 
-import { tipCards } from './data-tips.js'
+import { tipCards } from '../../data/data-tips.js';
 
 let outputTips = '';
 
