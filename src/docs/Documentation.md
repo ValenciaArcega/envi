@@ -13,6 +13,7 @@ Tolescro is a web tool where the users can explore the big **vocabulary** that E
 - HTML 5
 - CSS (Grid to make a responsive web design and Flexbox to elements, NO media queries)
 - JavaScript (DOM manipulation; events and variables)
+- Git (project tracking)
 
 ## Problem to solve
 The page founds to solve a big problematic that some people have; waste time in the phone, scrolling down watching content in social media, it helps sometimes, it creates big network between people or even can help to feel in touch and save, but in the another side, can make the people lazy and procrastinate some **paramount** tasks thanks to this mobile addition, therefore this tool help to keeping learning, even when they have free time to scroll the screen.

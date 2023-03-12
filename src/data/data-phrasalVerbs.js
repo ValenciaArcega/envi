@@ -30,6 +30,8 @@ export const phrasalVerbs = [
   { cn: "Calm down", pro: "kalm daun", es: "Relajarse / Bajar el enojo", ex: "You need to calm down, you are too angry ⇌ Necesitas calmarte, estás demasiado enojada" },
   { cn: "Carry on", pro: "kerui onkerui on", es: "Continuar / Proseguir", ex: "You have to carry on with your exam, until the teacher comes ⇌ Tienes que continuar con tu examen, hasta que venga la profesora" },
   { cn: "Break up", pro: "bre - ik op", es: "Terminar una relación", ex: "We broke up before get back college ⇌ Rompimos antes de volver a la universidad" },
+  { cn: "Hook up", pro: "ju - k op", es: "Ligar / Conectar con alguien", ex: "I'm not looking for a serious relationship rn, I just wanna hook up with someone casually ⇌ No estoy buscando una relación seria en este momento, solo quiero ligar con alguien sin compromiso" },
+  { cn: "Lay down", pro: "lei da - ʊn", es: "Acostarse / Recostarse", ex: "After a long day at work, I like to lay down on the couch and watch Instagram ⇌ Después de un largo día de trabajo, me gusta recostarme en el sofá y ver Instagram" },
 
-  // { cn: "", pro: "", es: "", ex: "" },
+  // { cn: "", pro: "", es: "", ex: " ⇌ " },
 ];

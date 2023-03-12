@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
       new Notification('Hey explorer !', {
         body: 'Disfruta de cartas aleatorias',
         icon: 'logo.png',
-        tag: 'The cards had been chnaged!' // overrite
+        tag: 'The cards had been chnaged!' // overwrite
       });
     } // if
   }); // promise
